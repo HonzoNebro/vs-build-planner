@@ -1,0 +1,8 @@
+{
+  "name": "vs-build-planner",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate-data.js"
+  }
+}

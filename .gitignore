@@ -1,4 +1,5 @@
-scripts
+scripts/*
+!scripts/validate-data.js
 img/dlcchars/
 img/dlcpassives/
 game-data*
