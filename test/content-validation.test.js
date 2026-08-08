@@ -6,6 +6,7 @@ const test = require('node:test')
 const {
   loadData,
   validateData,
+  validateIconAssets,
   validateIcons,
   validateInlineScripts,
   validateProject,
@@ -52,6 +53,11 @@ test('missing icon selectors are rejected', () => {
   const id = data.characters[0].id
   const cssWithoutIcon = css.replace(new RegExp(`\\.icon-${id}\\s*\\{[^}]*\\}`), '')
   assert.ok(validateIcons(data, cssWithoutIcon).some((error) => error.includes(`characters:${id}`)))
+})
+
+test('missing local icon assets are rejected', () => {
+  const css = '.icon-example { background-image: url("img/does-not-exist.webp"); }'
+  assert.ok(validateIconAssets(css, rootDir).some((error) => error.includes('img/does-not-exist.webp')))
 })
 
 test('invalid inline JavaScript is rejected', () => {
