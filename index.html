@@ -123,11 +123,10 @@
         </div>
         <div v-if="settings" class="buttons settings">
           <span class="button" @click="config.sorting = !config.sorting">SORT BY IMPACTS: <span :class="(config.sorting ? 'enabled' : 'disabled')">{{config.sorting ? 'ON' : 'OFF'}}</span></span>
-          <span class="button" @click="config.dlc1 = !config.dlc1">DLC 1: <span :class="(config.dlc1 ? 'enabled' : 'disabled')">{{config.dlc1 ? 'ON' : 'OFF'}}</span></span>
-          <span class="button" @click="config.dlc2 = !config.dlc2">DLC 2: <span :class="(config.dlc2 ? 'enabled' : 'disabled')">{{config.dlc2 ? 'ON' : 'OFF'}}</span></span>
-          <span class="button" @click="config.dlc3 = !config.dlc3">DLC 3: <span :class="(config.dlc3 ? 'enabled' : 'disabled')">{{config.dlc3 ? 'ON' : 'OFF'}}</span></span>
-          <span class="button" @click="config.dlc4 = !config.dlc4">DLC 4: <span :class="(config.dlc4 ? 'enabled' : 'disabled')">{{config.dlc4 ? 'ON' : 'OFF'}}</span></span>
-          <span class="button" @click="config.dlc5 = !config.dlc5">DLC 5: <span :class="(config.dlc5 ? 'enabled' : 'disabled')">{{config.dlc5 ? 'ON' : 'OFF'}}</span></span>
+          <span v-for="contentPack in contentPacks" :key="contentPack.id" class="button" @click="config.contentPacks[contentPack.id] = !config.contentPacks[contentPack.id]">
+            {{contentPack.shortName}}:
+            <span :class="config.contentPacks[contentPack.id] ? 'enabled' : 'disabled'">{{config.contentPacks[contentPack.id] ? 'ON' : 'OFF'}}</span>
+          </span>
           <span class="button" @click="config.combinations = !config.combinations">COMBINATIONS: <span :class="(config.combinations ? 'enabled' : 'disabled')">{{config.combinations ? 'ON' : 'OFF'}}</span></span>
           <span class="button" @click="config.impacts = !config.impacts">IMPACTS: <span :class="(config.impacts ? 'enabled' : 'disabled')">{{config.impacts ? 'ON' : 'OFF'}}</span></span>
           <span class="button" @click="config.titles = !config.titles">TITLES: <span :class="(config.titles ? 'enabled' : 'disabled')">{{config.titles ? 'ON' : 'OFF'}}</span></span>
@@ -158,12 +157,9 @@
                 :class="{
                   selected: selectedCharacter.id === character.id, 
                   special: character.special, 
-                  dlc1: character.dlc1, 
-                  dlc2: character.dlc2, 
-                  dlc3: character.dlc3, 
-                  dlc4: character.dlc4, 
-                  dlc5: character.dlc5
-                }" 
+                  'content-pack': character.contentPack
+                }"
+                :style="contentPackStyle(character)"
                 :title="character.title" 
                 tabindex="0"
                 @click="toggleItem(character)" 
@@ -244,13 +240,10 @@
                 :class="{
                   selected: weapon.selected,
                   special: weapon.special,
-                  dlc1: weapon.dlc1,
-                  dlc2: weapon.dlc2,
-                  dlc3: weapon.dlc3,
-                  dlc4: weapon.dlc4,
-                  dlc5: weapon.dlc5,
+                  'content-pack': weapon.contentPack,
                   center: !config.combinations && !config.titles && !config.impacts
                 }"
+                :style="contentPackStyle(weapon)"
                 :title="weapon.title"
                 tabindex="0"
                 @click="toggleItem(weapon)"
@@ -291,13 +284,10 @@
                 :class="{
                   selected: evolution.selected,
                   special: evolution.special,
-                  dlc1: evolution.dlc1,
-                  dlc2: evolution.dlc2,
-                  dlc3: evolution.dlc3,
-                  dlc4: evolution.dlc4,
-                  dlc5: evolution.dlc5,
+                  'content-pack': evolution.contentPack,
                   center: !config.combinations && !config.titles && !config.impacts
                 }"
+                :style="contentPackStyle(evolution)"
                 :title="evolution.title"
                 tabindex="0"
                 @click="toggleItem(evolution)"
@@ -330,7 +320,7 @@
               </svg>
             </div>
             <transition-group tag="div" class="objects">
-              <div v-for="passive in filteredPassives" :key="passive.id" :data-id="passive.id" class="object passive" :class="{selected: passive.selected, special: passive.special, dlc1: passive.dlc1, dlc2: passive.dlc2, dlc3: passive.dlc3, dlc4: passive.dlc4, dlc5: passive.dlc5, center: !config.combinations && !config.titles && !config.impacts}" :title="passive.title" @click="toggleItem(passive)" @mouseenter="onMouseEnter(passive)" @mouseleave="onMouseLeave()">
+              <div v-for="passive in filteredPassives" :key="passive.id" :data-id="passive.id" class="object passive" :class="{selected: passive.selected, special: passive.special, 'content-pack': passive.contentPack, center: !config.combinations && !config.titles && !config.impacts}" :style="contentPackStyle(passive)" :title="passive.title" @click="toggleItem(passive)" @mouseenter="onMouseEnter(passive)" @mouseleave="onMouseLeave()">
                 <div class="icon" :class="`icon-${passive.id}`"></div>
                 <div v-if="config.impacts" class="impacts">
                   <div v-for="impact in impactsById[passive.id]" class="impact" :class="itemsById[impact.substring(1)]?.selected ? (impact[0] === '+' ? 'positive' : 'negative') : '' " :title="impact.substring(1)"></div>
@@ -355,7 +345,6 @@
               </svg>
             </div>
             <transition-group tag="div" class="objects">
-              <!-- <div v-for="arcana in filteredArcanas" :key="arcana.id" :data-id="arcana.id" class="object arcana" :class="{selected: arcana.selected, special: arcana.special, dlc1: arcana.dlc1, dlc2: arcana.dlc2, dlc3: arcana.dlc3, dlc4: arcana.dlc4, dlc5: arcana.dlc5, center: !config.titles}" :title="arcana.title" @click="toggleItem(arcana)" @mouseenter="onMouseEnter(arcana)" @mouseleave="onMouseLeave()"> -->
               <div
                 v-for="arcana in filteredArcanas"
                 :key="arcana.id"
@@ -364,13 +353,10 @@
                 :class="{
                   selected: arcana.selected,
                   special: arcana.special,
-                  dlc1: arcana.dlc1,
-                  dlc2: arcana.dlc2,
-                  dlc3: arcana.dlc3,
-                  dlc4: arcana.dlc4,
-                  dlc5: arcana.dlc5,
+                  'content-pack': arcana.contentPack,
                   center: !config.combinations && !config.titles && !config.impacts
                 }"
+                :style="contentPackStyle(arcana)"
                 :title="arcana.title"
                 tabindex="0"
                 @click="toggleItem(arcana)"
@@ -411,12 +397,9 @@
                 :class="{
                   selected: stage.selected,
                   special: stage.special,
-                  dlc1: stage.dlc1,
-                  dlc2: stage.dlc2,
-                  dlc3: stage.dlc3,
-                  dlc4: stage.dlc4,
-                  dlc5: stage.dlc5
+                  'content-pack': stage.contentPack
                 }"
+                :style="contentPackStyle(stage)"
                 :title="stage.title"
                 tabindex="0"
                 @click="toggleItem(stage)"
@@ -513,28 +496,32 @@
           });
 
           // data from data.js
-          const { characters, weapons, evolutions, counterparts, powerups, passives, arcanas, stages, pickups, structures } = window.vs
+          const { contentPacks, characters, weapons, evolutions, counterparts, powerups, passives, arcanas, stages, pickups, structures } = window.vs
+          const contentPacksById = Object.fromEntries(contentPacks.map((contentPack) => [contentPack.id, contentPack]))
 
-          // List of all objects
-          const items = [...powerups, ...passives, ...weapons, ...evolutions, ...counterparts, ...arcanas, ...characters, ...stages, ...pickups, ...structures]
+          // List of all objects. Namespaced keys keep same-named power-ups and passives distinct.
+          const itemCollections = { powerups, passives, weapons, evolutions, counterparts, arcanas, characters, stages, pickups, structures }
+          const itemTypes = { powerups: 'powerup', passives: 'passive', weapons: 'weapon', evolutions: 'evolution', counterparts: 'counterpart', arcanas: 'arcana', characters: 'character', stages: 'stage', pickups: 'pickup', structures: 'structure' }
+          for (const [collectionId, collectionItems] of Object.entries(itemCollections)) {
+            for (const item of collectionItems) {
+              item.key = `${collectionId}:${item.id}`
+              item.type = itemTypes[collectionId]
+            }
+          }
+          const items = Object.values(itemCollections).flat()
+          const itemsByKey = items.reduce((result, item) => Object.assign(result, { [item.key]: item }), {})
+          // Legacy relations use unscoped IDs. Collection order intentionally resolves stat IDs to passives.
           const itemsById = items.reduce((itemsById, item) => Object.assign(itemsById, { [item.id]: item }), {})
 
-            const filterByDLC = (items) => {
-            return items.filter((item) => 
-              (config.dlc1 || !item.dlc1) && 
-              (config.dlc2 || !item.dlc2) && 
-              (config.dlc3 || !item.dlc3) && 
-              (config.dlc4 || !item.dlc4) && 
-              (config.dlc5 || !item.dlc5)
-            )
-            }
+          const filterByContentPack = (items) => items.filter((item) => !item.contentPack || config.contentPacks[item.contentPack] !== false)
+          const contentPackStyle = (item) => item.contentPack ? { '--content-pack-color': contentPacksById[item.contentPack]?.color || '#666' } : {}
 
-            const visibleCharacters = computed(() => filterByDLC(characters))
-            const visibleWeapons = computed(() => filterByDLC(weapons))
-            const visibleEvolutions = computed(() => filterByDLC(evolutions))
-            const visiblePassives = computed(() => filterByDLC(passives))
-            const visibleStages = computed(() => filterByDLC(stages))
-            const visibleArcanas = computed(() => filterByDLC(arcanas))
+          const visibleCharacters = computed(() => filterByContentPack(characters))
+          const visibleWeapons = computed(() => filterByContentPack(weapons))
+          const visibleEvolutions = computed(() => filterByContentPack(evolutions))
+          const visiblePassives = computed(() => filterByContentPack(passives))
+          const visibleStages = computed(() => filterByContentPack(stages))
+          const visibleArcanas = computed(() => filterByContentPack(arcanas))
 
           for (const item of items) {
             item.index = 0
@@ -562,6 +549,8 @@
             evolution.weaponIds = evolution.itemIds.filter((itemId) => itemsById[itemId].type === 'weapon' || itemsById[itemId].type === 'evolution')
             evolution.evolutionIds = evolution.itemIds.filter((itemId) => itemsById[itemId].type === 'evolution')
             evolution.passiveIds = evolution.itemIds.filter((itemId) => itemsById[itemId].type === 'passive')
+            evolution.kind = evolution.kind || (evolution.weaponIds.length > 1 ? 'union' : 'evolution')
+            evolution.requirements = evolution.requirements || { weapons: evolution.weaponIds, passives: evolution.passiveIds }
             for (const itemId of evolution.itemIds) {
               const item = itemsById[itemId]
               item.evolutionId = evolution.id
@@ -1418,7 +1407,7 @@
               passives.sort((a, b) => {
                 const selected1 = impactsById.value[a.id].filter((i) => selectedIds.has(i.substring(1)))
                 const selected2 = impactsById.value[b.id].filter((i) => selectedIds.has(i.substring(1)))
-                return a.dlc3 && !b.dlc3 ? 1 : !a.dlc3 && b.dlc3 ? -1 : selected2.length - selected1.length || b.index - a.index
+                return a.contentPack === 'emergency-meeting' && b.contentPack !== 'emergency-meeting' ? 1 : a.contentPack !== 'emergency-meeting' && b.contentPack === 'emergency-meeting' ? -1 : selected2.length - selected1.length || b.index - a.index
               })
               arcanas.sort((a, b) => {
                 const selected1 = impactsById.value[a.id].filter((i) => selectedIds.has(i.substring(1)))
@@ -1490,7 +1479,8 @@
           function onMouseEnter(object) {
             hoveredId = object.id
             // character's gif animation
-            if (object.type === 'character' && object.id !== 'shemoon' && !object.dlc3 && !object.dlc4 && !object.dlc5) {
+            const contentPack = contentPacksById[object.contentPack]
+            if (object.type === 'character' && object.id !== 'shemoon' && (!contentPack || contentPack.animatedCharacters)) {
               const iconElements = document.querySelectorAll(`[data-id="${object.id}"] > .icon`)
               for (const iconElement of iconElements) {
                 const image = new Image()
@@ -1533,7 +1523,7 @@
               if (!item.fixed) {
                 selectedIds.delete(item.id)
                 if (item.type === 'weapon') {
-                  const dlcWeapon = item.items.find((item) => item.dlc3)
+                  const dlcWeapon = item.items.find((item) => item.contentPack === 'emergency-meeting')
                   if (dlcWeapon) {
                     unselectId(dlcWeapon.id)
                   } else if (item.id === 'hats') {
@@ -1577,7 +1567,7 @@
                 break;
               case 'passive':
                 if (!selectedStage.value.itemIds.includes(item.id)) {
-                  const dlcWeapon = item.items.find((item) => item.dlc3);
+                  const dlcWeapon = item.items.find((item) => item.contentPack === 'emergency-meeting');
                   if (dlcWeapon && !selectedIds.has(dlcWeapon.id)) {
                     selectId(dlcWeapon.id);
                   } else if (item.id === 'minihorse') {
@@ -1692,7 +1682,8 @@
           }
 
           function useConfig(storageKey = 'vs-build') {
-            const defaultConfig = { sorting: false, impacts: true, pixels: true, titles: true, dlc1: true, dlc2: true, dlc3: true, dlc4: true, dlc5: true, combinations: true, size: 1, version: 2 }
+            const defaultContentPacks = Object.fromEntries(window.vs.contentPacks.map((contentPack) => [contentPack.id, true]))
+            const defaultConfig = { sorting: false, impacts: true, pixels: true, titles: true, contentPacks: defaultContentPacks, combinations: true, size: 1, version: 3 }
 
             const userConfig = loadUserConfig()
 
@@ -1700,7 +1691,12 @@
               Object.assign(userConfig, defaultConfig)
             }
 
-            const config = reactive({ ...defaultConfig, ...(userConfig.version === defaultConfig.version ? userConfig : {}) })
+            const savedConfig = userConfig.version === defaultConfig.version ? userConfig : {}
+            const config = reactive({
+              ...defaultConfig,
+              ...savedConfig,
+              contentPacks: { ...defaultContentPacks, ...(savedConfig.contentPacks || {}) },
+            })
 
             watch(config, saveUserConfig)
 
@@ -1767,6 +1763,8 @@
 
           return {
             config,
+            contentPacks,
+            contentPackStyle,
             settings,
             collapsedSections,
             characters,
@@ -1781,6 +1779,7 @@
             visiblePassives,
             visibleStages,
             itemsById,
+            itemsByKey,
             impactsById,
             selectedStage,
             selectedCharacter,

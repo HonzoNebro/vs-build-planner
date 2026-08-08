@@ -9,11 +9,6 @@
   --bg-solid: var(--neutral-dark);
   --bg-gradient-start: var(--primary);
   --bg-gradient-end: #100;
-  --dlc1-color: #779;
-  --dlc2-color: #798;
-  --dlc3-color: #868;
-  --dlc4-color: #996;
-  --dlc5-color: #966;
   --selected-color: #36f;
   --boost-color: #3c3;
   --drop-color: #f33;
@@ -179,24 +174,8 @@ section {
         background-color: #444;
       }
       */
-.dlc1 {
-  background-color: var(--dlc1-color);
-}
-
-.dlc2 {
-  background-color: var(--dlc2-color);
-}
-
-.dlc3 {
-  background-color: var(--dlc3-color);
-}
-
-.dlc4 {
-  background-color: var(--dlc4-color);
-}
-
-.dlc5 {
-  background-color: var(--dlc5-color);
+.content-pack {
+  background-color: var(--content-pack-color);
 }
 
 .selected {
