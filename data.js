@@ -5977,7 +5977,8 @@ window.vs = {
     },
     {
       "id": "arcana",
-      "name": "BoxArcana"
+      "name": "BoxArcana",
+      "iconId": "arcana0"
     },
     {
       "id": "vacuum",
