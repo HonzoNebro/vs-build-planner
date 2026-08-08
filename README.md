@@ -10,4 +10,3 @@
 ## Todo:
 - Add info for stages (low priority)
 - Add images for stages (low priority)
-- Replace placeholder candyboxes with Morning Star/Diabalogue/Coat of Arms/Spectral Sword/Belnades Spellbook/etc (very low priority, not sure if this is something I'm able to do)

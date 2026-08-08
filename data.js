@@ -1243,7 +1243,7 @@ window.vs = {
       "emoji": ":question:",
       "description": "Gains +1% Might every level. Immune to health drain. Once per life, triggers Soul Steal after receiving fatal damage.",
       "itemIds": [
-        "candybox"
+        "rpg"
       ],
       "special": true,
       "contentPack": "ode-castlevania",
@@ -1380,7 +1380,7 @@ window.vs = {
       "emoji": ":question:",
       "description": "Charge: Soul Steal.\nLevelUp: Dark Inferno.\nOverheal 8+: Summon Spirit.\nHP-Critical: Sword Brothers.\nImmune to health drain.",
       "itemIds": [
-        "candybox"
+        "alucardsword"
       ],
       "special": true,
       "contentPack": "ode-castlevania",
@@ -1492,7 +1492,7 @@ window.vs = {
       "emoji": ":question:",
       "description": "Gains +1% Might every level. Charge ability: triggers all equipped weapons from the Ebony Diabologue. Can find special pickups.",
       "itemIds": [
-        "candybox"
+        "confodere"
       ],
       "special": true,
       "contentPack": "ode-castlevania",
@@ -1615,7 +1615,7 @@ window.vs = {
       "emoji": ":question:",
       "description": "Gets more projectiles every 20 levels (max +3).",
       "itemIds": [
-        "candybox"
+        "holy"
       ],
       "special": true,
       "contentPack": "ode-castlevania",
@@ -1628,7 +1628,7 @@ window.vs = {
       "emoji": ":question:",
       "description": "Gets more projectiles every 20 levels (max +3).",
       "itemIds": [
-        "candybox"
+        "savrogweapon"
       ],
       "special": true,
       "contentPack": "ode-castlevania",
@@ -6298,6 +6298,7 @@ window.vs = {
     {
       "id": "galuga",
       "name": "Neo Galuga",
+      "contentPack": "operation-guns",
       "itemIds": [
         "homingmiss",
         "claw",
@@ -6305,6 +6306,61 @@ window.vs = {
         "wings",
         "powerup",
         "armadio"
+      ]
+    },
+    {
+      "id": "eudaimonia",
+      "name": "Eudaimonia M.",
+      "description": "A space between spaces. The culmination of something, or simply another beginning? Tag, you’re it.",
+      "special": true,
+      "itemIds": []
+    },
+    {
+      "id": "holy-forbidden",
+      "name": "Holy Forbidden",
+      "description": "Wait, you can see this too? This isn't right...",
+      "special": true,
+      "itemIds": []
+    },
+    {
+      "id": "room-1665",
+      "name": "Room 1665",
+      "description": "Seemingly bottomless, the down-reaching doors of this huge, infernal contraption open only when fed the blood of monsters.",
+      "special": true,
+      "itemIds": []
+    },
+    {
+      "id": "carlo-cart",
+      "name": "Carlo Cart",
+      "description": "Everything was a stage hazard.",
+      "special": true,
+      "itemIds": []
+    },
+    {
+      "id": "hectic-highway",
+      "name": "Hectic Highway",
+      "description": "Contra Force, rev your jetbikes — it's time to drive fast, and fire faster.",
+      "special": true,
+      "contentPack": "operation-guns",
+      "itemIds": []
+    },
+    {
+      "id": "ode-castlevania",
+      "name": "Ode to Castlevania",
+      "description": "As myriad humans joined their vespers in unison, the forces of chaos granted their dark wish: Castlevania rises again.",
+      "special": true,
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "armadio",
+        "bwaka",
+        "discus",
+        "parma",
+        "shuriken",
+        "revival",
+        "ring1",
+        "ring2",
+        "sign1",
+        "sign2"
       ]
     }
   ]
