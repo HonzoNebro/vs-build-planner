@@ -1,4 +1,41 @@
 window.vs = {
+  "contentPacks": [
+    {
+      "id": "legacy-moonspell",
+      "name": "Legacy of the Moonspell",
+      "shortName": "MOONSPELL",
+      "color": "#779",
+      "animatedCharacters": true
+    },
+    {
+      "id": "tides-foscari",
+      "name": "Tides of the Foscari",
+      "shortName": "FOSCARI",
+      "color": "#798",
+      "animatedCharacters": true
+    },
+    {
+      "id": "emergency-meeting",
+      "name": "Emergency Meeting",
+      "shortName": "EMERGENCY MEETING",
+      "color": "#868",
+      "animatedCharacters": false
+    },
+    {
+      "id": "operation-guns",
+      "name": "Operation Guns",
+      "shortName": "OPERATION GUNS",
+      "color": "#996",
+      "animatedCharacters": false
+    },
+    {
+      "id": "ode-castlevania",
+      "name": "Ode to Castlevania",
+      "shortName": "ODE TO CASTLEVANIA",
+      "color": "#966",
+      "animatedCharacters": false
+    }
+  ],
   "characters": [
     {
       "id": "antonio",
@@ -573,7 +610,7 @@ window.vs = {
       "itemIds": [
         "wind"
       ],
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "surname": "Moonspell",
       "description": "Recovery also multiplies all healing sources. Over-healing slightly increases Max Health.",
       "onEveryLevelUp": {},
@@ -586,7 +623,7 @@ window.vs = {
       "itemIds": [
         "seasons"
       ],
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "surname": "Moonspell",
       "description": "Becomes stronger and invincible for a fixed interval after defeating a large amount of enemies.",
       "onEveryLevelUp": {},
@@ -602,7 +639,7 @@ window.vs = {
       hiddenitemIds: [
         "muramasa"
       ],
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "surname": "Moonspell",
       "description": "Starts with hidden Night Sword. Morphs into a stronger version when his base weapon evolves.",
       "onEveryLevelUp": {},
@@ -615,7 +652,7 @@ window.vs = {
       "itemIds": [
         "mirage"
       ],
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "surname": "",
       "description": "Ignores weapons cooldown. Weapons fire at a fixed interval when moving.",
       "onEveryLevelUp": {},
@@ -628,7 +665,7 @@ window.vs = {
       "itemIds": [
         "bocce"
       ],
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "surname": "",
       "description": "Area temporarily increases at fixed intervals.",
       "onEveryLevelUp": {},
@@ -642,7 +679,7 @@ window.vs = {
       "hiddenitemIds": [
         "bocce"
       ],
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "prefix": "Megalo",
       "surname": "Moonspell",
       "description": "Cannot be damaged, but disappears after reaching the current Time Limit. Starts with hidden 108 Bocce.",
@@ -654,7 +691,7 @@ window.vs = {
       "name": "Syuuto",
       "emoji": ":charMegaloSyuutoVS:",
       "itemIds": ["muramasa"],
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "prefix": "Megalo",
       "surname": "Moonspell",
       "description": "Gains +1% Might every level.",
@@ -667,7 +704,7 @@ window.vs = {
       "itemIds": [
         "bolle"
       ],
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "surname": "",
       "description": "Gets more projectiles every 20 levels (max+4).",
       "price": 500
@@ -679,7 +716,7 @@ window.vs = {
       "itemIds": [
         "spell1"
       ],
-      "dlc2": true
+      "contentPack": "tides-foscari"
     },
     {
       "id": "maruto",
@@ -688,7 +725,7 @@ window.vs = {
       "itemIds": [
         "eskizzibur"
       ],
-      "dlc2": true
+      "contentPack": "tides-foscari"
     },
     {
       "id": "keitha",
@@ -697,7 +734,7 @@ window.vs = {
       "itemIds": [
         "arrow"
       ],
-      "dlc2": true
+      "contentPack": "tides-foscari"
     },
     {
       "id": "luminaire",
@@ -706,7 +743,7 @@ window.vs = {
       "itemIds": [
         "prism"
       ],
-      "dlc2": true
+      "contentPack": "tides-foscari"
     },
     {
       "id": "genevieve",
@@ -715,7 +752,7 @@ window.vs = {
       "itemIds": [
         "servant"
       ],
-      "dlc2": true
+      "contentPack": "tides-foscari"
     },
     {
       "id": "jeneviv",
@@ -724,7 +761,7 @@ window.vs = {
       "itemIds": [
         "servant"
       ],
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "prefix": "",
       "surname": "",
       "description": "It will literally eat the world.",
@@ -737,7 +774,7 @@ window.vs = {
       "itemIds": [
         "cat_"
       ],
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "surname": "",
       "description": "Gains XP when picking up Gold Coins and Coin Bags. Starts with temporarily reduced Might.",
       "price": 50000
@@ -749,7 +786,7 @@ window.vs = {
       "itemIds": [
         "popper"
       ],
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "surname": "",
       "description": "Gets more projectiles every 20 levels (max+4).",
       "price": 500
@@ -761,7 +798,7 @@ window.vs = {
       "itemIds": [
         "report"
       ],
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "surname": "Dino",
       "description": "Gains stat bonuses every time anyones weapon is brought to max level.",
       "price": 0
@@ -773,7 +810,7 @@ window.vs = {
       "itemIds": [
         "swipe"
       ],
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "surname": "Gino",
       "description": "Chooses an extra passive weapon at level 2, 12, and 22.",
       "price": 500
@@ -785,7 +822,7 @@ window.vs = {
       "itemIds": [
         "scan"
       ],
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "surname": "Lino",
       "description": "Can't be damaged or deal damage, but disappears after reaching the current Time Limit. Ignores walls.",
       "price": 500
@@ -797,7 +834,7 @@ window.vs = {
       "itemIds": [
         "vent"
       ],
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "surname": "Nino",
       "description": "Leaves behind excess body parts when damaged and may shift forms.",
       "price": 500
@@ -809,7 +846,7 @@ window.vs = {
       "itemIds": [
         "debris"
       ],
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "surname": "Pina",
       "description": "May gain +1 Revival when anyone revives. Increases Armor and Recovery of nearby characters. Ignores walls.",
       "price": 500
@@ -821,7 +858,7 @@ window.vs = {
       "itemIds": [
         "tongue"
       ],
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "surname": "Rina",
       "description": "Becomes stronger and briefly invincible after defeating a large amount of enemies, or an ally.",
       "price": 500
@@ -833,7 +870,7 @@ window.vs = {
       "itemIds": [
         "rocks"
       ],
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "surname": "Mina",
       "description": "Gets -10% Luck every 10 levels (max -90%). Can choose a per-level bonus every 10 levels (max 5 times).",
       "price": 500
@@ -845,7 +882,7 @@ window.vs = {
       "itemIds": [
         "hats"
       ],
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "surname": "",
       "description": "Gets more projectiles every 20 levels (max+4).",
       "price": 500
@@ -858,7 +895,7 @@ window.vs = {
       "hiddenitemIds": [
         "tongue"
       ],
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "prefix": "Megalo",
       "surname": "Rina",
       "description": "I'm not the Impostor.",
@@ -871,7 +908,7 @@ window.vs = {
       "itemIds": [
         "longgun"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "Rizer",
       "description": "Receives a bonus to Projectile Speed (max 50%) and to Might when defeating many enemies. Can find special pickups.",
       "price": 100
@@ -883,7 +920,7 @@ window.vs = {
       "itemIds": [
         "shortgun"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "Bean",
       "description": "Receive a bonus to Projectile Speed (max 50%) and to Cooldown (max-25%) when defeating many enemies. Can find special pickups.",
       "price": 100
@@ -895,7 +932,7 @@ window.vs = {
       "itemIds": [
         "spreadshot"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "",
       "description": "Movement Speed increses Armour. Can find special pickups.",
       "price": 100
@@ -907,7 +944,7 @@ window.vs = {
       "itemIds": [
         "laser"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "Zero",
       "description": "Gain a bonus to all stats after Reviving. Can find special pickups.",
       "price": 500
@@ -919,7 +956,7 @@ window.vs = {
       "itemIds": [
         "firearm"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "Fang",
       "description": "When Health is low, Cooldown is decreased and Move Speed and Speed increase. Can find special Pickups.",
       "price": 500
@@ -931,7 +968,7 @@ window.vs = {
       "itemIds": [
         "sonic"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "",
       "description": "Decreasing Colldown increases Area. Can find extra explosive props and special pickups.",
       "price": 500
@@ -943,7 +980,7 @@ window.vs = {
       "itemIds": [
         "crossbow"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "Etranzi",
       "description": "Move Speed decreases Cooldown. Can find special pickups.",
       "price": 500
@@ -955,7 +992,7 @@ window.vs = {
       "itemIds": [
         "lass"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "",
       "description": "Armour increses Might. Can find special pickups.",
       "price": 500
@@ -967,7 +1004,7 @@ window.vs = {
       "itemIds": [
         "homingmiss"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "",
       "description": "Might increases Armour. Can find special pickups.",
       "price": 500
@@ -979,7 +1016,7 @@ window.vs = {
       "itemIds": [
         "mines"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "Plissken",
       "description": "Projectile Speed increases Might. Can find extra explosive props and special pickups.",
       "price": 500
@@ -991,7 +1028,7 @@ window.vs = {
       "itemIds": [
         "claw"
       ],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "prefix": "Colonel",
       "surname": "",
       "description": "Greed and Curse increase Might. Can find special pickups.",
@@ -1002,7 +1039,7 @@ window.vs = {
       "name": "Simondo",
       "emoji": ":question:",
       "itemIds": [],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "surname": "Belmont",
       "description": "Simondo says he doesn't even need guns. Gets more projectiles every 20 levels (max +4).",
       "price": 10000
@@ -1019,7 +1056,7 @@ window.vs = {
         "savrogweapon",
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belmont",
       "price": 10
     },
@@ -1032,7 +1069,7 @@ window.vs = {
         "morningstar"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belmont",
       "price": 500
     },
@@ -1046,7 +1083,7 @@ window.vs = {
         "arcana10"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belmont",
       "price": 500
     },
@@ -1059,7 +1096,7 @@ window.vs = {
         "morningstar"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belmont",
       "price": 500
     },
@@ -1072,7 +1109,7 @@ window.vs = {
         "morningstar"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belmont",
       "price": 500
     },
@@ -1086,7 +1123,7 @@ window.vs = {
         "spellbook"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belmont",
       "price": 500
     },
@@ -1100,7 +1137,7 @@ window.vs = {
         "arcana9"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belmont",
       "price": 500
     },
@@ -1114,7 +1151,7 @@ window.vs = {
         "arcana19"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belmont",
       "price": 500
     },
@@ -1127,7 +1164,7 @@ window.vs = {
         "coatofarms"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Danasty",
       "price": 200
     },
@@ -1140,7 +1177,7 @@ window.vs = {
         "coatofarms"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Morris",
       "price": 2000
     },
@@ -1155,7 +1192,7 @@ window.vs = {
         "arcana7"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Morris",
       "price": 500
     },
@@ -1170,7 +1207,7 @@ window.vs = {
         "spectralsword"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Morris",
       "price": 500
     },
@@ -1183,7 +1220,7 @@ window.vs = {
         "coatofarms"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Kischine",
       "price": 2000
     },
@@ -1196,7 +1233,7 @@ window.vs = {
         "coatofarms"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1209,7 +1246,7 @@ window.vs = {
         "candybox"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Cruz",
       "price": 1000
     },
@@ -1222,7 +1259,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 0
     },
@@ -1235,7 +1272,7 @@ window.vs = {
         "spellbook"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Aulin",
       "price": 500
     },
@@ -1249,7 +1286,7 @@ window.vs = {
         "arcana14"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belnades",
       "price": 1665
     },
@@ -1263,7 +1300,7 @@ window.vs = {
         "arcana6"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Laforeze",
       "price": 7
     },
@@ -1277,7 +1314,7 @@ window.vs = {
         "arcana11"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Fernandez",
       "price": 1665
     },
@@ -1291,7 +1328,7 @@ window.vs = {
         "arcana3"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belnades",
       "price": 1665
     },
@@ -1305,7 +1342,7 @@ window.vs = {
         "arcana1"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Gandolfi",
       "price": 1665
     },
@@ -1319,7 +1356,7 @@ window.vs = {
         "arcana2"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Hakuba",
       "price": 1665
     },
@@ -1333,7 +1370,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Bartley",
       "price": 6665
     },
@@ -1346,7 +1383,7 @@ window.vs = {
         "candybox"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 1000
     },
@@ -1362,7 +1399,7 @@ window.vs = {
         "arcana16"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Schneider",
       "price": 2000
     },
@@ -1376,7 +1413,7 @@ window.vs = {
         "coatofarms"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Lecarde",
       "price": 500
     },
@@ -1390,7 +1427,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1404,7 +1441,7 @@ window.vs = {
         "coatofarms"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 500
     },
@@ -1417,7 +1454,7 @@ window.vs = {
         "spellbook"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Trantoul",
       "price": 2000
     },
@@ -1431,7 +1468,7 @@ window.vs = {
         "arcana15"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Dorin",
       "price": 9000
     },
@@ -1445,7 +1482,7 @@ window.vs = {
         "spellbook"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Renard",
       "price": 1000
     },
@@ -1458,7 +1495,7 @@ window.vs = {
         "candybox"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 1000
     },
@@ -1471,7 +1508,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1485,7 +1522,7 @@ window.vs = {
         "arcana20"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1498,7 +1535,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1513,7 +1550,7 @@ window.vs = {
         "arcana12"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1528,7 +1565,7 @@ window.vs = {
         "arcana4"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Graves",
       "price": 2000
     },
@@ -1541,7 +1578,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1555,7 +1592,7 @@ window.vs = {
         "spellbook"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1568,7 +1605,7 @@ window.vs = {
         "familiarforge"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Renard",
       "price": 9000
     },
@@ -1581,7 +1618,7 @@ window.vs = {
         "candybox"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 100
     },
@@ -1594,7 +1631,7 @@ window.vs = {
         "candybox"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Devil",
       "price": 100
     },
@@ -1607,7 +1644,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 9000
     },
@@ -1618,7 +1655,7 @@ window.vs = {
       "description": "Water included.",
       "itemIds": [],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 1665
     },
@@ -1633,7 +1670,7 @@ window.vs = {
       ],
       "hiddenitemIds": [],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 65536
     },
@@ -1646,7 +1683,7 @@ window.vs = {
         "rpg_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 9000
     },
@@ -1659,7 +1696,7 @@ window.vs = {
         "aurablastweapon"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1674,7 +1711,7 @@ window.vs = {
         "spectralsword"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1687,7 +1724,7 @@ window.vs = {
         "spellbook"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1700,7 +1737,7 @@ window.vs = {
         "windC_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Lecarde",
       "price": 2000
     },
@@ -1713,7 +1750,7 @@ window.vs = {
         "ice_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Lecarde",
       "price": 2000
     },
@@ -1726,7 +1763,7 @@ window.vs = {
         "windC_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Lecarde",
       "price": 2000
     },
@@ -1739,7 +1776,7 @@ window.vs = {
         "ice_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Lecarde",
       "price": 2000
     },
@@ -1753,7 +1790,7 @@ window.vs = {
         "arcana21"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -1773,7 +1810,7 @@ window.vs = {
         "martialwhip"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Belmont",
       "price": 1665
     },
@@ -1786,7 +1823,7 @@ window.vs = {
         "fire_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Bossi",
       "price": 1665
     },
@@ -1799,7 +1836,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Blinov",
       "price": 1665
     },
@@ -1812,7 +1849,7 @@ window.vs = {
         "light_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Fortner",
       "price": 1665
     },
@@ -1826,7 +1863,7 @@ window.vs = {
         "arcana13"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Jones",
       "price": 16650
     },
@@ -1839,7 +1876,7 @@ window.vs = {
         "slash_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1852,7 +1889,7 @@ window.vs = {
         "energy_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -1866,7 +1903,7 @@ window.vs = {
         "dominus2"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -1879,7 +1916,7 @@ window.vs = {
         "darkrift"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -1892,7 +1929,7 @@ window.vs = {
         "neutronweapon"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 500
     },
@@ -1905,7 +1942,7 @@ window.vs = {
         "arcana0"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 500
     },
@@ -1921,7 +1958,7 @@ window.vs = {
         "axe"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 2000
     },
@@ -1934,7 +1971,7 @@ window.vs = {
         "icebrand"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 500
     },
@@ -1948,7 +1985,7 @@ window.vs = {
         "arcana18"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -1962,7 +1999,7 @@ window.vs = {
         "arcana17"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -1975,7 +2012,7 @@ window.vs = {
         "gothmissile"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -1989,7 +2026,7 @@ window.vs = {
         "arcana5"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -2004,7 +2041,7 @@ window.vs = {
         "elec_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -2017,7 +2054,7 @@ window.vs = {
         "axe_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -2030,7 +2067,7 @@ window.vs = {
         "elec_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -2044,7 +2081,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "Bartley",
       "price": 16650
     },
@@ -2057,7 +2094,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -2070,7 +2107,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -2083,7 +2120,7 @@ window.vs = {
         "diabologue"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 16650
     },
@@ -2096,7 +2133,7 @@ window.vs = {
         "lancet_"
       ],
       "special": true,
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "surname": "",
       "price": 1048576
     },
@@ -2379,7 +2416,7 @@ window.vs = {
       "id": "wind",
       "name": "Silver Wind",
       "emoji": ":SilverWindVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Defeated enemies might drop hearts.",
       "rarity": 50,
       "tips": ""
@@ -2388,7 +2425,7 @@ window.vs = {
       "id": "seasons",
       "name": "Four Seasons",
       "emoji": ":FourSeasonsVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Generates 4 explosions. Amount and Duration affect damage instead.",
       "rarity": 50,
       "tips": "Ignores: speed."
@@ -2397,7 +2434,7 @@ window.vs = {
       "id": "night",
       "name": "Summon Night",
       "emoji": ":SummonNightVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Generates damaging zones above the character.",
       "rarity": 50,
       "tips": "Ignores: speed."
@@ -2406,7 +2443,7 @@ window.vs = {
       "id": "mirage",
       "name": "Mirage Robe",
       "emoji": ":MirageRobeVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Generates freezing mines with a chance to explode.",
       "rarity": 50,
       "tips": "Ignores: speed."
@@ -2415,7 +2452,7 @@ window.vs = {
       "id": "muramasa",
       "name": "Night Sword",
       "emoji": ":NightSwordVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Strikes with a combo attack at the nearest enemy. Retaliates. Might steals hearts.",
       "rarity": 30,
       "tips": "Ignores: speed, duration."
@@ -2424,7 +2461,7 @@ window.vs = {
       "id": "bolle",
       "name": "Mille Bolle Blu",
       "emoji": ":MilleBolleBluVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Fires lingering projectiles.",
       "rarity": 1,
       "tips": ""
@@ -2433,7 +2470,7 @@ window.vs = {
       "id": "bocce",
       "name": "108 Bocce",
       "emoji": ":108BocceVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Actually it's just 8. Damages nearby enemies.",
       "rarity": 10,
       "tips": "Ignores: amount, duration, speed."
@@ -2442,7 +2479,7 @@ window.vs = {
       "id": "spell1",
       "name": "SpellString",
       "emoji": ":SpellStringVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Strikes at nearby enemies. Damage multiplied by Speed.",
       "rarity": 70,
       "tips": "Ignores: Area, Duration."
@@ -2451,7 +2488,7 @@ window.vs = {
       "id": "spell2",
       "name": "SpellStream",
       "emoji": ":SpellStreamVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Generates an expanding damaging zone. Damage multiplied by Area.",
       "rarity": 70,
       "tips": "Ignores: Amount."
@@ -2460,7 +2497,7 @@ window.vs = {
       "id": "spell3",
       "name": "SpellStrike",
       "emoji": ":SpellStrikeVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Strikes at the nearest enemy. Damage further multiplied by Might.",
       "rarity": 70,
       "tips": "Ignores: Area, Duration."
@@ -2469,7 +2506,7 @@ window.vs = {
       "id": "eskizzibur",
       "name": "Eskizzibur",
       "emoji": ":EskizziburVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Attacks nearby enemies. Retaliates.",
       "rarity": 70,
       "tips": "Ignores: Speed, Duration."
@@ -2478,7 +2515,7 @@ window.vs = {
       "id": "arrow",
       "name": "Flash Arrow",
       "emoji": ":FlashArrowVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Can deal critical damage. Amount affects damage instead.",
       "rarity": 70,
       "tips": "Ignores: Duration."
@@ -2487,7 +2524,7 @@ window.vs = {
       "id": "prism",
       "name": "Prismatic Missile",
       "emoji": ":PrismaticMissileVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Generates explosions around the character. Affected by the first chosen Arcana between II, XIV, or XIX.",
       "rarity": 70,
       "tips": "Ignores: duration."
@@ -2496,7 +2533,7 @@ window.vs = {
       "id": "servant",
       "name": "Shadow Servant",
       "emoji": ":ShadowServantVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Has a chance to slow enemies down.",
       "rarity": 70,
       "tips": "Best with: Luck."
@@ -2505,7 +2542,7 @@ window.vs = {
       "id": "popper",
       "name": "Party Popper",
       "emoji": ":PartyPopperVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Throws bouncing projectiles.",
       "rarity": 1,
       "tips": "Best with: Duration, Speed."
@@ -2514,56 +2551,56 @@ window.vs = {
       "id": "report",
       "name": "Report!",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
       "id": "swipe",
       "name": "Lucky Swipe",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
       "id": "scan",
       "name": "Lifesign Scan",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
       "id": "vent",
       "name": "Just Vent",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
       "id": "debris",
       "name": "Clear Debris",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
       "id": "tongue",
       "name": "Sharp Tongue",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
       "id": "rocks",
       "name": "Science Rocks",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
       "id": "hats",
       "name": "Hats",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
 
@@ -2572,7 +2609,7 @@ window.vs = {
       "name": "Long Gun",
       "emoji": ":question:",
       "description": "Fires constantly in the faced direction.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2580,7 +2617,7 @@ window.vs = {
       "name": "Short Gun",
       "emoji": ":question:",
       "description": "Fires bursts of decaying projectiles horizontally.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2588,7 +2625,7 @@ window.vs = {
       "name": "Spread Shot",
       "emoji": ":question:",
       "description": "Fires in a wide spread in the faced direction.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2596,7 +2633,7 @@ window.vs = {
       "name": "C-U-Laser",
       "emoji": ":question:",
       "description": "Fires a piercing projectile in the faced direction.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2604,7 +2641,7 @@ window.vs = {
       "name": "Firearm",
       "emoji": ":question:",
       "description": "Fires spinning projectiles at the nearest enemy.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2612,7 +2649,7 @@ window.vs = {
       "name": "Sonic Bloom",
       "emoji": ":question:",
       "description": "Fires growing projectiles in the faced direction.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2620,7 +2657,7 @@ window.vs = {
       "name": "Homing Miss",
       "emoji": ":question:",
       "description": "Fires exploding projectiles that home in on enemies.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2628,7 +2665,7 @@ window.vs = {
       "name": "Diver Mines",
       "emoji": ":question:",
       "description": "Fires explosive projectiles that travel along walls.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2636,7 +2673,7 @@ window.vs = {
       "name": "Blade Crossbow",
       "emoji": ":question:",
       "description": "Fires homing projectiles that spin in place when they hit.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2644,7 +2681,7 @@ window.vs = {
       "name": "Prism Lass",
       "emoji": ":question:",
       "description": "Has a small chance to freeze enemies.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2652,7 +2689,7 @@ window.vs = {
       "name": "Metal Claw",
       "emoji": ":question:",
       "description": "Cooldown is affected by missing health.",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "rarity": 1,
     },
     {
@@ -2660,7 +2697,7 @@ window.vs = {
       "name": "Alchemy Whip",
       "emoji": ":question:",
       "description": "Grows stronger every time a boss enemy is defeated.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2668,7 +2705,7 @@ window.vs = {
       "name": "Wind Whip",
       "emoji": ":question:",
       "description": "Damage affected by growth.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2676,7 +2713,7 @@ window.vs = {
       "name": "Platinum Whip",
       "emoji": ":question:",
       "description": "Every 3rd activation fires projectiles in fixed directions.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2684,7 +2721,7 @@ window.vs = {
       "name": "Dragon Water Whip",
       "emoji": ":question:",
       "description": "Every 7th activation fires a snaking dragon projectile.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2692,7 +2729,7 @@ window.vs = {
       "name": "Sonic Whip",
       "emoji": ":question:",
       "description": "Chance to instant kill based on curse.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2700,7 +2737,7 @@ window.vs = {
       "name": "Jet Black Whip",
       "emoji": ":question:",
       "description": "Strikes at the nearest enemy and generates a linear damaging zone.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2708,7 +2745,7 @@ window.vs = {
       "name": "Vibhuti Whip",
       "emoji": ":question:",
       "description": "Strikes at the nearest enemy and generates a cluster of explosions.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2716,7 +2753,7 @@ window.vs = {
       "name": "Vanitas Whip",
       "emoji": ":question:",
       "description": "Strikes at the nearest enemy and generates a perpendicular damaging zone. Zone damage affected by MaxHealth.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2724,7 +2761,7 @@ window.vs = {
       "name": "Shuriken",
       "emoji": ":question:",
       "description": "Fires projectiles in the faced direction.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2732,7 +2769,7 @@ window.vs = {
       "name": "Curved Knife",
       "emoji": ":question:",
       "description": "Fires a spinning projectile at random enemy.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2740,7 +2777,7 @@ window.vs = {
       "name": "Javelin",
       "emoji": ":question:",
       "description": "Fires a penetrating projectile in a fixed direction.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 70
     },
     {
@@ -2748,7 +2785,7 @@ window.vs = {
       "name": "Discus",
       "emoji": ":question:",
       "description": "Fires a defensive projectile.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 70
     },
     {
@@ -2756,7 +2793,7 @@ window.vs = {
       "name": "Iron Ball",
       "emoji": ":question:",
       "description": "Damage affected by Armor.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2764,7 +2801,7 @@ window.vs = {
       "name": "Silver Revolver",
       "emoji": ":question:",
       "description": "Fires a powerful projectiles, six times.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2772,7 +2809,7 @@ window.vs = {
       "name": "Hand Grenade",
       "emoji": ":question:",
       "description": "Fires an exploding projectile.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 50
     },
     {
@@ -2780,7 +2817,7 @@ window.vs = {
       "name": "Wine Glass",
       "emoji": ":question:",
       "description": "Throws an exploding projectile.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 50
     },
     {
@@ -2788,7 +2825,7 @@ window.vs = {
       "name": "Raging Fire",
       "emoji": ":question:",
       "description": "Generates an exploding damaging zone.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2796,7 +2833,7 @@ window.vs = {
       "name": "Ice Fang",
       "emoji": ":question:",
       "description": "Generates damaging zones in a straight line.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2804,7 +2841,7 @@ window.vs = {
       "name": "Gale Force",
       "emoji": ":question:",
       "description": "Fires light-hitting projectiles backwards.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2812,7 +2849,7 @@ window.vs = {
       "name": "Rock Riot",
       "emoji": ":question:",
       "description": "Fires projectiles from a fixed location.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2820,7 +2857,7 @@ window.vs = {
       "name": "Fulgur",
       "emoji": ":question:",
       "description": "Strikes at fixed locations.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2828,7 +2865,7 @@ window.vs = {
       "name": "Keremet Bubbles",
       "emoji": ":question:",
       "description": "Fires slow moving damaging zones.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2836,7 +2873,7 @@ window.vs = {
       "name": "Hex",
       "emoji": ":question:",
       "description": "Generates a moving damaging zone. Damage affected by Curse.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2844,7 +2881,7 @@ window.vs = {
       "name": "Refectio",
       "emoji": ":question:",
       "description": "Generates a damaging zone that also provides light healing.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2852,7 +2889,7 @@ window.vs = {
       "name": "Mace",
       "emoji": ":question:",
       "description": "Amount affects number of hits.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2860,7 +2897,7 @@ window.vs = {
       "name": "Star Flail",
       "emoji": ":question:",
       "description": "Fires lingering projectiles. Damage multiplied by Recovery.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2868,7 +2905,7 @@ window.vs = {
       "name": "Alucard Spear",
       "emoji": ":question:",
       "description": "Executes a spinning attack when changing horizontal direction.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2876,7 +2913,7 @@ window.vs = {
       "name": "Trident",
       "emoji": ":question:",
       "description": "Strikes at fixed locations.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2884,7 +2921,7 @@ window.vs = {
       "name": "Iron Shield",
       "emoji": ":question:",
       "description": "Retaliates by shooting lingering projectiles.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 50
     },
     {
@@ -2892,7 +2929,7 @@ window.vs = {
       "name": "Guardian's Targe",
       "emoji": ":question:",
       "description": "Summons defensive followers. Overhealing triggers additional follower's attacks.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 50
     },
     {
@@ -2900,7 +2937,7 @@ window.vs = {
       "name": "Tyrfing",
       "emoji": ":question:",
       "description": "Has boomerang effect, can deal critical damage.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2908,7 +2945,7 @@ window.vs = {
       "name": "Alucart Sworb",
       "emoji": ":question:",
       "description": "Allegedly strikes at the nearest enemy.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 50
     },
     {
@@ -2916,7 +2953,7 @@ window.vs = {
       "name": "Confodere",
       "emoji": ":question:",
       "description": "Attack nearby enemies. Speed affects damage.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 80
     },
     {
@@ -2924,7 +2961,7 @@ window.vs = {
       "name": "Globus",
       "emoji": ":question:",
       "description": "Fires two bouncing projectiles. Amount affects Duration.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2932,7 +2969,7 @@ window.vs = {
       "name": "Optical Shot",
       "emoji": ":question:",
       "description": "Fires two penetrating projectiles.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -2940,7 +2977,7 @@ window.vs = {
       "name": "Dextro Custos",
       "emoji": ":question:",
       "description": "Summons Cerberus' fiery head in faced direction.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 70
     },
     {
@@ -2948,7 +2985,7 @@ window.vs = {
       "name": "Sinestro Custos",
       "emoji": ":question:",
       "description": "Summons Cerberus' icy head in faced direction.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 70
     },
     {
@@ -2956,7 +2993,7 @@ window.vs = {
       "name": "Centralis Custos",
       "emoji": ":question:",
       "description": "Summons Cerberus' vengeful head. Boosts Armor, Recovery and Cooldown when damaged.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 70
     },
     {
@@ -2964,7 +3001,7 @@ window.vs = {
       "name": "Dominus Anger",
       "emoji": ":question:",
       "description": "Fires a penetrating projectile. Drains health.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 50
     },
     {
@@ -2972,7 +3009,7 @@ window.vs = {
       "name": "Dominus Hatred",
       "emoji": ":question:",
       "description": "Fires projectiles from above. Drains health.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 50
     },
     {
@@ -2980,7 +3017,7 @@ window.vs = {
       "name": "Dominus Agony",
       "emoji": ":question:",
       "description": "Increases Might, Speed, Duration, and Area. Drains Health.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 50
     },
     {
@@ -2988,7 +3025,7 @@ window.vs = {
       "name": "Sonic Dash",
       "emoji": ":question:",
       "description": "Increases Move Speed by 10% per level and damages nearby enemies. Area and speed increases damage.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 50
     },
     {
@@ -2996,7 +3033,7 @@ window.vs = {
       "name": "Luminatio",
       "emoji": ":question:",
       "description": "Fires spinning projectiles made of light.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -3004,7 +3041,7 @@ window.vs = {
       "name": "Umbra",
       "emoji": ":question:",
       "description": "Fires spinning projectiles made of darkness.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -3012,7 +3049,7 @@ window.vs = {
       "name": "Endo Gears",
       "emoji": ":question:",
       "description": "Also triggers other clockwork weapons. Damage increased by Amount and currently found Orologions.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3020,7 +3057,7 @@ window.vs = {
       "name": "Peri Pendulum",
       "emoji": ":question:",
       "description": "Also triggers other clockwork weapons. Damage increased by Amount and currently found Orologions.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3028,7 +3065,7 @@ window.vs = {
       "name": "Myo Lift",
       "emoji": ":question:",
       "description": "Also triggers other clockwork weapons. Damage increased by Amount and currently found Orologions.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3036,7 +3073,7 @@ window.vs = {
       "name": "Epi Head",
       "emoji": ":question:",
       "description": "Also triggers other clockwork weapons. Damage increased by Amount and currently found Orologions.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3054,7 +3091,7 @@ window.vs = {
       ],
       "emoji": ":question:",
       "description": "Allows you to choose from a selection of magic whips.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 2
     },
     {
@@ -3084,7 +3121,7 @@ window.vs = {
       ],
       "emoji": ":question:",
       "description": "Allows you to choose from a selection of vampire-killing tools.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 2
     },
     {
@@ -3103,7 +3140,7 @@ window.vs = {
       ],
       "emoji": ":question:",
       "description": "Allows you to choose from a selection of spells.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 2
     },
     {
@@ -3125,7 +3162,7 @@ window.vs = {
       ],
       "emoji": ":question:",
       "description": "Allows you to choose from a selection of magic weapons.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 2
     },
     {
@@ -3151,7 +3188,7 @@ window.vs = {
       ],
       "emoji": ":question:",
       "description": "Allows you to choose from a selection of ambiguous powers.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 2
     },
     {
@@ -3172,7 +3209,7 @@ window.vs = {
       ],
       "emoji": ":question:",
       "description": "Allows you to summon a familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 6
     },
     {
@@ -3180,7 +3217,7 @@ window.vs = {
       "name": "Valmanway",
       "emoji": ":question:",
       "description": "Fires faster when moving.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3188,7 +3225,7 @@ window.vs = {
       "name": "Icebrand",
       "emoji": ":question:",
       "description": "Fires lingering projectiles. Might freeze enemies.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3196,7 +3233,7 @@ window.vs = {
       "name": "Arrow of Goth",
       "emoji": ":question:",
       "description": "Critical hits maximise amount of projectiles.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3204,7 +3241,7 @@ window.vs = {
       "name": "Aura Blast",
       "emoji": ":question:",
       "description": "Generates explosive sideways.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3212,7 +3249,7 @@ window.vs = {
       "name": "Svarog Statue",
       "emoji": ":question:",
       "description": "Geneartes damaging zones when moving.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3220,7 +3257,7 @@ window.vs = {
       "name": "Troll Bomb",
       "emoji": ":question:",
       "description": "This one doesn't bounce.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3228,7 +3265,7 @@ window.vs = {
       "name": "Hydro Storm",
       "emoji": ":question:",
       "description": "Generates damaging waves based on Projectile Speed and Duration.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3236,7 +3273,7 @@ window.vs = {
       "name": "Grand Cross",
       "emoji": ":question:",
       "description": "Summons holy light.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3244,7 +3281,7 @@ window.vs = {
       "name": "Summon Spirit",
       "emoji": ":question:",
       "description": "Fires a homing projectile.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3252,7 +3289,7 @@ window.vs = {
       "name": "Soul Steal",
       "emoji": ":question:",
       "description": "Damages all enemies in sight and attempts to turn them into hearts.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 1
     },
     {
@@ -3260,7 +3297,7 @@ window.vs = {
       "name": "Dark Rift",
       "emoji": ":question:",
       "description": "Generates vertical damaging zones.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3268,7 +3305,7 @@ window.vs = {
       "name": "Sword Brothers",
       "emoji": ":question:",
       "description": "Grants a brief moment of Invulnerability and generates a damaging wave.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     },
     {
@@ -3276,7 +3313,7 @@ window.vs = {
       "name": "Summon Spirit Tornado",
       "emoji": ":question:",
       "description": "Summons spirits that will occasionally pick up XP gems for you.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 20
     }
   ],
@@ -3618,7 +3655,7 @@ window.vs = {
         "recovery"
       ],
       "emoji": ":FestiveWindsVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Evolved Silver Wind. Weakens enemies defenses.",
       "rarity": 1,
       "tips": "Requires Max: Pummarola."
@@ -3631,7 +3668,7 @@ window.vs = {
         "area"
       ],
       "emoji": ":GodaiShuffleVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Evolved Four Seasons. Generates an additional explosion.",
       "rarity": 1,
       "tips": "Requires Max: Spinach, Candelabrador."
@@ -3644,7 +3681,7 @@ window.vs = {
         "amount"
       ],
       "emoji": ":EchoNightVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Evolved Summon Night. Generates damaging zones below the character.",
       "rarity": 100,
       "tips": "Requires Max: Duplicator."
@@ -3657,7 +3694,7 @@ window.vs = {
         "magnet"
       ],
       "emoji": ":JOdoreVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Evolved Mirage Robe. Projectiles move and confuse enemies.",
       "rarity": 1,
       "tips": "Requires Max: Magnet."
@@ -3670,7 +3707,7 @@ window.vs = {
         "greed"
       ],
       "emoji": ":MuraMasaVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Evolved Night Sword. Enables critical hits and combo finisher. Drains Health.",
       "rarity": 1,
       "tips": "Requires Max: Stone Mask."
@@ -3683,7 +3720,7 @@ window.vs = {
         "duration"
       ],
       "emoji": ":BooRooBoolleVS:",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "description": "Evolved Mille Bolle Blu. Projectiles can hit the same target more than once.",
       "rarity": 1,
       "tips": "Requires Max: Spellbinder"
@@ -3697,7 +3734,7 @@ window.vs = {
         "spell3"
       ],
       "emoji": ":SpellStromVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Union of SpellString, SpellStream, and SpellStrike. Grows stronger after every singularity.",
       "rarity": 1,
       "tips": ""
@@ -3710,7 +3747,7 @@ window.vs = {
         "armor"
       ],
       "emoji": ":LegionnaireVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Evolved Eskizzibur. Generates additional projectiles that deal retaliatory damage.",
       "rarity": 1,
       "tips": "Requires Max: Armor"
@@ -3723,7 +3760,7 @@ window.vs = {
         "speed"
       ],
       "emoji": ":MillionaireVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Evolved Flash Arrow. Fires additional projectiles based on Amount and when picking up gold coins.",
       "rarity": 1,
       "tips": "Requires Max: Bracer, Clover."
@@ -3736,7 +3773,7 @@ window.vs = {
         "growth"
       ],
       "emoji": ":LuminaireVS:",
-      "dlc2": true
+      "contentPack": "tides-foscari"
     },
     {
       "id": "servant_",
@@ -3746,7 +3783,7 @@ window.vs = {
         "curse"
       ],
       "emoji": ":OphionVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Evolved Shadow Servant. Has a chance to instantly kill enemies.",
       "rarity": 1,
       "tips": "Requires Max: Skull'O Maniac."
@@ -3759,7 +3796,7 @@ window.vs = {
         "minicrewmate"
       ],
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
@@ -3770,7 +3807,7 @@ window.vs = {
         "miniengineer"
       ],
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
@@ -3781,7 +3818,7 @@ window.vs = {
         "minighost"
       ],
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
@@ -3792,7 +3829,7 @@ window.vs = {
         "minishapeshifter"
       ],
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
@@ -3803,7 +3840,7 @@ window.vs = {
         "miniguardian"
       ],
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
@@ -3814,7 +3851,7 @@ window.vs = {
         "miniimpostor"
       ],
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
@@ -3825,7 +3862,7 @@ window.vs = {
         "miniscientist"
       ],
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
@@ -3836,7 +3873,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved Long Gun. Calls forth 2 drones for support fire."
     },
     {
@@ -3848,7 +3885,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved Short Gun. Calls forth 2 drones for support fire."
     },
     {
@@ -3860,7 +3897,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved Spread Shot. Calls forth 2 drones for support fire."
     },
     {
@@ -3872,7 +3909,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved C-U-Laser. Lasers split into multiple beams when they hit."
     },
     {
@@ -3884,7 +3921,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved Fire Arm. Fires again when destroying a light source or destructible item."
     },
     {
@@ -3896,7 +3933,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved Sonic Bloom. Charges up a more powerful auto-aimed blast when standing still."
     },
     {
@@ -3908,7 +3945,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved Homing Miss. Projectiles split into smaller ones when they hit."
     },
     {
@@ -3920,7 +3957,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved Diver Mines. Creates damaging zones that attract enemies."
     },
     {
@@ -3932,7 +3969,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved Blade Crossbow. Calls forth divine intervention with a Luck-based frequency."
     },
     {
@@ -3944,7 +3981,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved Prism Lass. May freeze, slow down, or DeFang enemies."
     },
     {
@@ -3956,7 +3993,7 @@ window.vs = {
         "powerup"
       ],
       "emoji": ":question:",
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "description": "Evolved Metal Claw. Pummels the most powerful enemies in sight."
     },
     {
@@ -3967,7 +4004,7 @@ window.vs = {
           "revival"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Alchemy Whip. Every 3rd activation fires additional projectiles. Intense sunlught incinerates boss enemies."
     },
     {
@@ -3978,7 +4015,7 @@ window.vs = {
           "growth"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Wind Whip. Every 7th activation summons a spirit that violently collects XP gems for you."
     },
     {
@@ -3989,7 +4026,7 @@ window.vs = {
           "luck"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Platinum Whip. Every 7th activation also fires special projectiles."
     },
     {
@@ -4000,7 +4037,7 @@ window.vs = {
           "magnet"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Dragon Water Whip. Every 13th activation generates damaging waves based on Projectile Speed and Duration."
     },
     {
@@ -4011,7 +4048,7 @@ window.vs = {
           "curse"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Sonic Whip. Every 5th activation also triggers a blast of damaging waves."
     },
     {
@@ -4022,7 +4059,7 @@ window.vs = {
           "greed"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Jet Black Whip. Every 8th activation also triggers damaging zones."
     },
     {
@@ -4033,7 +4070,7 @@ window.vs = {
           "area"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Vibhuti Whip. Critical hits maximise amount of projectiles."
     },
     {
@@ -4044,7 +4081,7 @@ window.vs = {
           "health"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Vanitas Whip. Every 7th activation generates an explosion."
     },
     {
@@ -4055,7 +4092,7 @@ window.vs = {
           "cooldown"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Shuriken. Fires with no delay."
     },
     {
@@ -4066,7 +4103,7 @@ window.vs = {
           "speed"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Curved Knife. Projectiles bounce forever until Duration expires."
     },
     {
@@ -4077,7 +4114,7 @@ window.vs = {
           "duration"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Javelin. Projectiles reappear after leaving the screen."
     },
     {
@@ -4088,7 +4125,7 @@ window.vs = {
           "parma"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Discus. Travels along walls. Deals critical damage if the user is invulnerable."
     },
     {
@@ -4099,7 +4136,7 @@ window.vs = {
           "armor"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Iron Ball. Fires a very heavy projectile."
     },
     {
@@ -4110,7 +4147,7 @@ window.vs = {
           "dominion"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Silver Revolver. Critical hits instantly kill enemies and turn them into Jewels."
     },
     {
@@ -4121,7 +4158,7 @@ window.vs = {
           "area"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Hand Grenade. Explosions propagate."
     },
     {
@@ -4132,7 +4169,7 @@ window.vs = {
           "revival"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Wine Glass. Soulful food deals Revival-based damage to unrefined palates."
     },
     {
@@ -4143,7 +4180,7 @@ window.vs = {
           "might"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Raging Fire. Also summons a snake of fire."
     },
     {
@@ -4154,7 +4191,7 @@ window.vs = {
           "duration"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Ice Fang. Also triggers a freezing wind."
     },
     {
@@ -4165,7 +4202,7 @@ window.vs = {
           "speed"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Gale Force. Also triggers a spinning tornado."
     },
     {
@@ -4176,7 +4213,7 @@ window.vs = {
           "greed"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Rock Riot. Also triggers a rain of crystals that can turn enemies into valuable jewels."
     },
     {
@@ -4187,7 +4224,7 @@ window.vs = {
           "amount"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Fulgur. Also triggers ball lightnings."
     },
     {
@@ -4198,7 +4235,7 @@ window.vs = {
           "armor"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Keremet Bubbles. Also triggers a slimy swarm that chases enemies down."
     },
     {
@@ -4209,7 +4246,7 @@ window.vs = {
           "curse"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Hex. Also tirggers a negative energy zone that doubles Curse when stepped into."
     },
     {
@@ -4220,7 +4257,7 @@ window.vs = {
           "luck"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Refectio. At fixed intervals, also fully heals characters and purifies all enemies in sight."
     },
     {
@@ -4231,7 +4268,7 @@ window.vs = {
           "health"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Mace. Has a catastrophically high critical damage multiplier."
     },
     {
@@ -4242,7 +4279,7 @@ window.vs = {
           "recovery"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Star Flail. Projectiles are shot in the faced direction."
     },
     {
@@ -4253,7 +4290,7 @@ window.vs = {
           "wings"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Alucard Spear. Every 7th activation triggers a special attack based on speed."
     },
     {
@@ -4264,7 +4301,7 @@ window.vs = {
           "amount"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Trident. Critical hits also fire a damaging beam."
     },
     {
@@ -4275,7 +4312,7 @@ window.vs = {
           "parma"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Iron Shield. Critical hits retaliate with spinning swords."
     },
     {
@@ -4286,7 +4323,7 @@ window.vs = {
           "recovery"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Guardian's Targe. Overhealing also triggers a period of invulnerability."
     },
     {
@@ -4297,7 +4334,7 @@ window.vs = {
           "might"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Tyrfing. Critical damage also affected by Area, Speed, and Duration."
     },
     {
@@ -4307,7 +4344,7 @@ window.vs = {
           "alucardsword"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Alucart Sworb. Apparitions of the sword's true bearer seek out enemies."
     },
     {
@@ -4317,7 +4354,7 @@ window.vs = {
           "alucardsword_"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Gift of Alucard Swords. Absorbs and triggers all other equipped evolutions. Hovering shield damages enemies.",
     },
     {
@@ -4327,7 +4364,7 @@ window.vs = {
           "confodere"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Attack nearby enemies. Speed affects Damage."
     },
     {
@@ -4337,7 +4374,7 @@ window.vs = {
           "confodere_"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Attack nearby enemies. Speed affects Cooldown and Damage."
     },
     {
@@ -4348,7 +4385,7 @@ window.vs = {
           "cooldown"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Globus. Fires a piercing energy beam in the faced direction."
     },
     {
@@ -4359,7 +4396,7 @@ window.vs = {
           "dominion"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Optical Shot. Damage is affected by the amount of defeated enemies."
     },
     {
@@ -4372,7 +4409,7 @@ window.vs = {
       ],
       "special": true,
       "emoji": ":question:",
-        "dlc5": true,
+        "contentPack": "ode-castlevania",
         "description": "Union of Dextros, Sinistro, and Arma Custos."
     },
     {
@@ -4385,7 +4422,7 @@ window.vs = {
       ],
       "special": true,
       "emoji": ":question:",
-        "dlc5": true,
+        "contentPack": "ode-castlevania",
         "description": "Union of Dominus Anger, Dominus Hatred and Dominus Agony. Deals critical damage to anything in sight. Drains health."
     },
     {
@@ -4396,7 +4433,7 @@ window.vs = {
           "wings"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Sonic Dash. Also triggers a single shield charge."
     },
     {
@@ -4407,7 +4444,7 @@ window.vs = {
           "growth"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Luminatio. Damage, Speed, Area, and Duration affected by Growth."
     },
     {
@@ -4418,7 +4455,7 @@ window.vs = {
           "magnet"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Evolved Umbra. Damage, Speed, Area, and Duration affected by Magnet."
     },
     {
@@ -4430,7 +4467,7 @@ window.vs = {
         "candybox"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Gift of Vol Luminatio and Vol Umbra. Meteors rain down on enemies at fixed intervals.",
     },
     {
@@ -4443,7 +4480,7 @@ window.vs = {
         "headsweapon"
       ],
       "emoji": ":question:",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "description": "Union of Endo Gears, Peri Pendulum, Myo Lift, and Epi Heads.",
     }
   ],
@@ -4491,7 +4528,7 @@ window.vs = {
     {
       "id": "pooper",
       "name": "Party Pooper",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Counterpart to Party Popper from Arcana I - Gemini.",
       "rarity": 1,
       "tips": ""
@@ -4499,7 +4536,7 @@ window.vs = {
     {
       "id": "sliver",
       "name": "Silver Sliver",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Counterpart to Shadow Servant and Ophion from Arcana I - Gemini.",
       "rarity": 1,
       "tips": ""
@@ -4507,7 +4544,7 @@ window.vs = {
     {
       "id": "insatiable",
       "name": "Insatiable",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "",
       "rarity": 1,
       "tips": ""
@@ -4530,7 +4567,7 @@ window.vs = {
       "id": "tongue2",
       "name": "Silver Tongue",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": ""
     },
     {
@@ -4544,14 +4581,14 @@ window.vs = {
       "name": "Prism Damsel",
       "emoji": ":question:",
       "description": "Has a small chance to freeze enemies.",
-      "dlc4": true
+      "contentPack": "operation-guns"
     },
     {
       "id": "energy2",
       "name": "Anti Globus",
       "emoji": ":question:",
       "description": "Fires two bouncing projectiles. Duration affected by Amount.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -4559,7 +4596,7 @@ window.vs = {
       "name": "Anti Raging Fire",
       "emoji": ":question:",
       "description": "Generates an exploding damaging zone.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -4567,7 +4604,7 @@ window.vs = {
       "name": "Anti Ice Fang",
       "emoji": ":question:",
       "description": "Generates damaging zones in a straight line.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -4575,7 +4612,7 @@ window.vs = {
       "name": "Anti Rock Riot",
       "emoji": ":question:",
       "description": "Fires projectiles from a fixed location.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -4583,7 +4620,7 @@ window.vs = {
       "name": "Anti Gale Force",
       "emoji": ":question:",
       "description": "Fires lingering projectiles.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -4591,7 +4628,7 @@ window.vs = {
       "name": "Anti Fulgur",
       "emoji": ":question:",
       "description": "Strikes at fixed locations.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -4599,7 +4636,7 @@ window.vs = {
       "name": "Speculo Acidic Bubbles",
       "emoji": ":question:",
       "description": "Fires slow moving damaging zones.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -4607,7 +4644,7 @@ window.vs = {
       "name": "Anti Refectio",
       "emoji": ":question:",
       "description": "Damages nearby enemies. Decreases Curse by 5% per Amount.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
     {
@@ -4615,7 +4652,7 @@ window.vs = {
       "name": "Anti Hex",
       "emoji": ":question:",
       "description": "-",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "rarity": 60
     },
   ],
@@ -4797,7 +4834,7 @@ window.vs = {
       "id": "badge",
       "name": "Academy Badge",
       "emoji": ":AcademyBadgeVS:",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "description": "Will provide bonus Amount and Revivals in exchange for Growth.",
       "isPowerUp": true,
       "rarity": 10
@@ -4806,7 +4843,7 @@ window.vs = {
       "id": "minicrewmate",
       "name": "Mini Crewmate (Garlic)",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
       "itemIds": ["garlic"]
@@ -4815,7 +4852,7 @@ window.vs = {
       "id": "miniengineer",
       "name": "Mini Engineer (Lightning)",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
       "itemIds": ["lightning"]
@@ -4824,7 +4861,7 @@ window.vs = {
       "id": "minighost",
       "name": "Mini Ghost (Lancet)",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
       "itemIds": ["lancet"]
@@ -4833,7 +4870,7 @@ window.vs = {
       "id": "minishapeshifter",
       "name": "Mini Shapeshifter (Bone)",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
       "itemIds": ["bone"]
@@ -4842,7 +4879,7 @@ window.vs = {
       "id": "miniguardian",
       "name": "Mini Guardian (Laurel)",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
       "itemIds": ["laurel"]
@@ -4851,7 +4888,7 @@ window.vs = {
       "id": "miniimpostor",
       "name": "Mini Impostor (Knife)",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
       "itemIds": ["knife"]
@@ -4860,7 +4897,7 @@ window.vs = {
       "id": "miniscientist",
       "name": "Mini Scientist (Water)",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
       "itemIds": ["water"]
@@ -4869,7 +4906,7 @@ window.vs = {
       "id": "minihorse",
       "name": "Mini Horse (Jubilee)",
       "emoji": ":question:",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "description": "",
       "itemIds": ["jubilee"]
     },
@@ -4879,7 +4916,7 @@ window.vs = {
       "emoji": ":question:",
       "description": "Levels up a random equipped weapon. Gives +1 Revival. Does not occupy a weapon slot",
       "itemIds": [],
-      "dlc4": true,
+      "contentPack": "operation-guns",
       "extra": true
     },
     {
@@ -4888,7 +4925,7 @@ window.vs = {
       "emoji": ":question:",
       "description": "Increases invulnerability time after getting damaged by 50ms.",
       "itemIds": [],
-      "dlc5": true
+      "contentPack": "ode-castlevania"
     },
     {
       "id": "dominion",
@@ -4896,14 +4933,14 @@ window.vs = {
       "emoji": ":question:",
       "description": "Increases enemies spawn quantity by 10. Increases duration of Gold Fever and Gold Finger by 10%",
       "itemIds": [],
-      "dlc5": true
+      "contentPack": "ode-castlevania"
     },
     {
       "id": "accfamiliarukoback",
       "name": "Ukoback Familiar",
       "emoji": ":question:",
       "description": "Summons an angry familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -4912,7 +4949,7 @@ window.vs = {
       "name": "Bitterfly Familiar",
       "emoji": ":question:",
       "description": "Summons a quiet familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -4921,7 +4958,7 @@ window.vs = {
       "name": "Imp Familiar",
       "emoji": ":question:",
       "description": "Summons a naughty familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -4930,7 +4967,7 @@ window.vs = {
       "name": "Alleged Ghost Familiar",
       "emoji": ":question:",
       "description": "Summons a non-existent familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -4939,7 +4976,7 @@ window.vs = {
       "name": "Mage Familiar",
       "emoji": ":question:",
       "description": "Summons a magical familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -4948,7 +4985,7 @@ window.vs = {
       "name": "Faerie Familiar",
       "emoji": ":question:",
       "description": "Summons a good natured familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -4957,7 +4994,7 @@ window.vs = {
       "name": "Pumpkin Familiar",
       "emoji": ":question:",
       "description": "Summons a crazy familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -4966,7 +5003,7 @@ window.vs = {
       "name": "Sacred Cardinal",
       "emoji": ":question:",
       "description": "Summons a fiery familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -4975,7 +5012,7 @@ window.vs = {
       "name": "Sacred Dragon",
       "emoji": ":question:",
       "description": "Summons a fizzy familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -4984,7 +5021,7 @@ window.vs = {
       "name": "Sacred Tiger",
       "emoji": ":question:",
       "description": "Summons a chilled familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -4993,7 +5030,7 @@ window.vs = {
       "name": "Sacred Turtle",
       "emoji": ":question:",
       "description": "Summons a grounded familiar.",
-      "dlc5": true,
+      "contentPack": "ode-castlevania",
       "extra": true,
       "rarity": 1
     },
@@ -6185,7 +6222,7 @@ window.vs = {
       "id": "moonspell",
       "name": "Mt.Moonspell",
       "description": "Ancestral home of a fallen clan, now overrun by yokai and oni. The night has won in this world where the sun doesn't shine.",
-      "dlc1": true,
+      "contentPack": "legacy-moonspell",
       "itemIds": [
         "might",
         "recovery",
@@ -6200,7 +6237,7 @@ window.vs = {
       "id": "lake",
       "name": "Lake Foscari",
       "description": "An enchanted forest stuffed with fae mysteries and mythological entities. The perfect place to have an average adventure with zero complications.",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "itemIds": [
         "armor",
         "speed",
@@ -6214,7 +6251,7 @@ window.vs = {
       "id": "abyss",
       "name": "Abyss Foscari",
       "description": "Sealed by Luminaire in ancient times to contain the darkness within, these underground ruins are now accessible, but so is the outside world to the evil from the depths.",
-      "dlc2": true,
+      "contentPack": "tides-foscari",
       "itemIds": [
         "cooldown",
         "magnet",
@@ -6231,7 +6268,7 @@ window.vs = {
     {
       "id": "polus",
       "name": "Polus Replica",
-      "dlc3": true,
+      "contentPack": "emergency-meeting",
       "itemIds": [
         "minicrewmate",
         "miniengineer",
