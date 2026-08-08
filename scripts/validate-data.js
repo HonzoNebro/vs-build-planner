@@ -119,6 +119,19 @@ function validateIcons(data, css) {
   return errors
 }
 
+function validateIconAssets(css, rootDir) {
+  const errors = []
+  const references = new Set(
+    [...css.matchAll(/url\((?:"|')?(img\/[^"')]+)(?:"|')?\)/g)].map((match) => match[1]),
+  )
+  for (const reference of references) {
+    if (!fs.existsSync(path.join(rootDir, reference))) {
+      errors.push(`Missing icon asset: ${reference}`)
+    }
+  }
+  return errors
+}
+
 function validateInlineScripts(html) {
   const errors = []
   const scripts = [...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)]
@@ -141,6 +154,7 @@ function validateProject(rootDir) {
   const errors = [
     ...validateData(data),
     ...validateIcons(data, css),
+    ...validateIconAssets(css, rootDir),
     ...validateInlineScripts(html),
   ]
   if (errors.length) throw new Error(`Content validation failed:\n- ${errors.join('\n- ')}`)
@@ -158,6 +172,7 @@ module.exports = {
   CONTENT_COLLECTIONS,
   loadData,
   validateData,
+  validateIconAssets,
   validateIcons,
   validateInlineScripts,
   validateProject,

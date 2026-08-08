@@ -2642,6 +2642,30 @@ window.vs = {
       "description": "Starts with Pocket Knife and has increased Max Health, Armor, and MoveSpeed.",
       "price": 50000,
       "special": true
+    },
+    {
+      "id": "para-kooleo",
+      "prefix": "Para",
+      "name": "Kooleo",
+      "emoji": ":question:",
+      "itemIds": [
+        "penshin-fatcha"
+      ],
+      "description": "Starts with MoveSpeed and Duration bonuses. Triggers a Vacuum at low health and likes to evolve weapons.",
+      "price": 153,
+      "special": true
+    },
+    {
+      "id": "big-troubler",
+      "prefix": "Big",
+      "name": "Troubler",
+      "emoji": ":question:",
+      "itemIds": [
+        "unearthly-bolt"
+      ],
+      "description": "Activates his main weapon when collecting Gold Coins and uses Gold Coins as a damage barrier.",
+      "price": 50000,
+      "special": true
     }
   ],
   "weapons": [
@@ -4090,6 +4114,20 @@ window.vs = {
       "contentPack": "ode-castlevania",
       "description": "Summons an amphibian assault.",
       "rarity": 20
+    },
+    {
+      "id": "penshin-fatcha",
+      "name": "Penshin Fatcha",
+      "emoji": ":question:",
+      "description": "Selects one of six tuna forms. Treasure chests evolve it between forms and stack their stats.",
+      "rarity": 50
+    },
+    {
+      "id": "unearthly-bolt",
+      "name": "Unearthly Bolt",
+      "emoji": ":question:",
+      "description": "Targets the nearest enemy. Consecutive critical hits increase its damage, with a cap based on Revivals.",
+      "rarity": 70
     }
   ],
   "evolutions": [
@@ -5791,6 +5829,92 @@ window.vs = {
       ],
       "description": "Union of Summon Spirit Tornado and Gorgeous Moon.",
       "rarity": 1
+    },
+    {
+      "id": "tonno-subito",
+      "name": "Tonno Subito",
+      "emoji": ":question:",
+      "itemIds": [
+        "penshin-fatcha"
+      ],
+      "description": "One of the six selectable Penshin Fatcha forms; emphasizes Projectile Speed.",
+      "rarity": 50
+    },
+    {
+      "id": "tonnado",
+      "name": "Tonnado",
+      "emoji": ":question:",
+      "itemIds": [
+        "penshin-fatcha"
+      ],
+      "description": "One of the six selectable Penshin Fatcha forms; emphasizes Duration.",
+      "rarity": 50
+    },
+    {
+      "id": "tonnomoto",
+      "name": "Tonn'omoto",
+      "emoji": ":question:",
+      "itemIds": [
+        "penshin-fatcha"
+      ],
+      "description": "One of the six selectable Penshin Fatcha forms; emphasizes Cooldown.",
+      "rarity": 50
+    },
+    {
+      "id": "tonnoddeo",
+      "name": "Tonn'oddeo",
+      "emoji": ":question:",
+      "itemIds": [
+        "penshin-fatcha"
+      ],
+      "description": "One of the six selectable Penshin Fatcha forms; emphasizes Amount.",
+      "rarity": 50
+    },
+    {
+      "id": "tonne",
+      "name": "Tonne",
+      "emoji": ":question:",
+      "itemIds": [
+        "penshin-fatcha"
+      ],
+      "description": "One of the six selectable Penshin Fatcha forms; emphasizes Area.",
+      "rarity": 50
+    },
+    {
+      "id": "unsurpassed",
+      "name": "Unsurpassed",
+      "emoji": ":question:",
+      "itemIds": [
+        "penshin-fatcha"
+      ],
+      "description": "One of the six selectable Penshin Fatcha forms; emphasizes Might.",
+      "rarity": 50
+    },
+    {
+      "id": "miracle-of-multiplication",
+      "name": "Miracle of Multiplication",
+      "emoji": ":question:",
+      "itemIds": [
+        "tonno-subito",
+        "tonnado",
+        "tonnomoto",
+        "tonnoddeo",
+        "tonne",
+        "unsurpassed"
+      ],
+      "description": "Secret Penshin Fatcha evolution that combines all six tuna effects.",
+      "rarity": 50
+    },
+    {
+      "id": "spirit-disturbance",
+      "name": "Spirit Disturbance",
+      "emoji": ":question:",
+      "itemIds": [
+        "unearthly-bolt",
+        "revival"
+      ],
+      "description": "Evolution of Unearthly Bolt. Requires a maxed Tirajisú and summons a green dragon that always deals critical hits.",
+      "rarity": 1
     }
   ],
   "counterparts": [
@@ -7176,6 +7300,50 @@ window.vs = {
       ],
       "description": "Enemies within Magnet range receive Greed-based damage. Once per life, fatal damage triggers Cursed World Eater.",
       "major": true
+    },
+    {
+      "id": "darkana0",
+      "name": "0 - Stake to your Heart",
+      "emoji": ":question:",
+      "itemIds": [
+        "coin"
+      ],
+      "description": "Halts XP gain. Enemies drop Gold Coins, damage is dealt to Gold instead of HP, and special merchants spawn every minute.",
+      "major": true
+    },
+    {
+      "id": "darkana8",
+      "name": "VIII - Edge of the Earth",
+      "emoji": ":question:",
+      "itemIds": [
+        "wings",
+        "magnet",
+        "chest"
+      ],
+      "description": "Grants Thorns, fixes MoveSpeed at 200%, allows walking through walls, vacuums normally immovable objects, and doubles light sources.",
+      "major": true
+    },
+    {
+      "id": "darkana19",
+      "name": "XIX - Heir of Fate",
+      "emoji": ":question:",
+      "itemIds": [
+        "health",
+        "might",
+        "firewand",
+        "firewand_",
+        "water",
+        "water_",
+        "pinion_",
+        "bracelet",
+        "bracelet_",
+        "bracelet__",
+        "flame",
+        "flame_",
+        "fritta"
+      ],
+      "description": "Fire kills drop Scorched Souls that grant Max Health and Might. Triggers an Nduja Fritta when health becomes critical.",
+      "major": true
     }
   ],
   "pickups": [
@@ -7820,6 +7988,13 @@ window.vs = {
       "name": "Ante Chamber",
       "description": "A surreal crossover stage built around the Ante Chamber cast.",
       "contentPack": "ante-chamber",
+      "itemIds": []
+    },
+    {
+      "id": "lycaeum",
+      "name": "The Lycaeum",
+      "description": "An underwater stage of switches, crabs, hidden treasure, and a climb to the surface.",
+      "special": true,
       "itemIds": []
     }
   ]
