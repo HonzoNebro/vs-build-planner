@@ -34,6 +34,13 @@ window.vs = {
       "shortName": "ODE TO CASTLEVANIA",
       "color": "#966",
       "animatedCharacters": false
+    },
+    {
+      "id": "emerald-diorama",
+      "name": "Emerald Diorama",
+      "shortName": "EMERALD DIORAMA",
+      "color": "#587d70",
+      "animatedCharacters": false
     }
   ],
   "characters": [
@@ -2137,6 +2144,240 @@ window.vs = {
       "surname": "",
       "price": 1048576
     },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-tsunanori",
+      "name": "Tsunanori",
+      "surname": "Mido",
+      "itemIds": [
+        "eme-fleuret",
+        "eme-splashers"
+      ],
+      "description": "Leads a party armed with Fleuret and Splashers.",
+      "price": 5000
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-bonnie",
+      "name": "Bonnie",
+      "surname": "Blair",
+      "itemIds": [
+        "eme-punch",
+        "eme-kick"
+      ],
+      "description": "Leads a party armed with Punch and Kick.",
+      "price": 5000
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-formina",
+      "name": "Formina",
+      "surname": "Franklyn",
+      "itemIds": [
+        "eme-saber-machine-gun",
+        "eme-eagle-gun"
+      ],
+      "description": "Leads a party armed with Saber Machine Gun and Eagle Gun.",
+      "price": 5000
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-diva",
+      "name": "Diva No. 5",
+      "surname": "",
+      "itemIds": [
+        "eme-super-missile",
+        "eme-twin-dragon"
+      ],
+      "description": "Leads a party armed with Super Missile and Twin Dragon.",
+      "price": 5000
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-ameya",
+      "name": "Ameya",
+      "surname": "Aisling",
+      "itemIds": [
+        "eme-spirit-rings"
+      ],
+      "hiddenitemIds": [
+        "eme-sunlight",
+        "eme-aqua-sphere",
+        "eme-heavens-thunder",
+        "eme-hypergravity",
+        "eme-vermillion-sands",
+        "eme-chaos-disaster"
+      ],
+      "description": "Spirit Rings can trigger six different Glimmer techniques.",
+      "price": 5000
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-siugnas",
+      "name": "Siugnas",
+      "surname": "",
+      "itemIds": [
+        "eme-town-sword",
+        "eme-sanguine-star"
+      ],
+      "description": "Leads a party armed with Town Sword and Sanguine Star.",
+      "price": 5000
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-final-emperor",
+      "name": "Final Emperor",
+      "surname": "",
+      "itemIds": [
+        "eme-flamberge"
+      ],
+      "description": "Starts with Flamberge.",
+      "price": 25000,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-dolores",
+      "name": "Dolores",
+      "surname": "",
+      "itemIds": [
+        "eme-bullova"
+      ],
+      "description": "Starts with Bullova.",
+      "price": 25000,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-macha",
+      "name": "Macha",
+      "surname": "Alter Ego",
+      "itemIds": [
+        "eme-khukuri"
+      ],
+      "hiddenitemIds": [
+        "eme-rings-of-calamity"
+      ],
+      "description": "Starts with Khukuri and has hidden Rings of Calamity.",
+      "price": 25000,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-lita",
+      "name": "Lita",
+      "surname": "Caryx",
+      "itemIds": [
+        "eme-glaive"
+      ],
+      "hiddenitemIds": [
+        "eme-heavens-thunder"
+      ],
+      "description": "Starts with Glaive and has the Heaven’s Thunder technique.",
+      "price": 25000,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-kugutsu",
+      "name": "Kugutsu",
+      "surname": "",
+      "itemIds": [
+        "eme-twin-dragon"
+      ],
+      "hiddenitemIds": [
+        "eme-khukuri",
+        "eme-eagle-gun",
+        "eme-punch"
+      ],
+      "description": "Fights alongside three Kugutsu followers.",
+      "price": 25000,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-mr-s",
+      "name": "Mr. S",
+      "surname": "",
+      "itemIds": [
+        "eme-inspiration"
+      ],
+      "description": "Starts with Inspiration, which selects an Emerald Diorama weapon.",
+      "price": 100000,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-lolo",
+      "name": "Lolo, Hiss, Meow, and Purr",
+      "surname": "",
+      "itemIds": [],
+      "hiddenitemIds": [
+        "eme-chaos-disaster"
+      ],
+      "description": "Triggers Showstopper at critical health and gains a follower whenever it triggers.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-kina",
+      "name": "Kina",
+      "surname": "",
+      "itemIds": [],
+      "description": "Uses unique sword Glimmer techniques instead of a conventional starting weapon.",
+      "price": 1000,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-imakoo",
+      "name": "Imakoo",
+      "surname": "",
+      "itemIds": [],
+      "description": "Uses unique axe and blood Glimmer techniques instead of a conventional starting weapon.",
+      "price": 1000,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-door-spirit",
+      "name": "Malevolent Door Spirit",
+      "surname": "",
+      "itemIds": [
+        "eme-blood-chalice"
+      ],
+      "description": "Starts with Blood Chalice.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "gazebo",
+      "name": "Gazebo",
+      "emoji": ":question:",
+      "itemIds": [
+        "gaze-of-gaea"
+      ],
+      "description": "Overhealing by +30 gives a cumulative bonus to a random stat.",
+      "price": 5000,
+      "special": true
+    }
   ],
   "weapons": [
     {
@@ -3315,6 +3556,205 @@ window.vs = {
       "description": "Summons spirits that will occasionally pick up XP gems for you.",
       "contentPack": "ode-castlevania",
       "rarity": 20
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-fleuret",
+      "name": "Fleuret",
+      "description": "A light rapier that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-town-sword",
+      "name": "Town Sword",
+      "description": "A longsword that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-splashers",
+      "name": "Splashers",
+      "description": "A paired blade weapon that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-flamberge",
+      "name": "Flamberge",
+      "description": "A greatsword that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-punch",
+      "name": "Punch",
+      "description": "A martial attack that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-kick",
+      "name": "Kick",
+      "description": "A martial attack that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-saber-machine-gun",
+      "name": "Saber Machine Gun",
+      "description": "A firearm that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-super-missile",
+      "name": "Super Missile",
+      "description": "A mechanical weapon that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-eagle-gun",
+      "name": "Eagle Gun",
+      "description": "A pistol that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-khukuri",
+      "name": "Khukuri",
+      "description": "A curved blade that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-twin-dragon",
+      "name": "Twin Dragon",
+      "description": "A katana technique that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-bullova",
+      "name": "Bullova",
+      "description": "An axe that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-sanguine-star",
+      "name": "Sanguine Star",
+      "description": "A blood weapon that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-glaive",
+      "name": "Glaive",
+      "description": "A spear that can Glimmer into special techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-spirit-rings",
+      "name": "Spirit Rings",
+      "description": "Triggers elemental Glimmer techniques.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-emerald-rapture",
+      "name": "Emerald Rapture",
+      "description": "A wave weapon that can Glimmer into Emerald Wave.",
+      "rarity": 50
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-inspiration",
+      "name": "Inspiration",
+      "description": "Allows you to choose an Emerald Diorama sub-weapon.",
+      "rarity": 1,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-sunlight",
+      "name": "Sunlight",
+      "description": "A fire-aligned Glimmer technique.",
+      "rarity": 1,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-aqua-sphere",
+      "name": "Aqua Sphere",
+      "description": "A water-aligned Glimmer technique.",
+      "rarity": 1,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-heavens-thunder",
+      "name": "Heaven’s Thunder",
+      "description": "A wood-aligned Glimmer technique.",
+      "rarity": 1,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-hypergravity",
+      "name": "Hypergravity",
+      "description": "An earth-aligned Glimmer technique.",
+      "rarity": 1,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-vermillion-sands",
+      "name": "Vermillion Sands",
+      "description": "A metal-aligned Glimmer technique.",
+      "rarity": 1,
+      "special": true
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-chaos-disaster",
+      "name": "Chaos Disaster",
+      "description": "A chaos-aligned Glimmer technique.",
+      "rarity": 1,
+      "special": true
+    },
+    {
+      "id": "gaze-of-gaea",
+      "name": "Gaze of Gaea",
+      "emoji": ":question:",
+      "itemIds": [],
+      "description": "Might defang enemies.",
+      "rarity": 50
     }
   ],
   "evolutions": [
@@ -4482,6 +4922,277 @@ window.vs = {
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
       "description": "Union of Endo Gears, Peri Pendulum, Myo Lift, and Epi Heads.",
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-estoc",
+      "name": "Estoc",
+      "itemIds": [
+        "eme-fleuret"
+      ],
+      "description": "Evolution of Fleuret.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-espada-ropera",
+      "name": "Espada Ropera",
+      "itemIds": [
+        "eme-estoc"
+      ],
+      "description": "Evolution of Estoc.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-lordstar",
+      "name": "Lordstar",
+      "itemIds": [
+        "eme-town-sword"
+      ],
+      "description": "Evolution of Town Sword.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-dayblade",
+      "name": "Dayblade",
+      "itemIds": [
+        "eme-lordstar"
+      ],
+      "description": "Evolution of Lordstar.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-pursuant-blades",
+      "name": "Pursuant Blades",
+      "itemIds": [
+        "eme-splashers",
+        "duration"
+      ],
+      "description": "Evolution of Splashers. Requires Spellbinder.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-zweihander",
+      "name": "Zweihander",
+      "itemIds": [
+        "eme-flamberge"
+      ],
+      "description": "Evolution of Flamberge.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-galatyn",
+      "name": "Galatyn",
+      "itemIds": [
+        "eme-zweihander"
+      ],
+      "description": "Evolution of Zweihander.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-pressure-point",
+      "name": "Pressure Point",
+      "itemIds": [
+        "eme-punch"
+      ],
+      "description": "Evolution of Punch.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-gilded-hand",
+      "name": "Gilded Hand",
+      "itemIds": [
+        "eme-pressure-point"
+      ],
+      "description": "Evolution of Pressure Point.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-triangle-kick",
+      "name": "Triangle Kick",
+      "itemIds": [
+        "eme-kick",
+        "recovery"
+      ],
+      "description": "Evolution of Kick. Requires Pummarola.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-hecaton-machine-gun",
+      "name": "Hecaton Machine Gun",
+      "itemIds": [
+        "eme-saber-machine-gun"
+      ],
+      "description": "Evolution of Saber Machine Gun.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-divergence",
+      "name": "Divergence",
+      "itemIds": [
+        "eme-hecaton-machine-gun"
+      ],
+      "description": "Evolution of Hecaton Machine Gun.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-hydra-cannon",
+      "name": "Hydra Cannon",
+      "itemIds": [
+        "eme-super-missile"
+      ],
+      "description": "Evolution of Super Missile.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-hyperion-bazooka",
+      "name": "Hyperion Bazooka",
+      "itemIds": [
+        "eme-hydra-cannon"
+      ],
+      "description": "Evolution of Hydra Cannon.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-pendragon",
+      "name": "Pendragon",
+      "itemIds": [
+        "eme-eagle-gun",
+        "might"
+      ],
+      "description": "Evolution of Eagle Gun. Requires Spinach.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-jetstream",
+      "name": "Jetstream",
+      "itemIds": [
+        "eme-khukuri",
+        "parma"
+      ],
+      "description": "Evolution of Khukuri. Requires Parm Aegis.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-gekkabijin",
+      "name": "Gekkabijin",
+      "itemIds": [
+        "eme-twin-dragon"
+      ],
+      "description": "Evolution of Twin Dragon.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-bilqis",
+      "name": "Bilqis",
+      "itemIds": [
+        "eme-bullova",
+        "curse"
+      ],
+      "description": "Evolution of Bullova. Requires Skull O’Maniac.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-blood-chalice",
+      "name": "Blood Chalice",
+      "itemIds": [
+        "eme-sanguine-star",
+        "greed"
+      ],
+      "description": "Evolution of Sanguine Star. Requires Stone Mask.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-feather-spear",
+      "name": "Feather Spear",
+      "itemIds": [
+        "eme-glaive"
+      ],
+      "description": "Evolution of Glaive.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-lohengrin",
+      "name": "Lohengrin",
+      "itemIds": [
+        "eme-feather-spear"
+      ],
+      "description": "Evolution of Feather Spear.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-rings-of-calamity",
+      "name": "Rings of Calamity",
+      "itemIds": [
+        "eme-spirit-rings"
+      ],
+      "description": "Evolution of Spirit Rings.",
+      "rarity": 1
+    },
+    {
+      "emoji": ":question:",
+      "contentPack": "emerald-diorama",
+      "id": "eme-emerald-wave",
+      "name": "Emerald Wave",
+      "itemIds": [
+        "eme-emerald-rapture",
+        "growth"
+      ],
+      "description": "Evolution of Emerald Rapture. Requires Crown.",
+      "rarity": 1
+    },
+    {
+      "id": "embrace-of-gaea",
+      "name": "Embrace of Gaea",
+      "emoji": ":question:",
+      "itemIds": [
+        "gaze-of-gaea",
+        "parma"
+      ],
+      "description": "Evolved Gaze of Gaea. Retaliates. Damage is increased while invulnerable.",
+      "rarity": 1
     }
   ],
   "counterparts": [
@@ -5769,6 +6480,21 @@ window.vs = {
       ],
       "description": "Losing health generates exploding projectiles. Explosion damage is increased by total recovered health and Magnet bonus. Explosion Area is increased by Magnet.",
       "major": true
+    },
+    {
+      "id": "darkana3",
+      "name": "III - Hidden Anathema",
+      "emoji": ":question:",
+      "itemIds": [
+        "wineglass_",
+        "recovery",
+        "chicken",
+        "fritta",
+        "sorbetto",
+        "wall-chicken"
+      ],
+      "description": "Food pickups grant cumulative bonuses to random stats based on their rarity or healing value.",
+      "major": true
     }
   ],
   "pickups": [
@@ -6016,6 +6742,23 @@ window.vs = {
       "tips": "Drop rate affected by Luck.",
       "unlocksAt": 8,
       "value": 0
+    },
+    {
+      "id": "sorbetto",
+      "name": "Sorbetto",
+      "description": "Temporarily emits cones of cold. Affected by player stats.",
+      "rarity": 1,
+      "tips": "Drop rate affected by Luck.",
+      "value": 300
+    },
+    {
+      "id": "wall-chicken",
+      "name": "Wall Chicken",
+      "description": "Typical Castlevania pot roast. Restores 60 Health points.",
+      "contentPack": "ode-castlevania",
+      "rarity": 6,
+      "tips": "Drop rate affected by Luck.",
+      "value": 60
     }
   ],
   "structures": [
@@ -6361,6 +7104,22 @@ window.vs = {
         "ring2",
         "sign1",
         "sign2"
+      ]
+    },
+    {
+      "id": "emerald-diorama",
+      "name": "Emerald Diorama",
+      "description": "A world-weaving stage from SaGa Emerald Beyond.",
+      "contentPack": "emerald-diorama",
+      "itemIds": []
+    },
+    {
+      "id": "the-coop",
+      "name": "The Coop",
+      "description": "A chicken-themed bonus stage containing Parm Aegis and the speed-up relic.",
+      "special": true,
+      "itemIds": [
+        "parma"
       ]
     }
   ]
