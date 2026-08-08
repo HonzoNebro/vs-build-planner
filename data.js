@@ -41,6 +41,13 @@ window.vs = {
       "shortName": "EMERALD DIORAMA",
       "color": "#587d70",
       "animatedCharacters": false
+    },
+    {
+      "id": "ante-chamber",
+      "name": "Ante Chamber",
+      "shortName": "ANTE CHAMBER",
+      "color": "#b62034",
+      "animatedCharacters": false
     }
   ],
   "characters": [
@@ -2377,6 +2384,264 @@ window.vs = {
       "description": "Overhealing by +30 gives a cumulative bonus to a random stat.",
       "price": 5000,
       "special": true
+    },
+    {
+      "id": "chula-reh",
+      "name": "Chula-Reh",
+      "emoji": ":question:",
+      "itemIds": [
+        "magi-stones"
+      ],
+      "description": "Starts with Magi-Stones and uses dice-driven effects.",
+      "price": 777
+    },
+    {
+      "id": "ziappunta",
+      "name": "Zi'Appunta",
+      "surname": "Belpaese",
+      "emoji": ":question:",
+      "itemIds": [
+        "ammo-appalate"
+      ],
+      "description": "Starts with Ammo Appalate and specializes in explosive props and golden chests.",
+      "price": 5000
+    },
+    {
+      "id": "ante-jimbo",
+      "name": "Jimbo",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "itemIds": [
+        "ante-infernolatro"
+      ],
+      "description": "Starts with Infernolatro.",
+      "price": 5000
+    },
+    {
+      "id": "ante-canio",
+      "name": "Canio",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "itemIds": [
+        "ante-fibonacci-spritz"
+      ],
+      "description": "Starts with Fibonacci Spritz.",
+      "price": 5000
+    },
+    {
+      "id": "ante-chicot",
+      "name": "Chicot",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "itemIds": [
+        "ante-gros-michel"
+      ],
+      "description": "Starts with Gros Michel.",
+      "price": 5000
+    },
+    {
+      "id": "ante-perkeo",
+      "name": "Perkeo",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "itemIds": [
+        "ante-celestial-booster"
+      ],
+      "description": "Starts with Celestial Booster.",
+      "price": 5000
+    },
+    {
+      "id": "tp-hugh",
+      "name": "Hugh",
+      "surname": "Baldwin",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "valmanway"
+      ],
+      "description": "Adept with Valmanway, Tyrfing, and Rune Sword. May receive Coat of Arms as an early level-up option.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-morris",
+      "name": "Morris",
+      "surname": "Baldwin",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "kaiser-knuckle"
+      ],
+      "description": "Adept with all weapons from the Coat of Arms and retaliates with martial weapons.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-annette",
+      "name": "Annette",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "gearsweapon"
+      ],
+      "description": "Summons a selection of clockwork weapons.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-tera",
+      "name": "Tera",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "grandcross"
+      ],
+      "description": "Starts with temporarily reduced Cooldown. Overhealing slightly decreases Cooldown.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-stone-skull",
+      "name": "Stone Skull",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [],
+      "description": "Gains +1 Armor every 5 levels. Horizontally impaired. Retaliates.",
+      "price": 16650,
+      "special": true
+    },
+    {
+      "id": "tp-sword-ruler",
+      "name": "Sword Ruler",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "swordbrothers"
+      ],
+      "description": "Starts with Sword Brothers.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-persephone",
+      "name": "Persephone",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "spirittornado"
+      ],
+      "description": "Vacuums everything.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-astarte",
+      "name": "Astarte",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [],
+      "hiddenitemIds": [
+        "starflail"
+      ],
+      "description": "Starts with a hidden Star Flail and can turn defeated enemies into followers.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-drolta",
+      "name": "Drolta",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "anura"
+      ],
+      "description": "Starts with Anura.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-actrise",
+      "name": "Actrise",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "earth_"
+      ],
+      "description": "Starts with Gemma Torpor.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-atlantis-shrine-wizard",
+      "name": "Atlantis Shrine Wizard",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "hydrostorm"
+      ],
+      "description": "Starts with Hydro Storm.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-fake-trio",
+      "name": "Fake Trio",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "bone"
+      ],
+      "description": "A trio of zombies.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-slogra-gaibon",
+      "name": "Slogra and Gaibon",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "chauve"
+      ],
+      "description": "The inseparable demon duo starts with Trident.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-zephyr",
+      "name": "Zephyr",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "knife"
+      ],
+      "description": "Adept with knives. Orologions grant Cooldown and MoveSpeed bonuses.",
+      "price": 5000,
+      "special": true
+    },
+    {
+      "id": "tp-jiangshi",
+      "name": "Jiangshi",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "soulstealweapon"
+      ],
+      "description": "Triggers a random equipped weapon every 13th hop. Immune to health drain.",
+      "price": 10000,
+      "special": true
+    },
+    {
+      "id": "tp-alucard",
+      "name": "Alucard",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "pocket-knife"
+      ],
+      "description": "Starts with Pocket Knife and has increased Max Health, Armor, and MoveSpeed.",
+      "price": 50000,
+      "special": true
     }
   ],
   "weapons": [
@@ -3755,6 +4020,76 @@ window.vs = {
       "itemIds": [],
       "description": "Might defang enemies.",
       "rarity": 50
+    },
+    {
+      "id": "ammo-appalate",
+      "name": "Ammo Appalate",
+      "emoji": ":question:",
+      "description": "Fires towards a random enemy in the faced direction.",
+      "rarity": 100
+    },
+    {
+      "id": "magi-stones",
+      "name": "Magi-Stones",
+      "emoji": ":question:",
+      "description": "Deals damage based on its Weapon Level.",
+      "rarity": 120
+    },
+    {
+      "id": "ante-infernolatro",
+      "name": "Infernolatro",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "description": "Ante Chamber weapon.",
+      "rarity": 104
+    },
+    {
+      "id": "ante-gros-michel",
+      "name": "Gros Michel",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "description": "Ante Chamber weapon.",
+      "rarity": 104
+    },
+    {
+      "id": "ante-fibonacci-spritz",
+      "name": "Fibonacci Spritz",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "description": "Ante Chamber weapon.",
+      "rarity": 104
+    },
+    {
+      "id": "ante-celestial-booster",
+      "name": "Celestial Booster",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "description": "Ante Chamber weapon.",
+      "rarity": 104
+    },
+    {
+      "id": "kaiser-knuckle",
+      "name": "Kaiser Knuckle",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "description": "A close-range martial weapon.",
+      "rarity": 20
+    },
+    {
+      "id": "pocket-knife",
+      "name": "Pocket Knife",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "description": "A compact blade from the Coat of Arms.",
+      "rarity": 20
+    },
+    {
+      "id": "anura",
+      "name": "Anura",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "description": "Summons an amphibian assault.",
+      "rarity": 20
     }
   ],
   "evolutions": [
@@ -5109,9 +5444,10 @@ window.vs = {
       "id": "eme-gekkabijin",
       "name": "Gekkabijin",
       "itemIds": [
-        "eme-twin-dragon"
+        "eme-twin-dragon",
+        "karomas-mana"
       ],
-      "description": "Evolution of Twin Dragon.",
+      "description": "Evolution of Twin Dragon. Requires Karoma’s Mana.",
       "rarity": 1
     },
     {
@@ -5192,6 +5528,268 @@ window.vs = {
         "parma"
       ],
       "description": "Evolved Gaze of Gaea. Retaliates. Damage is increased while invulnerable.",
+      "rarity": 1
+    },
+    {
+      "id": "gunastrophe",
+      "name": "Gunastrophe",
+      "emoji": ":question:",
+      "itemIds": [
+        "ammo-appalate",
+        "speed"
+      ],
+      "description": "Evolution of Ammo Appalate. Requires Bracer and fires all guns across the screen.",
+      "rarity": 1
+    },
+    {
+      "id": "kyra-stones",
+      "name": "Kyra-Stones",
+      "emoji": ":question:",
+      "itemIds": [
+        "magi-stones",
+        "karomas-mana"
+      ],
+      "description": "Evolution of Magi-Stones. Requires Karoma’s Mana; damage scales with Player Level.",
+      "rarity": 1
+    },
+    {
+      "id": "ante-naneinferno",
+      "name": "NaneInferno",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "itemIds": [
+        "ante-infernolatro",
+        "ante-outer-saboteur"
+      ],
+      "description": "Evolution of Infernolatro. Requires Outer Saboteur.",
+      "rarity": 1
+    },
+    {
+      "id": "ante-cavendish",
+      "name": "Cavendish",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "itemIds": [
+        "ante-gros-michel",
+        "ante-outer-saboteur"
+      ],
+      "description": "Evolution of Gros Michel. Requires Outer Saboteur.",
+      "rarity": 1
+    },
+    {
+      "id": "ante-royal-flush",
+      "name": "Royal Flush",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "itemIds": [
+        "ante-fibonacci-spritz",
+        "ante-outer-saboteur"
+      ],
+      "description": "Evolution of Fibonacci Spritz. Requires Outer Saboteur.",
+      "rarity": 1
+    },
+    {
+      "id": "ante-negative-space",
+      "name": "Negative Space",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "itemIds": [
+        "ante-celestial-booster",
+        "ante-outer-saboteur"
+      ],
+      "description": "Evolution of Celestial Booster. Requires Outer Saboteur.",
+      "rarity": 1
+    },
+    {
+      "id": "lapiste-tepisto",
+      "name": "Lapiste Tepisto",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "kaiser-knuckle",
+        "bracelet__"
+      ],
+      "description": "Evolution of Kaiser Knuckle. Requires Tri-Bracelet.",
+      "rarity": 1
+    },
+    {
+      "id": "claimh-solais",
+      "name": "Claimh Solais",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "pocket-knife",
+        "torrona"
+      ],
+      "description": "Evolution of Pocket Knife. Requires Torrona’s Box.",
+      "rarity": 1
+    },
+    {
+      "id": "dark-frogamorphosis",
+      "name": "Dark Frogamorphosis",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "anura",
+        "garlic_"
+      ],
+      "description": "Evolution of Anura. Requires Soul Eater.",
+      "rarity": 1
+    },
+    {
+      "id": "million-cut",
+      "name": "Million Cut",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "valmanway",
+        "knife_"
+      ],
+      "description": "Union of Valmanway and Thousand Edge.",
+      "rarity": 1
+    },
+    {
+      "id": "ninth-circle",
+      "name": "Ninth Circle",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "icebrand",
+        "bible_"
+      ],
+      "description": "Union of Icebrand and Unholy Vespers.",
+      "rarity": 1
+    },
+    {
+      "id": "dies-irae",
+      "name": "Dies Irae",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "gothmissile",
+        "mana_"
+      ],
+      "description": "Union of Arrow of Goth and Mannajja.",
+      "rarity": 1
+    },
+    {
+      "id": "kardia-phlegeton",
+      "name": "Kardia Phlegeton",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "aurablastweapon",
+        "firewand_"
+      ],
+      "description": "Union of Aura Blast and Hellfire.",
+      "rarity": 1
+    },
+    {
+      "id": "darkness-illusion",
+      "name": "Darkness Illusion",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "savrogweapon",
+        "pinion_"
+      ],
+      "description": "Union of Svarog Statue and Valkyrie Turner.",
+      "rarity": 1
+    },
+    {
+      "id": "carnage-heart",
+      "name": "Carnage Heart",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "neutronweapon",
+        "runetracer_"
+      ],
+      "description": "Union of Troll Bomb and NO FUTURE.",
+      "rarity": 1
+    },
+    {
+      "id": "hydro-pump-climax",
+      "name": "Hydro Pump Climax",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "hydrostorm",
+        "water_"
+      ],
+      "description": "Union of Hydro Storm and La Borra.",
+      "rarity": 1
+    },
+    {
+      "id": "arch-angle",
+      "name": "Arch Angle",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "grandcross",
+        "cross_"
+      ],
+      "description": "Union of Grand Cross and Heaven Sword.",
+      "rarity": 1
+    },
+    {
+      "id": "spirit-of-light",
+      "name": "Spirit of Light",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "summonspirit",
+        "magicwand_"
+      ],
+      "description": "Union of Summon Spirit and Holy Wand.",
+      "rarity": 1
+    },
+    {
+      "id": "power-of-lire",
+      "name": "Power of Lire",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "soulstealweapon",
+        "cat_"
+      ],
+      "description": "Union of Soul Steal and Vicious Hunger.",
+      "rarity": 1
+    },
+    {
+      "id": "legacy-of-death-soul-river",
+      "name": "Legacy of Death: Soul River",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "darkrift",
+        "axe_"
+      ],
+      "description": "Union of Dark Rift and Death Spiral.",
+      "rarity": 1
+    },
+    {
+      "id": "vjaya-sisters",
+      "name": "Vjaya Sisters",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "swordbrothers",
+        "lightning_"
+      ],
+      "description": "Union of Sword Brothers and Thunder Loop.",
+      "rarity": 1
+    },
+    {
+      "id": "venus-crescent",
+      "name": "Venus Crescent",
+      "emoji": ":question:",
+      "contentPack": "ode-castlevania",
+      "itemIds": [
+        "spirittornado",
+        "pentagram_"
+      ],
+      "description": "Union of Summon Spirit Tornado and Gorgeous Moon.",
       "rarity": 1
     }
   ],
@@ -5745,7 +6343,21 @@ window.vs = {
       "extra": true,
       "rarity": 1
     },
-
+    {
+      "id": "karomas-mana",
+      "name": "Karoma's Mana",
+      "emoji": ":question:",
+      "description": "Increases enemy spawn quantity by 10 and the duration of Gold Fever and Gold Finger by 10%.",
+      "rarity": 180
+    },
+    {
+      "id": "ante-outer-saboteur",
+      "name": "Outer Saboteur",
+      "emoji": ":question:",
+      "contentPack": "ante-chamber",
+      "description": "Required to evolve every Ante Chamber weapon.",
+      "rarity": 104
+    }
   ],
   "powerups": [
     {
@@ -6495,6 +7107,75 @@ window.vs = {
       ],
       "description": "Food pickups grant cumulative bonuses to random stats based on their rarity or healing value.",
       "major": true
+    },
+    {
+      "id": "darkana5",
+      "name": "V - Pale Diamond Incursion",
+      "emoji": ":question:",
+      "itemIds": [
+        "knife",
+        "axe",
+        "firewand",
+        "water",
+        "runetracer",
+        "lightning",
+        "bird1",
+        "bird2",
+        "cat",
+        "pinion",
+        "vento",
+        "bone",
+        "cart",
+        "furniture",
+        "jubilee",
+        "bracelet",
+        "flame",
+        "ammo-appalate",
+        "magi-stones",
+        "javelin",
+        "mirage",
+        "bolle",
+        "arrow",
+        "prism",
+        "servant",
+        "popper",
+        "hats",
+        "spreadshot",
+        "sonic",
+        "shuriken",
+        "bwaka",
+        "javelinC",
+        "ironball",
+        "ante-gros-michel"
+      ],
+      "description": "Listed weapons aim at the nearest enemy and activate an extra time when they defeat an enemy.",
+      "major": true
+    },
+    {
+      "id": "darkana13",
+      "name": "XIII - Call of a Mad Moon",
+      "emoji": ":question:",
+      "itemIds": [
+        "growth",
+        "luck",
+        "greed",
+        "curse"
+      ],
+      "description": "Effect depends on random results and player stats: Luck improves chests and light sources, Growth improves XP crystals, Greed improves gold pickups, and Curse empowers enemies.",
+      "major": true
+    },
+    {
+      "id": "darkana18",
+      "name": "XVIII - Victorian Horror",
+      "emoji": ":question:",
+      "itemIds": [
+        "greed",
+        "magnet",
+        "curse",
+        "littleheart"
+      ],
+      "description": "Enemies within Magnet range receive Greed-based damage. Once per life, fatal damage triggers Cursed World Eater.",
+      "major": true
     }
   ],
   "pickups": [
@@ -7121,6 +7802,25 @@ window.vs = {
       "itemIds": [
         "parma"
       ]
+    },
+    {
+      "id": "mazerella",
+      "name": "Mazerella",
+      "description": "A free-roaming stage introduced in version 1.14.",
+      "itemIds": []
+    },
+    {
+      "id": "westwoods",
+      "name": "Westwoods",
+      "description": "A free-roaming woodland stage introduced in version 1.14.",
+      "itemIds": []
+    },
+    {
+      "id": "ante-chamber-stage",
+      "name": "Ante Chamber",
+      "description": "A surreal crossover stage built around the Ante Chamber cast.",
+      "contentPack": "ante-chamber",
+      "itemIds": []
     }
   ]
 }
