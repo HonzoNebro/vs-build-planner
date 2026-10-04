@@ -136,6 +136,14 @@
         </div>
 
         <!-- Characters -->
+        <fieldset v-if="selectedCharacter.id === 'nameless-saint'">
+          <legend>Nameless Saint — your Collection</legend>
+          <p>Mark weapons you have collected. Starting equipment follows the enabled DLCs. Leave all unchecked for no starting weapon.</p>
+          <label v-for="id in saintWeaponIds" :key="id" style="display: inline-block; margin: 0.5em">
+            <input type="checkbox" v-model="saintCollection" :value="id" :disabled="itemsById[id].contentPack && config.contentPacks[itemsById[id].contentPack] === false">
+            {{ itemsById[id].name }}
+          </label>
+        </fieldset>
         <h2 @click="collapsedSections.characters = !collapsedSections.characters">
           <small :style="{ transform: collapsedSections.characters ? 'none' : 'rotate(90deg)' }">►</small> 
           Characters
@@ -453,6 +461,9 @@
           const config = useConfig()
 
           const settings = ref(false)
+
+          const saintWeaponIds = window.vs.characters.find((item) => item.id === 'nameless-saint').startingWeaponGroups.flat()
+          const saintCollection = ref([])
 
           const selectedIds = reactive(new Set(getHashIds()))
 
@@ -1099,6 +1110,10 @@
             // New catalog entries may not have hand-authored stat impacts yet.
             // They still need an array for sorting and Arcana relationships.
             for (const item of items) newImpactsById[item.id] ||= []
+            for (const character of characters) {
+              for (const id of character.adeptItemIds || []) newImpactsById[character.id].push(`+${id}`)
+            }
+            newImpactsById['nameless-saint'].push('+luck')
             for (const arcana of arcanas) {
               for (const id of arcana.itemIds || []) {
                 if (!newImpactsById[arcana.id].includes(`+${id}`)) newImpactsById[arcana.id].push(`+${id}`)
@@ -1420,6 +1435,26 @@
             { immediate: true }
           )
 
+          watch(
+            () => JSON.stringify([saintCollection.value, config.contentPacks, selectedCharacter.value.id]),
+            () => {
+              const saint = itemsById['nameless-saint']
+              const nextIds = saint.startingWeaponGroups.map((group) => group.find((id) => saintCollection.value.includes(id) && isContentAvailable(itemsById[id]))).filter(Boolean)
+              if (JSON.stringify(nextIds) !== JSON.stringify(saint.itemIds)) {
+                if (selectedCharacter.value.id === saint.id) {
+                  for (const id of saint.itemIds) if (!nextIds.includes(id)) selectedIds.delete(id)
+                }
+                saint.itemIds = nextIds
+                saint.items = nextIds.map((id) => itemsById[id])
+              }
+              if (selectedCharacter.value.id === saint.id) {
+                for (const id of nextIds) selectedIds.add(id)
+                updateHash()
+              }
+            },
+            { immediate: true }
+          )
+
           watchEffect(() => {
             if (config.sorting) {
               weapons.sort((a, b) => {
@@ -1451,10 +1486,12 @@
           window.addEventListener('hashchange', updateSelectedIds)
 
           function getHashIds() {
-            return location.hash
-              .substring(1)
-              .split(',')
-              .filter((id) => id)
+            const ids = location.hash.substring(1).split(',').filter(Boolean)
+            const collection = ids.find((id) => id.startsWith('saint='))
+            if (collection !== undefined) {
+              saintCollection.value = collection.substring(6).split('+').filter((id) => saintWeaponIds.includes(id))
+            }
+            return ids.filter((id) => !id.startsWith('saint='))
           }
 
           function updateSelectedIds() {
@@ -1465,11 +1502,12 @@
           }
 
           function updateHash() {
-            const newHash = (selectedCharacter.value.id ? [selectedCharacter.value] : [])
+            let newHash = (selectedCharacter.value.id ? [selectedCharacter.value] : [])
               .concat(selectedWeapons.value, selectedPassives.value, selectedArcanas.value, selectedStage.value)
               .map((item) => item.id)
               .filter((id) => id)
               .join()
+            if (selectedCharacter.value.id === 'nameless-saint') newHash += ',saint=' + saintWeaponIds.filter((id) => saintCollection.value.includes(id)).join('+')
             if ('#' + newHash !== location.hash) {
               const scrollPosition = document.documentElement.scrollTop
               location.hash = newHash
@@ -1791,6 +1829,8 @@
 
           return {
             config,
+            saintWeaponIds,
+            saintCollection,
             contentPacks,
             contentPackStyle,
             settings,

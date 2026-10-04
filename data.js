@@ -2880,7 +2880,10 @@ window.vs = {
       "price": 3000,
       "animated": false,
       "description": "Starts and is Adept with an array of holy weapons, depending on their availability in the Collection. Lastbreath: triggers a Rosary.",
-      "prefix": "Nameless"
+      "prefix": "Nameless",
+      "startingWeaponGroups": [["bocce", "cross"], ["108-responsive-prayers"], ["holy", "laurel"]],
+      "adeptItemIds": ["cross", "cross_", "laurel", "bocce", "108-responsive-prayers", "road-to-heaven"],
+      "tips": "Starts with +20% Luck and +8 Banish. Starting weapons depend on your Collection: 108 Bocce takes priority over Cross, and Refectio over Laurel. Each weapon must have been collected. Unlock: defeat Ashtart, Sargon, Congregation, and Baal'Thasar in one run, or cast namelessspell."
     },
     {
       "id": "baal-thasar",

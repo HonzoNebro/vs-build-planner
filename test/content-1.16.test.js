@@ -8,14 +8,14 @@ const root = path.resolve(__dirname, '..')
 
 // Run the real setup and computed functions without a browser or external CDN.
 // This harness does not cover DOM rendering or Vue's reactive scheduler.
-function planner() {
+function planner(hash = '') {
   let app
   const watchers = []
   const effects = []
   const value = (source) => typeof source === 'function' ? source() : source && 'value' in source ? source.value : source
   const context = {
     window: { vs: loadData(root), addEventListener() {} },
-    location: { hash: '' },
+    location: { hash },
     localStorage: { getItem: () => null },
     document: { documentElement: { scrollTop: 0 }, querySelectorAll: () => [] },
     console,
@@ -39,6 +39,7 @@ function planner() {
   }
   return {
     app,
+    get hash() { return context.location.hash },
     flush() {
       for (let round = 0; round < 3; round++) {
         for (const watcher of watchers) {
@@ -157,4 +158,28 @@ test('floor inventory rejects unknown items and invalid quantities', () => {
   const errors = validateData(data)
   assert.ok(errors.some((error) => error.includes('floorItems references missing ID')))
   assert.ok(errors.some((error) => error.includes('floorItems has invalid count')))
+})
+
+test('Nameless Saint uses collected weapons, with priority and DLC fallbacks', () => {
+  const session = planner()
+  const { app, flush } = session
+  app.toggleItem(app.itemsById['nameless-saint']); flush()
+  assert.equal(app.selectedWeapons.value.length, 0)
+  app.saintCollection.value = ['cross', 'laurel']; flush()
+  assert.deepEqual(Array.from(app.selectedCharacter.value.itemIds), ['cross', 'laurel'])
+  app.saintCollection.value = Array.from(app.saintWeaponIds); flush()
+  assert.deepEqual(Array.from(app.selectedCharacter.value.itemIds), ['bocce', '108-responsive-prayers', 'holy'])
+  assert.ok(!app.itemsById.cross.selected)
+  assert.ok(!app.itemsById.laurel.selected)
+  const shared = planner('#' + session.hash.replace(/^#/, ''))
+  shared.flush()
+  assert.deepEqual(Array.from(shared.app.selectedCharacter.value.itemIds), ['bocce', '108-responsive-prayers', 'holy'])
+  app.config.contentPacks['legacy-moonspell'] = false
+  app.config.contentPacks['ode-castlevania'] = false
+  flush()
+  assert.deepEqual(Array.from(app.selectedCharacter.value.itemIds), ['cross', '108-responsive-prayers', 'laurel'])
+  app.saintCollection.value = ['bocce', 'holy']; flush()
+  assert.equal(app.selectedCharacter.value.itemIds.length, 0)
+  assert.ok(app.impactsById.value['nameless-saint'].includes('+road-to-heaven'))
+  assert.ok(!app.impactsById.value['nameless-saint'].includes('+holy'))
 })

@@ -71,7 +71,10 @@ function validateData(data) {
       if (!recordsById.has(entry.id)) errors.push(`${record.id}.floorItems references missing ID: ${entry.id}`)
       if (!Number.isInteger(entry.count) || entry.count < 1) errors.push(`${record.id}.floorItems has invalid count for ${entry.id}`)
     }
-    for (const field of ['itemIds', 'hiddenitemIds', 'maxLevelItemIds']) {
+    for (const group of record.startingWeaponGroups || []) {
+      for (const id of group) if (!recordsById.has(id)) errors.push(`${record.id} starting weapon references missing ID: ${id}`)
+    }
+    for (const field of ['itemIds', 'hiddenitemIds', 'maxLevelItemIds', 'adeptItemIds']) {
       if (record[field] !== undefined && !Array.isArray(record[field])) {
         errors.push(`${record.collectionName}:${record.id}.${field} must be an array`)
         continue
