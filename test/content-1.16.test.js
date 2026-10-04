@@ -183,3 +183,47 @@ test('Nameless Saint uses collected weapons, with priority and DLC fallbacks', (
   assert.ok(app.impactsById.value['nameless-saint'].includes('+road-to-heaven'))
   assert.ok(!app.impactsById.value['nameless-saint'].includes('+holy'))
 })
+
+test('gift recipes retain base weapons and Universitas does not require Candybox', () => {
+  for (const [giftId, bases] of [['universitas', ['light_', 'dark_']], ['sword_', ['sword']]]) {
+    const { app, flush } = planner()
+    app.toggleItem(app.itemsById[giftId]); flush()
+    assert.ok(!app.itemsById[giftId].itemIds.includes('candybox'))
+    for (const id of bases) assert.ok(app.evolvedWeapons.value.some((item) => item.id === id), id)
+    assert.ok(app.counterpartsWeapons.value.some((item) => item.id === giftId))
+  }
+})
+
+test('morphs require their specific character and can be selected as build targets', () => {
+  for (const [morph, character, base] of [
+    ['anima-of-mortaccio', 'mortaccio', 'bone'],
+    ['yatta-daikarin', 'cavallo', 'cherry'],
+    ['carrozza', 'ramba', 'cart'],
+    ['profusione-d-amore', 'osole', 'flowers'],
+  ]) {
+    const { app, flush } = planner()
+    app.toggleItem(app.itemsById[base]); flush()
+    assert.equal(app.itemsById[morph].selected, false)
+    assert.ok(app.evolvedWeapons.value.some((item) => item.id === base))
+    app.toggleItem(app.itemsById[morph]); flush()
+    assert.equal(app.selectedCharacter.value.id, character)
+    assert.ok(app.evolvedWeapons.value.some((item) => item.id === morph))
+    assert.ok(app.itemsById[morph].title.includes('level 80'))
+    assert.ok(app.itemsById[morph].title.includes('No chest required'))
+  }
+})
+
+test('evolution audit distinguishes passive levels, consumed catalysts and Glimmers', () => {
+  const { app } = planner()
+  assert.deepEqual(Array.from(app.itemsById.whip_.maxLevelItemIds), ['whip'])
+  assert.deepEqual(Array.from(app.itemsById.arrow_.maxLevelItemIds), ['arrow', 'speed'])
+  assert.deepEqual(Array.from(app.itemsById.shortgun_.maxLevelItemIds), ['shortgun'])
+  assert.deepEqual(Array.from(app.itemsById.shortgun_.consumedItemIds), ['powerup'])
+  assert.deepEqual(Array.from(app.itemsById.report_.maxLevelItemIds), ['report', 'minicrewmate'])
+  assert.ok(app.itemsById.report_.title.includes('Consumed on evolution'))
+  assert.ok(app.itemsById['eme-estoc'].title.includes('Crystalline Carve'))
+  assert.equal(app.itemsById['eme-estoc'].name, 'Dress Sword')
+  assert.equal(app.itemsById['eme-bilqis'].name, 'Falconwind')
+  assert.deepEqual(Array.from(app.itemsById['wicked-ruler'].itemIds), ['chaos-rune', 'duration'])
+  assert.ok(app.itemsById['eme-rings-of-calamity'].title.includes('five max-level passives'))
+})

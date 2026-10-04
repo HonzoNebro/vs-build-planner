@@ -74,7 +74,10 @@ function validateData(data) {
     for (const group of record.startingWeaponGroups || []) {
       for (const id of group) if (!recordsById.has(id)) errors.push(`${record.id} starting weapon references missing ID: ${id}`)
     }
-    for (const field of ['itemIds', 'hiddenitemIds', 'maxLevelItemIds', 'adeptItemIds']) {
+    if (record.requiredCharacterId && !(data.characters || []).some((character) => character.id === record.requiredCharacterId)) {
+      errors.push(`${record.id} references missing required character: ${record.requiredCharacterId}`)
+    }
+    for (const field of ['itemIds', 'hiddenitemIds', 'maxLevelItemIds', 'adeptItemIds', 'consumedItemIds']) {
       if (record[field] !== undefined && !Array.isArray(record[field])) {
         errors.push(`${record.collectionName}:${record.id}.${field} must be an array`)
         continue
@@ -89,6 +92,9 @@ function validateData(data) {
       if (record.collectionName !== 'evolutions' || !record.itemIds?.includes(reference)) {
         errors.push(`${record.collectionName}:${record.id} has a max-level requirement outside its ingredients: ${reference}`)
       }
+    }
+    for (const reference of record.consumedItemIds || []) {
+      if (!record.itemIds?.includes(reference)) errors.push(`${record.id} consumes an item outside its ingredients: ${reference}`)
     }
   }
 

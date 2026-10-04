@@ -2,10 +2,11 @@
 
 ## Baseline
 
-- Audit date: 2026-10-03
+- Audit date: 2026-10-04
 - Game baseline: Vampire Survivors 1.16.107 (Steam build 25016043)
-- Planner records: 768
+- Planner records: 774
 - Registered content packs: 8
+- Evolution-audit assets: 6 (`img/evolution-audit/`)
 - Versioned assets: 196 (`v1.13`: 70, `v1.14`: 61, `v1.15`: 16, `v1.16`: 49)
 
 The 1.15 scope follows the [official update announcement](https://store.steampowered.com/news/app/1794680/view/693137145499484494): The Lycaeum, Para Kooleo, Big Troubler, the Penshin Fatcha branch, Unearthly Bolt and Spirit Disturbance, and Darkanas 0, VIII, and XIX.
@@ -17,8 +18,8 @@ The 1.16 scope follows the [official release and hotfix announcements](https://s
 | Collection | Records |
 | --- | ---: |
 | Characters | 229 |
-| Weapons | 184 |
-| Evolutions | 165 |
+| Weapons | 185 |
+| Evolutions | 170 |
 | Counterparts | 22 |
 | Passives | 48 |
 | Power-ups | 20 |
@@ -26,7 +27,7 @@ The 1.16 scope follows the [official release and hotfix announcements](https://s
 | Pickups | 27 |
 | Structures | 5 |
 | Stages | 34 |
-| **Total** | **768** |
+| **Total** | **774** |
 
 ## Records by content pack
 
@@ -34,7 +35,7 @@ Records without a `contentPack` value are counted as base-game content.
 
 | Scope | Records |
 | --- | ---: |
-| Base game and free updates | 271 |
+| Base game and free updates | 277 |
 | Legacy of the Moonspell | 35 |
 | Tides of the Foscari | 27 |
 | Emergency Meeting | 34 |
@@ -43,7 +44,7 @@ Records without a `contentPack` value are counted as base-game content.
 | Emerald Diorama | 63 |
 | Ante Chamber | 14 |
 | Legacy of the Bloodmoon | 36 |
-| **Total** | **768** |
+| **Total** | **774** |
 
 ## Source policy
 
@@ -92,3 +93,11 @@ The 1.16 regression suite runs the real planner setup/computed functions with a 
 4. Add data and artwork in the same change; prefer a versioned `img/vX.Y/` directory.
 5. Update the totals and baseline in this document.
 6. Run the full verification commands and audit every local CSS image reference.
+
+## Evolution reference audit (2026-10-04)
+
+The user supplied the text of the wiki's Evolution article. Its recipe tables were used to add explicit evolution/union/gift/morph classifications and max-level requirements to the supported ordinary recipes, plus consumed-catalyst notes for Emergency Meeting and Operation Guns and 21 required Glimmer techniques for Emerald Diorama. See [the mechanics notes](evolution-mechanics.md) for scope and remaining limitations.
+
+Six missing base-game records were added: Chaos Rune, Wicked Ruler, Anima of Mortaccio, Yatta Daikarin, Carrozza!, and Profusione D'Amore. Their names, descriptions and icons were checked against the installed 1.16.107 client; [the source map](evolution-sources.json) identifies their internal keys. Existing IDs were retained when correcting the display names Dress Sword (`eme-estoc`), Falconwind (`eme-bilqis`), and Luminaire (`prism_`). Millionaire's obsolete Clover requirement was removed from its tooltip. Universitas no longer requires Candybox.
+
+Gift prerequisites are retained in the build preview. Morph targets select their required character and describe the level-80/relic conditions; merely picking Bone, Cherry Bomb, Carréllo or Celestial Dusting with another character does not activate a morph. These are target builds, not a simulation of reaching level 80 or opening a chest.

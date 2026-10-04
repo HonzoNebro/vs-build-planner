@@ -569,7 +569,8 @@
             evolution.requirements = evolution.requirements || { weapons: evolution.weaponIds, passives: evolution.passiveIds }
             for (const itemId of evolution.itemIds) {
               const item = itemsById[itemId]
-              item.evolutionId = evolution.id
+              // Gifts add equipment without replacing their prerequisite weapons.
+              if (evolution.kind !== 'gift') item.evolutionId = evolution.id
               // add combinations to weapons and passives
               if (item.type === 'weapon' || (item.type === 'passive' && item.id !== 'powerup')) {
                 item.itemIds = (item.itemIds || []).concat(evolution.itemIds.filter((id) => id !== itemId))
@@ -615,6 +616,9 @@
             if (item.floorItems) {
               item.title += '\n' + item.floorItems.map(({ id, count, condition }) => `${itemsById[id].name} ×${count}${condition ? ` — ${condition}` : ''}`).join('\n')
             }
+            if (item.kind) item.title += `\nType: ${item.kind}.`
+            if (item.glimmer) item.title += `\nRequired Glimmer: ${item.glimmer}.`
+            if (item.consumedItemIds?.length) item.title += `\nConsumed on evolution: ${item.consumedItemIds.map((id) => itemsById[id].name).join(', ')}.`
           }
 
           const impactsById = computed(() => {
@@ -1236,8 +1240,7 @@
 
           const evolvedWeapons = computed(() => {
             const evolvedWeapons = selectedWeapons.value.map((weapon) => {
-              // sword's evolution is a counterpart, so ignore it
-              if (!weapon.evolved || weapon.id === 'sword') {
+              if (!weapon.evolved) {
                 return weapon
               }
               // level 2 evolution
@@ -1273,14 +1276,8 @@
               })
             }
 
-            // Handle the sword and umbra+sol evolution
-            if (itemsById.sword.evolved) {
-              counterparts.push(itemsById.sword_)
-            }
-
-            if (itemsById.dark_.selected && itemsById.light_.selected) {
-              counterparts.push(itemsById.universitas)
-            }
+            // Gifts remain alongside the equipment used to obtain them.
+            for (const gift of evolutions.filter((item) => item.kind === 'gift' && item.selected)) counterparts.push(gift)
 
             // Handle arcana1's counterparts
             if (selectedIds.has('arcana1')) {
@@ -1388,11 +1385,11 @@
               }
               for (const evolution of evolutions) {
                 // selected if all required items are selected or if it's a character's item
-                evolution.selected = evolution.items.every((item) => item.selected) || selectedCharacter.value.itemIds.includes(evolution.id);
+                evolution.selected = (evolution.items.every((item) => item.selected) && (!evolution.requiredCharacterId || selectedCharacter.value.id === evolution.requiredCharacterId)) || selectedCharacter.value.itemIds.includes(evolution.id);
               }
               for (const weapon of weapons) {
                 // evolved if all required items are selected
-                weapon.evolved = weapon.evolutionId && weapon.evolution.items.every((it) => it.selected) && !selectedCharacter.value.itemIds.includes(weapon.evolutionId) && !selectedCharacter.value.itemIds.includes(weapon.evolution?.evolutionId);
+                weapon.evolved = weapon.evolutionId && weapon.evolution.selected && !selectedCharacter.value.itemIds.includes(weapon.evolutionId) && !selectedCharacter.value.itemIds.includes(weapon.evolution?.evolutionId);
               }
               for (const evolution of evolutions) {
                 // evolved if all required items are selected or evolved
@@ -1613,6 +1610,7 @@
                 selectedIds.add(item.id);
                 break;
               case 'evolution':
+                if (item.requiredCharacterId) selectId(item.requiredCharacterId)
                 for (const itemId of item.itemIds) {
                   selectId(itemId);
                 }

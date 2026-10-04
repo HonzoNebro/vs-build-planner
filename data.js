@@ -4536,6 +4536,13 @@ window.vs = {
       "description": "Cursed item. Amount affects Damage. Critical hits or changing movement direction ensure extra attacks.",
       "tips": "Ignores: Speed, Duration.",
       "rarity": 50
+    },
+    {
+      "id": "chaos-rune",
+      "name": "Chaos Rune",
+      "emoji": ":question:",
+      "description": "Speed and Duration affect the number of hit boxes instead.",
+      "rarity": 40
     }
   ],
   "evolutions": [
@@ -4549,7 +4556,11 @@ window.vs = {
       ],
       "description": "Evolved Whip. Can deal critical damage and absorb HP.",
       "rarity": 1,
-      "tips": "Requires: Hollow Heart"
+      "tips": "Requires: Hollow Heart",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "whip"
+      ]
     },
     {
       "id": "magicwand_",
@@ -4561,7 +4572,11 @@ window.vs = {
       ],
       "description": "Evolved Magic Wand. Fires with no delay.",
       "rarity": 1,
-      "tips": "Requires: Empty Tome."
+      "tips": "Requires: Empty Tome.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "magicwand"
+      ]
     },
     {
       "id": "knife_",
@@ -4573,7 +4588,11 @@ window.vs = {
       ],
       "description": "Evolved Knife. Fires with no delay.",
       "rarity": 1,
-      "tips": "Requires: Bracer."
+      "tips": "Requires: Bracer.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "knife"
+      ]
     },
     {
       "id": "axe_",
@@ -4585,7 +4604,11 @@ window.vs = {
       ],
       "description": "Evolved Axe. Passes through enemies.",
       "rarity": 1,
-      "tips": "Requires: Candelabrador."
+      "tips": "Requires: Candelabrador.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "axe"
+      ]
     },
     {
       "id": "cross_",
@@ -4597,7 +4620,11 @@ window.vs = {
       ],
       "description": "Evolved Cross. Can deal critical damage.",
       "rarity": 1,
-      "tips": "Requires: Clover."
+      "tips": "Requires: Clover.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "cross"
+      ]
     },
     {
       "id": "bible_",
@@ -4609,7 +4636,11 @@ window.vs = {
       ],
       "description": "Evolved King Bible. Never ends.",
       "rarity": 1,
-      "tips": "Requires: Spellbinder."
+      "tips": "Requires: Spellbinder.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "bible"
+      ]
     },
     {
       "id": "firewand_",
@@ -4621,7 +4652,11 @@ window.vs = {
       ],
       "description": "Evolved Fire Wand. Passes through enemies.",
       "rarity": 1,
-      "tips": "Requires: Spinach."
+      "tips": "Requires: Spinach.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "firewand"
+      ]
     },
     {
       "id": "garlic_",
@@ -4633,7 +4668,11 @@ window.vs = {
       ],
       "description": "Evolved Garlic. Steals hearts. Power increases when recovering HP.",
       "rarity": 1,
-      "tips": "Requires: Pummarola."
+      "tips": "Requires: Pummarola.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "garlic"
+      ]
     },
     {
       "id": "water_",
@@ -4645,7 +4684,11 @@ window.vs = {
       ],
       "description": "Evolved Santa Water. Damaging zones follow you and grow when they move.",
       "rarity": 1,
-      "tips": "Requires: Attractorb."
+      "tips": "Requires: Attractorb.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "water"
+      ]
     },
     {
       "id": "runetracer_",
@@ -4657,7 +4700,11 @@ window.vs = {
       ],
       "description": "Evolved Runetracer. Explodes when bouncing and in retaliation.",
       "rarity": 1,
-      "tips": "Requires: Armor"
+      "tips": "Requires: Armor",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "runetracer"
+      ]
     },
     {
       "id": "lightning_",
@@ -4669,7 +4716,11 @@ window.vs = {
       ],
       "description": "Evolved Lightning Ring. Projectiles strike twice.",
       "rarity": 1,
-      "tips": "Requires: Duplicator."
+      "tips": "Requires: Duplicator.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "lightning"
+      ]
     },
     {
       "id": "pentagram_",
@@ -4681,7 +4732,11 @@ window.vs = {
       ],
       "description": "Evolved Pentagram. Generates extra gems and gathers all of them.",
       "rarity": 1,
-      "tips": "Requires: Crown."
+      "tips": "Requires: Crown.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "pentagram"
+      ]
     },
     {
       "id": "bird_",
@@ -4694,7 +4749,12 @@ window.vs = {
       "special": true,
       "description": "Union of Ebony Wings and Peachone.",
       "rarity": 1,
-      "tips": ""
+      "tips": "",
+      "kind": "union",
+      "maxLevelItemIds": [
+        "bird1",
+        "bird2"
+      ]
     },
     {
       "id": "guns_",
@@ -4708,7 +4768,12 @@ window.vs = {
       "special": true,
       "description": "Union of Phiera Der Tuphello and Eight The Sparrow. Scales with Revivals.",
       "rarity": 1,
-      "tips": "Requires: Tiragisú"
+      "tips": "Requires: Tiragisú",
+      "kind": "union",
+      "maxLevelItemIds": [
+        "guns1",
+        "guns2"
+      ]
     },
     {
       "id": "cat_",
@@ -4720,7 +4785,11 @@ window.vs = {
       ],
       "description": "Evolved Gatti Amari. Might turn anything into gold.",
       "rarity": 1,
-      "tips": "Requires: Stone Mask."
+      "tips": "Requires: Stone Mask.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "cat"
+      ]
     },
     {
       "id": "mana_",
@@ -4732,7 +4801,11 @@ window.vs = {
       ],
       "description": "Evolved Song of Mana. Might slow enemies down.",
       "rarity": 1,
-      "tips": "Requires: Skull O`Maniac"
+      "tips": "Requires: Skull O`Maniac",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "mana"
+      ]
     },
     {
       "id": "pinion_",
@@ -4744,7 +4817,11 @@ window.vs = {
       ],
       "description": "Evolved Shadow Pinion. Bigger, longer, faster, stronger.",
       "rarity": 1,
-      "tips": "Requires: Wings."
+      "tips": "Requires: Wings.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "pinion"
+      ]
     },
     {
       "id": "lancet_",
@@ -4757,7 +4834,13 @@ window.vs = {
       ],
       "description": "Evolved Clock Lancet. Halves enemies health.",
       "rarity": 1,
-      "tips": "Requires Max: Gold Ring, Silver Ring."
+      "tips": "Requires Max: Gold Ring, Silver Ring.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "lancet",
+        "ring1",
+        "ring2"
+      ]
     },
     {
       "id": "laurel_",
@@ -4770,7 +4853,13 @@ window.vs = {
       ],
       "description": "Evolved Laurel. Caps incoming damage at 10. Retaliates when losing charges.",
       "rarity": 1,
-      "tips": "Requires Max: Metaglio Left, Metaglio Right."
+      "tips": "Requires Max: Metaglio Left, Metaglio Right.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "laurel",
+        "sign1",
+        "sign2"
+      ]
     },
     {
       "id": "vento_",
@@ -4782,7 +4871,12 @@ window.vs = {
       ],
       "description": "Union of Vento Sacro and Bloody Tear. Critical hits might generate explosions.",
       "rarity": 1,
-      "tips": ""
+      "tips": "",
+      "kind": "union",
+      "maxLevelItemIds": [
+        "vento",
+        "whip_"
+      ]
     },
     {
       "id": "bracelet_",
@@ -4794,7 +4888,11 @@ window.vs = {
       "special": true,
       "description": "Fires three projectiles at a random enemy.",
       "rarity": 20,
-      "tips": ""
+      "tips": "",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "bracelet"
+      ]
     },
     {
       "id": "bracelet__",
@@ -4806,13 +4904,22 @@ window.vs = {
       "special": true,
       "description": "Fires three projectiles at a random enemy.",
       "rarity": 20,
-      "tips": ""
+      "tips": "",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "bracelet_"
+      ]
     },
     {
       "id": "pako_",
       "name": "Mazo Familiar",
       "emoji": ":question:",
       "itemIds": [
+        "pako",
+        "health"
+      ],
+      "kind": "evolution",
+      "maxLevelItemIds": [
         "pako",
         "health"
       ]
@@ -4827,7 +4934,12 @@ window.vs = {
       ],
       "description": "Gift of Victory Sword. The more enemies are defeated, the stronger it grows.",
       "rarity": 1,
-      "tips": "Requires Max: Torrona`s Box."
+      "tips": "Gift: retains Victory Sword. Requires max-level Victory Sword and Torrona’s Box, then an evolution-capable treasure chest.",
+      "kind": "gift",
+      "maxLevelItemIds": [
+        "sword",
+        "torrona"
+      ]
     },
     {
       "id": "flame_",
@@ -4839,13 +4951,23 @@ window.vs = {
       ],
       "description": "Evolved Flames of Misspell. The more enemies are defeated, the stronger it grows.",
       "rarity": 1,
-      "tips": "Requires Max: Torrona`s Box."
+      "tips": "Requires Max: Torrona`s Box.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "flame",
+        "torrona"
+      ]
     },
     {
       "id": "fandango_",
       "name": "Celestial Voulge",
       "emoji": ":celestialvoulgeVS:",
       "itemIds": [
+        "fandango",
+        "wings"
+      ],
+      "kind": "evolution",
+      "maxLevelItemIds": [
         "fandango",
         "wings"
       ]
@@ -4857,6 +4979,11 @@ window.vs = {
       "itemIds": [
         "javelin",
         "luck"
+      ],
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "javelin",
+        "luck"
       ]
     },
     {
@@ -4864,6 +4991,11 @@ window.vs = {
       "name": "Photonstorm",
       "emoji": ":question:",
       "itemIds": [
+        "phas3r",
+        "cooldown"
+      ],
+      "kind": "evolution",
+      "maxLevelItemIds": [
         "phas3r",
         "cooldown"
       ]
@@ -4883,7 +5015,8 @@ window.vs = {
       "maxLevelItemIds": [
         "wind",
         "recovery"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "seasons_",
@@ -4900,7 +5033,8 @@ window.vs = {
       "maxLevelItemIds": [
         "seasons",
         "area"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "night_",
@@ -4917,7 +5051,8 @@ window.vs = {
       "maxLevelItemIds": [
         "night",
         "amount"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "mirage_",
@@ -4934,7 +5069,8 @@ window.vs = {
       "maxLevelItemIds": [
         "mirage",
         "magnet"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "muramasa_",
@@ -4951,7 +5087,8 @@ window.vs = {
       "maxLevelItemIds": [
         "muramasa",
         "greed"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "bolle_",
@@ -4968,7 +5105,8 @@ window.vs = {
       "maxLevelItemIds": [
         "bolle",
         "duration"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "spell_",
@@ -4982,7 +5120,13 @@ window.vs = {
       "contentPack": "tides-foscari",
       "description": "Union of SpellString, SpellStream, and SpellStrike. Grows stronger after every singularity.",
       "rarity": 1,
-      "tips": ""
+      "tips": "",
+      "kind": "union",
+      "maxLevelItemIds": [
+        "spell1",
+        "spell2",
+        "spell3"
+      ]
     },
     {
       "id": "eskizzibur_",
@@ -4995,7 +5139,12 @@ window.vs = {
       "contentPack": "tides-foscari",
       "description": "Evolved Eskizzibur. Generates additional projectiles that deal retaliatory damage.",
       "rarity": 1,
-      "tips": "Requires Max: Armor"
+      "tips": "Requires Max: Armor",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eskizzibur",
+        "armor"
+      ]
     },
     {
       "id": "arrow_",
@@ -5008,17 +5157,27 @@ window.vs = {
       "contentPack": "tides-foscari",
       "description": "Evolved Flash Arrow. Fires additional projectiles based on Amount and when picking up gold coins.",
       "rarity": 1,
-      "tips": "Requires Max: Bracer, Clover."
+      "tips": "Requires Max: Bracer.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "arrow",
+        "speed"
+      ]
     },
     {
       "id": "prism_",
-      "name": "Luminaire Luminaire",
+      "name": "Luminaire",
       "itemIds": [
         "prism",
         "growth"
       ],
       "emoji": ":LuminaireVS:",
-      "contentPack": "tides-foscari"
+      "contentPack": "tides-foscari",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "prism",
+        "growth"
+      ]
     },
     {
       "id": "servant_",
@@ -5031,7 +5190,12 @@ window.vs = {
       "contentPack": "tides-foscari",
       "description": "Evolved Shadow Servant. Has a chance to instantly kill enemies.",
       "rarity": 1,
-      "tips": "Requires Max: Skull'O Maniac."
+      "tips": "Requires Max: Skull'O Maniac.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "servant",
+        "curse"
+      ]
     },
     {
       "id": "report_",
@@ -5042,7 +5206,15 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "emergency-meeting",
-      "description": ""
+      "description": "",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "report",
+        "minicrewmate"
+      ],
+      "consumedItemIds": [
+        "minicrewmate"
+      ]
     },
     {
       "id": "swipe_",
@@ -5053,7 +5225,15 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "emergency-meeting",
-      "description": ""
+      "description": "",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "swipe",
+        "miniengineer"
+      ],
+      "consumedItemIds": [
+        "miniengineer"
+      ]
     },
     {
       "id": "scan_",
@@ -5064,7 +5244,15 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "emergency-meeting",
-      "description": ""
+      "description": "",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "scan",
+        "minighost"
+      ],
+      "consumedItemIds": [
+        "minighost"
+      ]
     },
     {
       "id": "vent_",
@@ -5075,7 +5263,15 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "emergency-meeting",
-      "description": ""
+      "description": "",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "vent",
+        "minishapeshifter"
+      ],
+      "consumedItemIds": [
+        "minishapeshifter"
+      ]
     },
     {
       "id": "debris_",
@@ -5086,7 +5282,15 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "emergency-meeting",
-      "description": ""
+      "description": "",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "debris",
+        "miniguardian"
+      ],
+      "consumedItemIds": [
+        "miniguardian"
+      ]
     },
     {
       "id": "tongue_",
@@ -5097,7 +5301,15 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "emergency-meeting",
-      "description": ""
+      "description": "",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "tongue",
+        "miniimpostor"
+      ],
+      "consumedItemIds": [
+        "miniimpostor"
+      ]
     },
     {
       "id": "rocks_",
@@ -5108,7 +5320,15 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "emergency-meeting",
-      "description": ""
+      "description": "",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "rocks",
+        "miniscientist"
+      ],
+      "consumedItemIds": [
+        "miniscientist"
+      ]
     },
     {
       "id": "longgun_",
@@ -5119,7 +5339,14 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved Long Gun. Calls forth 2 drones for support fire."
+      "description": "Evolved Long Gun. Calls forth 2 drones for support fire.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "longgun"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "shortgun_",
@@ -5131,7 +5358,14 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved Short Gun. Calls forth 2 drones for support fire."
+      "description": "Evolved Short Gun. Calls forth 2 drones for support fire.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "shortgun"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "spreadshot_",
@@ -5143,7 +5377,14 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved Spread Shot. Calls forth 2 drones for support fire."
+      "description": "Evolved Spread Shot. Calls forth 2 drones for support fire.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "spreadshot"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "laser_",
@@ -5155,7 +5396,14 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved C-U-Laser. Lasers split into multiple beams when they hit."
+      "description": "Evolved C-U-Laser. Lasers split into multiple beams when they hit.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "laser"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "firearm_",
@@ -5167,7 +5415,14 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved Fire Arm. Fires again when destroying a light source or destructible item."
+      "description": "Evolved Fire Arm. Fires again when destroying a light source or destructible item.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "firearm"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "sonic_",
@@ -5179,7 +5434,14 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved Sonic Bloom. Charges up a more powerful auto-aimed blast when standing still."
+      "description": "Evolved Sonic Bloom. Charges up a more powerful auto-aimed blast when standing still.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "sonic"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "homingmiss_",
@@ -5191,7 +5453,14 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved Homing Miss. Projectiles split into smaller ones when they hit."
+      "description": "Evolved Homing Miss. Projectiles split into smaller ones when they hit.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "homingmiss"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "mines_",
@@ -5203,7 +5472,14 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved Diver Mines. Creates damaging zones that attract enemies."
+      "description": "Evolved Diver Mines. Creates damaging zones that attract enemies.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "mines"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "crossbow_",
@@ -5215,7 +5491,14 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved Blade Crossbow. Calls forth divine intervention with a Luck-based frequency."
+      "description": "Evolved Blade Crossbow. Calls forth divine intervention with a Luck-based frequency.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "crossbow"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "lass_",
@@ -5227,7 +5510,14 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved Prism Lass. May freeze, slow down, or DeFang enemies."
+      "description": "Evolved Prism Lass. May freeze, slow down, or DeFang enemies.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "lass"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "claw_",
@@ -5239,481 +5529,682 @@ window.vs = {
       ],
       "emoji": ":question:",
       "contentPack": "operation-guns",
-      "description": "Evolved Metal Claw. Pummels the most powerful enemies in sight."
+      "description": "Evolved Metal Claw. Pummels the most powerful enemies in sight.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "claw"
+      ],
+      "consumedItemIds": [
+        "powerup"
+      ]
     },
     {
       "id": "alchemywhip_",
       "name": "Vampire Killer",
       "itemIds": [
-          "alchemywhip",
-          "revival"
+        "alchemywhip",
+        "revival"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Alchemy Whip. Every 3rd activation fires additional projectiles. Intense sunlught incinerates boss enemies."
+      "description": "Evolved Alchemy Whip. Every 3rd activation fires additional projectiles. Intense sunlught incinerates boss enemies.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "alchemywhip"
+      ]
     },
     {
       "id": "windwhip_",
       "name": "Spirit Tornado Tip",
       "itemIds": [
-          "windwhip",
-          "growth"
+        "windwhip",
+        "growth"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Wind Whip. Every 7th activation summons a spirit that violently collects XP gems for you."
+      "description": "Evolved Wind Whip. Every 7th activation summons a spirit that violently collects XP gems for you.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "windwhip"
+      ]
     },
     {
       "id": "platinumwhip_",
       "name": "Cross Crasher Tip",
       "itemIds": [
-          "platinumwhip",
-          "luck"
+        "platinumwhip",
+        "luck"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Platinum Whip. Every 7th activation also fires special projectiles."
+      "description": "Evolved Platinum Whip. Every 7th activation also fires special projectiles.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "platinumwhip"
+      ]
     },
     {
       "id": "dragonwater_",
       "name": "Hydrostormer Tip",
       "itemIds": [
-          "dragonwater",
-          "magnet"
+        "dragonwater",
+        "magnet"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Dragon Water Whip. Every 13th activation generates damaging waves based on Projectile Speed and Duration."
+      "description": "Evolved Dragon Water Whip. Every 13th activation generates damaging waves based on Projectile Speed and Duration.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "dragonwater"
+      ]
     },
     {
       "id": "sonicwhip_",
       "name": "Crissaegrim Tip",
       "itemIds": [
-          "sonicwhip",
-          "curse"
+        "sonicwhip",
+        "curse"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Sonic Whip. Every 5th activation also triggers a blast of damaging waves."
+      "description": "Evolved Sonic Whip. Every 5th activation also triggers a blast of damaging waves.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "sonicwhip"
+      ]
     },
     {
       "id": "lemuria_",
       "name": "Mormegil Tip",
       "itemIds": [
-          "lemuria",
-          "greed"
+        "lemuria",
+        "greed"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Jet Black Whip. Every 8th activation also triggers damaging zones."
+      "description": "Evolved Jet Black Whip. Every 8th activation also triggers damaging zones.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "lemuria"
+      ]
     },
     {
       "id": "holywhip_",
       "name": "Daybreaker Tip",
       "itemIds": [
-          "holywhip",
-          "area"
+        "holywhip",
+        "area"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Vibhuti Whip. Critical hits maximise amount of projectiles."
+      "description": "Evolved Vibhuti Whip. Critical hits maximise amount of projectiles.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "holywhip"
+      ]
     },
     {
       "id": "martialwhip_",
       "name": "Aurablaster Tip",
       "itemIds": [
-          "martialwhip",
-          "health"
+        "martialwhip",
+        "health"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Vanitas Whip. Every 7th activation generates an explosion."
+      "description": "Evolved Vanitas Whip. Every 7th activation generates an explosion.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "martialwhip"
+      ]
     },
     {
       "id": "shuriken_",
       "name": "Yagyu Shuriken",
       "itemIds": [
-          "shuriken",
-          "cooldown"
+        "shuriken",
+        "cooldown"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Shuriken. Fires with no delay."
+      "description": "Evolved Shuriken. Fires with no delay.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "shuriken"
+      ]
     },
     {
       "id": "bwaka_",
       "name": "Bwaka Knife",
       "itemIds": [
-          "bwaka",
-          "speed"
+        "bwaka",
+        "speed"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Curved Knife. Projectiles bounce forever until Duration expires."
+      "description": "Evolved Curved Knife. Projectiles bounce forever until Duration expires.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "bwaka"
+      ]
     },
     {
       "id": "javelinC_",
       "name": "Long Inus",
       "itemIds": [
-          "javelinC",
-          "duration"
+        "javelinC",
+        "duration"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Javelin. Projectiles reappear after leaving the screen."
+      "description": "Evolved Javelin. Projectiles reappear after leaving the screen.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "javelinC"
+      ]
     },
     {
       "id": "discus_",
       "name": "Stellar Blade",
       "itemIds": [
-          "discus",
-          "parma"
+        "discus",
+        "parma"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Discus. Travels along walls. Deals critical damage if the user is invulnerable."
+      "description": "Evolved Discus. Travels along walls. Deals critical damage if the user is invulnerable.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "discus",
+        "parma"
+      ]
     },
     {
       "id": "ironball_",
       "name": "Wrecking Ball",
       "itemIds": [
-          "ironball",
-          "armor"
+        "ironball",
+        "armor"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Iron Ball. Fires a very heavy projectile."
+      "description": "Evolved Iron Ball. Fires a very heavy projectile.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "ironball"
+      ]
     },
     {
       "id": "gun_",
       "name": "Jewel Gun",
       "itemIds": [
-          "gun",
-          "dominion"
+        "gun",
+        "dominion"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Silver Revolver. Critical hits instantly kill enemies and turn them into Jewels."
+      "description": "Evolved Silver Revolver. Critical hits instantly kill enemies and turn them into Jewels.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "gun"
+      ]
     },
     {
       "id": "rpg_",
       "name": "The RPG",
       "itemIds": [
-          "rpg",
-          "area"
+        "rpg",
+        "area"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Hand Grenade. Explosions propagate."
+      "description": "Evolved Hand Grenade. Explosions propagate.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "rpg",
+        "area"
+      ]
     },
     {
       "id": "wineglass_",
       "name": "Meal Ticket",
       "itemIds": [
-          "wineglass",
-          "revival"
+        "wineglass",
+        "revival"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Wine Glass. Soulful food deals Revival-based damage to unrefined palates."
+      "description": "Evolved Wine Glass. Soulful food deals Revival-based damage to unrefined palates.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "wineglass",
+        "revival"
+      ]
     },
     {
       "id": "fire_",
       "name": "Salamender",
       "itemIds": [
-          "fire",
-          "might"
+        "fire",
+        "might"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Raging Fire. Also summons a snake of fire."
+      "description": "Evolved Raging Fire. Also summons a snake of fire.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "fire",
+        "might"
+      ]
     },
     {
       "id": "ice_",
       "name": "Cocytus",
       "itemIds": [
-          "ice",
-          "duration"
+        "ice",
+        "duration"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Ice Fang. Also triggers a freezing wind."
+      "description": "Evolved Ice Fang. Also triggers a freezing wind.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "ice",
+        "duration"
+      ]
     },
     {
       "id": "windC_",
       "name": "Pneuma Tempestas",
       "itemIds": [
-          "windC",
-          "speed"
+        "windC",
+        "speed"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Gale Force. Also triggers a spinning tornado."
+      "description": "Evolved Gale Force. Also triggers a spinning tornado.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "windC",
+        "speed"
+      ]
     },
     {
       "id": "earth_",
       "name": "Gemma Torpor",
       "itemIds": [
-          "earth",
-          "greed"
+        "earth",
+        "greed"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Rock Riot. Also triggers a rain of crystals that can turn enemies into valuable jewels."
+      "description": "Evolved Rock Riot. Also triggers a rain of crystals that can turn enemies into valuable jewels.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "earth",
+        "greed"
+      ]
     },
     {
       "id": "elec_",
       "name": "Tenebris Tonitrus",
       "itemIds": [
-          "elec",
-          "amount"
+        "elec",
+        "amount"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Fulgur. Also triggers ball lightnings."
+      "description": "Evolved Fulgur. Also triggers ball lightnings.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "elec",
+        "amount"
+      ]
     },
     {
       "id": "acid_",
       "name": "Keremet Morbus",
       "itemIds": [
-          "acid",
-          "armor"
+        "acid",
+        "armor"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Keremet Bubbles. Also triggers a slimy swarm that chases enemies down."
+      "description": "Evolved Keremet Bubbles. Also triggers a slimy swarm that chases enemies down.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "acid",
+        "armor"
+      ]
     },
     {
       "id": "evil_",
       "name": "Nightmare",
       "itemIds": [
-          "evil",
-          "curse"
+        "evil",
+        "curse"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Hex. Also tirggers a negative energy zone that doubles Curse when stepped into."
+      "description": "Evolved Hex. Also tirggers a negative energy zone that doubles Curse when stepped into.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "evil",
+        "curse"
+      ]
     },
     {
       "id": "holy_",
       "name": "Sanctuary",
       "itemIds": [
-          "holy",
-          "luck"
+        "holy",
+        "luck"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Refectio. At fixed intervals, also fully heals characters and purifies all enemies in sight."
+      "description": "Evolved Refectio. At fixed intervals, also fully heals characters and purifies all enemies in sight.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "holy",
+        "luck"
+      ]
     },
     {
       "id": "mace_",
       "name": "Stamazza",
       "itemIds": [
-          "mace",
-          "health"
+        "mace",
+        "health"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Mace. Has a catastrophically high critical damage multiplier."
+      "description": "Evolved Mace. Has a catastrophically high critical damage multiplier.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "mace",
+        "health"
+      ]
     },
     {
       "id": "starflail_",
       "name": "Moon Rod",
       "itemIds": [
-          "starflail",
-          "recovery"
+        "starflail",
+        "recovery"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Star Flail. Projectiles are shot in the faced direction."
+      "description": "Evolved Star Flail. Projectiles are shot in the faced direction.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "starflail",
+        "recovery"
+      ]
     },
     {
       "id": "alucardspear_",
       "name": "Thunderbolt Spear",
       "itemIds": [
-          "alucardspear",
-          "wings"
+        "alucardspear",
+        "wings"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Alucard Spear. Every 7th activation triggers a special attack based on speed."
+      "description": "Evolved Alucard Spear. Every 7th activation triggers a special attack based on speed.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "alucardspear"
+      ]
     },
     {
       "id": "chauve_",
       "name": "Gungnir-Souris",
       "itemIds": [
-          "chauve",
-          "amount"
+        "chauve",
+        "amount"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Trident. Critical hits also fire a damaging beam."
+      "description": "Evolved Trident. Critical hits also fire a damaging beam.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "chauve",
+        "amount"
+      ]
     },
     {
       "id": "shield_",
       "name": "Dark Iron Shield",
       "itemIds": [
-          "shield",
-          "parma"
+        "shield",
+        "parma"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Iron Shield. Critical hits retaliate with spinning swords."
+      "description": "Evolved Iron Shield. Critical hits retaliate with spinning swords.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "shield"
+      ]
     },
     {
       "id": "sacredbeasts_",
       "name": "Sacred Beasts Tower Shield",
       "itemIds": [
-          "sacredbeasts",
-          "recovery"
+        "sacredbeasts",
+        "recovery"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Guardian's Targe. Overhealing also triggers a period of invulnerability."
+      "description": "Evolved Guardian's Targe. Overhealing also triggers a period of invulnerability.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "sacredbeasts"
+      ]
     },
     {
       "id": "slash_",
       "name": "Rune Sword",
       "itemIds": [
-          "slash",
-          "might"
+        "slash",
+        "might"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Tyrfing. Critical damage also affected by Area, Speed, and Duration."
+      "description": "Evolved Tyrfing. Critical damage also affected by Area, Speed, and Duration.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "slash"
+      ]
     },
     {
       "id": "alucardsword_",
       "name": "Alucard Swords",
       "itemIds": [
-          "alucardsword"
+        "alucardsword"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Alucart Sworb. Apparitions of the sword's true bearer seek out enemies."
+      "description": "Evolved Alucart Sworb. Apparitions of the sword's true bearer seek out enemies.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "alucardsword"
+      ]
     },
     {
       "id": "alucardshield_",
       "name": "Alucard Shield",
       "itemIds": [
-          "alucardsword_"
+        "alucardsword_"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
       "description": "Gift of Alucard Swords. Absorbs and triggers all other equipped evolutions. Hovering shield damages enemies.",
+      "kind": "gift",
+      "maxLevelItemIds": [
+        "alucardsword_"
+      ],
+      "tips": "Gift from a treasure chest. Requires six max-level passives and six max-level evolutions. Can absorb evolved weapons; absorption is not simulated."
     },
     {
       "id": "confodere_",
       "name": "Vol Confodere",
       "itemIds": [
-          "confodere"
+        "confodere"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Attack nearby enemies. Speed affects Damage."
+      "description": "Attack nearby enemies. Speed affects Damage.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "confodere"
+      ]
     },
     {
       "id": "confodere__",
       "name": "Melio Confodere",
       "itemIds": [
-          "confodere_"
+        "confodere_"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Attack nearby enemies. Speed affects Cooldown and Damage."
+      "description": "Attack nearby enemies. Speed affects Cooldown and Damage.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "confodere_"
+      ]
     },
     {
       "id": "energy_",
       "name": "Nitesco",
       "itemIds": [
-          "energy",
-          "cooldown"
+        "energy",
+        "cooldown"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Globus. Fires a piercing energy beam in the faced direction."
+      "description": "Evolved Globus. Fires a piercing energy beam in the faced direction.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "energy",
+        "cooldown"
+      ]
     },
     {
       "id": "spite_",
       "name": "Acerbatus",
       "itemIds": [
-          "spite",
-          "dominion"
+        "spite",
+        "dominion"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Optical Shot. Damage is affected by the amount of defeated enemies."
+      "description": "Evolved Optical Shot. Damage is affected by the amount of defeated enemies.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "spite",
+        "dominion"
+      ]
     },
     {
       "id": "custos_",
       "name": "Trinum Custodem",
       "itemIds": [
-          "custos1",
-          "custos2",
-          "custos3"
+        "custos1",
+        "custos2",
+        "custos3"
       ],
       "special": true,
       "emoji": ":question:",
-        "contentPack": "ode-castlevania",
-        "description": "Union of Dextros, Sinistro, and Arma Custos."
+      "contentPack": "ode-castlevania",
+      "description": "Union of Dextros, Sinistro, and Arma Custos.",
+      "kind": "union",
+      "maxLevelItemIds": [
+        "custos1",
+        "custos2",
+        "custos3"
+      ]
     },
     {
       "id": "dominus_",
       "name": "Power of Sire",
       "itemIds": [
-          "dominus1",
-          "dominus2",
-          "dominus3"
+        "dominus1",
+        "dominus2",
+        "dominus3"
       ],
       "special": true,
       "emoji": ":question:",
-        "contentPack": "ode-castlevania",
-        "description": "Union of Dominus Anger, Dominus Hatred and Dominus Agony. Deals critical damage to anything in sight. Drains health."
+      "contentPack": "ode-castlevania",
+      "description": "Union of Dominus Anger, Dominus Hatred and Dominus Agony. Deals critical damage to anything in sight. Drains health.",
+      "kind": "union",
+      "maxLevelItemIds": [
+        "dominus1",
+        "dominus2",
+        "dominus3"
+      ]
     },
     {
       "id": "rapidus_",
       "name": "Rapidus Fio",
       "itemIds": [
-          "rapidus",
-          "wings"
+        "rapidus",
+        "wings"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Sonic Dash. Also triggers a single shield charge."
+      "description": "Evolved Sonic Dash. Also triggers a single shield charge.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "rapidus",
+        "wings"
+      ]
     },
     {
       "id": "light_",
       "name": "Vol Luminatio",
       "itemIds": [
-          "light",
-          "growth"
+        "light",
+        "growth"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Luminatio. Damage, Speed, Area, and Duration affected by Growth."
+      "description": "Evolved Luminatio. Damage, Speed, Area, and Duration affected by Growth.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "light",
+        "growth"
+      ]
     },
     {
       "id": "dark_",
       "name": "Vol Umbra",
       "itemIds": [
-          "dark",
-          "magnet"
+        "dark",
+        "magnet"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
-      "description": "Evolved Umbra. Damage, Speed, Area, and Duration affected by Magnet."
+      "description": "Evolved Umbra. Damage, Speed, Area, and Duration affected by Magnet.",
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "dark",
+        "magnet"
+      ]
     },
     {
       "id": "universitas",
       "name": "Universitas",
       "itemIds": [
         "light_",
-        "dark_",
-        "candybox"
+        "dark_"
       ],
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
       "description": "Gift of Vol Luminatio and Vol Umbra. Meteors rain down on enemies at fixed intervals.",
+      "kind": "gift",
+      "maxLevelItemIds": [],
+      "tips": "Gift from a treasure chest. Requires Vol Luminatio and Vol Umbra; retains both. Candybox is not required."
     },
     {
       "id": "clocktower_weapon",
@@ -5727,17 +6218,29 @@ window.vs = {
       "emoji": ":question:",
       "contentPack": "ode-castlevania",
       "description": "Union of Endo Gears, Peri Pendulum, Myo Lift, and Epi Heads.",
+      "kind": "union",
+      "maxLevelItemIds": [
+        "gearsweapon",
+        "pendulumweapon",
+        "elevatorweapon",
+        "headsweapon"
+      ]
     },
     {
       "emoji": ":question:",
       "contentPack": "emerald-diorama",
       "id": "eme-estoc",
-      "name": "Estoc",
+      "name": "Dress Sword",
       "itemIds": [
         "eme-fleuret"
       ],
       "description": "Evolution of Fleuret.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-fleuret"
+      ],
+      "glimmer": "Crystalline Carve"
     },
     {
       "emoji": ":question:",
@@ -5747,8 +6250,13 @@ window.vs = {
       "itemIds": [
         "eme-estoc"
       ],
-      "description": "Evolution of Estoc.",
-      "rarity": 1
+      "description": "Evolution of Dress Sword.",
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-estoc"
+      ],
+      "glimmer": "Shocking Rush"
     },
     {
       "emoji": ":question:",
@@ -5759,7 +6267,12 @@ window.vs = {
         "eme-town-sword"
       ],
       "description": "Evolution of Town Sword.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-town-sword"
+      ],
+      "glimmer": "Swallow Slice"
     },
     {
       "emoji": ":question:",
@@ -5770,7 +6283,12 @@ window.vs = {
         "eme-lordstar"
       ],
       "description": "Evolution of Lordstar.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-lordstar"
+      ],
+      "glimmer": "Airwave"
     },
     {
       "emoji": ":question:",
@@ -5782,7 +6300,12 @@ window.vs = {
         "duration"
       ],
       "description": "Evolution of Splashers. Requires Spellbinder.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-splashers"
+      ],
+      "glimmer": "Dual Whirlwind"
     },
     {
       "emoji": ":question:",
@@ -5793,7 +6316,12 @@ window.vs = {
         "eme-flamberge"
       ],
       "description": "Evolution of Flamberge.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-flamberge"
+      ],
+      "glimmer": "Bull Crush"
     },
     {
       "emoji": ":question:",
@@ -5804,7 +6332,12 @@ window.vs = {
         "eme-zweihander"
       ],
       "description": "Evolution of Zweihander.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-zweihander"
+      ],
+      "glimmer": "Absetzen"
     },
     {
       "emoji": ":question:",
@@ -5815,7 +6348,12 @@ window.vs = {
         "eme-punch"
       ],
       "description": "Evolution of Punch.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-punch"
+      ],
+      "glimmer": "Raksha"
     },
     {
       "emoji": ":question:",
@@ -5826,7 +6364,12 @@ window.vs = {
         "eme-pressure-point"
       ],
       "description": "Evolution of Pressure Point.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-pressure-point"
+      ],
+      "glimmer": "Shenlong Firefist"
     },
     {
       "emoji": ":question:",
@@ -5838,7 +6381,12 @@ window.vs = {
         "recovery"
       ],
       "description": "Evolution of Kick. Requires Pummarola.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-kick"
+      ],
+      "glimmer": "Thunder Kick"
     },
     {
       "emoji": ":question:",
@@ -5849,7 +6397,12 @@ window.vs = {
         "eme-saber-machine-gun"
       ],
       "description": "Evolution of Saber Machine Gun.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-saber-machine-gun"
+      ],
+      "glimmer": "Shockwave"
     },
     {
       "emoji": ":question:",
@@ -5860,7 +6413,12 @@ window.vs = {
         "eme-hecaton-machine-gun"
       ],
       "description": "Evolution of Hecaton Machine Gun.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-hecaton-machine-gun"
+      ],
+      "glimmer": "Bombarding Fire"
     },
     {
       "emoji": ":question:",
@@ -5871,7 +6429,12 @@ window.vs = {
         "eme-super-missile"
       ],
       "description": "Evolution of Super Missile.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-super-missile"
+      ],
+      "glimmer": "Ballistic Missiles"
     },
     {
       "emoji": ":question:",
@@ -5882,7 +6445,12 @@ window.vs = {
         "eme-hydra-cannon"
       ],
       "description": "Evolution of Hydra Cannon.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-hydra-cannon"
+      ],
+      "glimmer": "Artificial Hailstorm"
     },
     {
       "emoji": ":question:",
@@ -5894,7 +6462,12 @@ window.vs = {
         "might"
       ],
       "description": "Evolution of Eagle Gun. Requires Spinach.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-eagle-gun"
+      ],
+      "glimmer": "Falconfire"
     },
     {
       "emoji": ":question:",
@@ -5906,7 +6479,12 @@ window.vs = {
         "parma"
       ],
       "description": "Evolution of Khukuri. Requires Parm Aegis.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-khukuri"
+      ],
+      "glimmer": "Moonfall Slash"
     },
     {
       "emoji": ":question:",
@@ -5918,19 +6496,29 @@ window.vs = {
         "karomas-mana"
       ],
       "description": "Evolution of Twin Dragon. Requires Karoma’s Mana.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-twin-dragon"
+      ],
+      "glimmer": "Gravedigger"
     },
     {
       "emoji": ":question:",
       "contentPack": "emerald-diorama",
       "id": "eme-bilqis",
-      "name": "Bilqis",
+      "name": "Falconwind",
       "itemIds": [
         "eme-bullova",
         "curse"
       ],
       "description": "Evolution of Bullova. Requires Skull O’Maniac.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-bullova"
+      ],
+      "glimmer": "Hell's Fury"
     },
     {
       "emoji": ":question:",
@@ -5942,7 +6530,12 @@ window.vs = {
         "greed"
       ],
       "description": "Evolution of Sanguine Star. Requires Stone Mask.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-sanguine-star"
+      ],
+      "glimmer": "Blood Rage"
     },
     {
       "emoji": ":question:",
@@ -5953,7 +6546,12 @@ window.vs = {
         "eme-glaive"
       ],
       "description": "Evolution of Glaive.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-glaive"
+      ],
+      "glimmer": "Divine Lancer"
     },
     {
       "emoji": ":question:",
@@ -5964,7 +6562,12 @@ window.vs = {
         "eme-feather-spear"
       ],
       "description": "Evolution of Feather Spear.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-feather-spear"
+      ],
+      "glimmer": "Stardust"
     },
     {
       "emoji": ":question:",
@@ -5975,7 +6578,12 @@ window.vs = {
         "eme-spirit-rings"
       ],
       "description": "Evolution of Spirit Rings.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-spirit-rings"
+      ],
+      "tips": "Requires five max-level passives in addition to max-level Spirit Rings."
     },
     {
       "emoji": ":question:",
@@ -5987,7 +6595,11 @@ window.vs = {
         "growth"
       ],
       "description": "Evolution of Emerald Rapture. Requires Crown.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "eme-emerald-rapture"
+      ]
     },
     {
       "id": "embrace-of-gaea",
@@ -5998,7 +6610,11 @@ window.vs = {
         "parma"
       ],
       "description": "Evolved Gaze of Gaea. Retaliates. Damage is increased while invulnerable.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "gaze-of-gaea"
+      ]
     },
     {
       "id": "gunastrophe",
@@ -6009,7 +6625,12 @@ window.vs = {
         "speed"
       ],
       "description": "Evolution of Ammo Appalate. Requires Bracer and fires all guns across the screen.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "ammo-appalate",
+        "speed"
+      ]
     },
     {
       "id": "kyra-stones",
@@ -6020,7 +6641,11 @@ window.vs = {
         "karomas-mana"
       ],
       "description": "Evolution of Magi-Stones. Requires Karoma’s Mana; damage scales with Player Level.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "magi-stones"
+      ]
     },
     {
       "id": "ante-naneinferno",
@@ -6032,7 +6657,12 @@ window.vs = {
         "ante-outer-saboteur"
       ],
       "description": "Evolution of Infernolatro. Requires Outer Saboteur.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "ante-infernolatro",
+        "ante-outer-saboteur"
+      ]
     },
     {
       "id": "ante-cavendish",
@@ -6044,7 +6674,12 @@ window.vs = {
         "ante-outer-saboteur"
       ],
       "description": "Evolution of Gros Michel. Requires Outer Saboteur.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "ante-gros-michel",
+        "ante-outer-saboteur"
+      ]
     },
     {
       "id": "ante-royal-flush",
@@ -6056,7 +6691,12 @@ window.vs = {
         "ante-outer-saboteur"
       ],
       "description": "Evolution of Fibonacci Spritz. Requires Outer Saboteur.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "ante-fibonacci-spritz",
+        "ante-outer-saboteur"
+      ]
     },
     {
       "id": "ante-negative-space",
@@ -6068,7 +6708,12 @@ window.vs = {
         "ante-outer-saboteur"
       ],
       "description": "Evolution of Celestial Booster. Requires Outer Saboteur.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "ante-celestial-booster",
+        "ante-outer-saboteur"
+      ]
     },
     {
       "id": "lapiste-tepisto",
@@ -6080,7 +6725,12 @@ window.vs = {
         "bracelet__"
       ],
       "description": "Evolution of Kaiser Knuckle. Requires Tri-Bracelet.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "kaiser-knuckle",
+        "bracelet__"
+      ]
     },
     {
       "id": "claimh-solais",
@@ -6092,7 +6742,12 @@ window.vs = {
         "torrona"
       ],
       "description": "Evolution of Pocket Knife. Requires Torrona’s Box.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "pocket-knife",
+        "torrona"
+      ]
     },
     {
       "id": "dark-frogamorphosis",
@@ -6104,7 +6759,12 @@ window.vs = {
         "garlic_"
       ],
       "description": "Evolution of Anura. Requires Soul Eater.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "anura",
+        "garlic_"
+      ]
     },
     {
       "id": "million-cut",
@@ -6116,7 +6776,12 @@ window.vs = {
         "knife_"
       ],
       "description": "Union of Valmanway and Thousand Edge.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "valmanway",
+        "knife_"
+      ]
     },
     {
       "id": "ninth-circle",
@@ -6128,7 +6793,12 @@ window.vs = {
         "bible_"
       ],
       "description": "Union of Icebrand and Unholy Vespers.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "icebrand",
+        "bible_"
+      ]
     },
     {
       "id": "dies-irae",
@@ -6140,7 +6810,12 @@ window.vs = {
         "mana_"
       ],
       "description": "Union of Arrow of Goth and Mannajja.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "gothmissile",
+        "mana_"
+      ]
     },
     {
       "id": "kardia-phlegeton",
@@ -6152,7 +6827,12 @@ window.vs = {
         "firewand_"
       ],
       "description": "Union of Aura Blast and Hellfire.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "aurablastweapon",
+        "firewand_"
+      ]
     },
     {
       "id": "darkness-illusion",
@@ -6164,7 +6844,12 @@ window.vs = {
         "pinion_"
       ],
       "description": "Union of Svarog Statue and Valkyrie Turner.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "savrogweapon",
+        "pinion_"
+      ]
     },
     {
       "id": "carnage-heart",
@@ -6176,7 +6861,12 @@ window.vs = {
         "runetracer_"
       ],
       "description": "Union of Troll Bomb and NO FUTURE.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "neutronweapon",
+        "runetracer_"
+      ]
     },
     {
       "id": "hydro-pump-climax",
@@ -6188,7 +6878,12 @@ window.vs = {
         "water_"
       ],
       "description": "Union of Hydro Storm and La Borra.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "hydrostorm",
+        "water_"
+      ]
     },
     {
       "id": "arch-angle",
@@ -6200,7 +6895,12 @@ window.vs = {
         "cross_"
       ],
       "description": "Union of Grand Cross and Heaven Sword.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "grandcross",
+        "cross_"
+      ]
     },
     {
       "id": "spirit-of-light",
@@ -6212,7 +6912,12 @@ window.vs = {
         "magicwand_"
       ],
       "description": "Union of Summon Spirit and Holy Wand.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "summonspirit",
+        "magicwand_"
+      ]
     },
     {
       "id": "power-of-lire",
@@ -6224,7 +6929,12 @@ window.vs = {
         "cat_"
       ],
       "description": "Union of Soul Steal and Vicious Hunger.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "soulstealweapon",
+        "cat_"
+      ]
     },
     {
       "id": "legacy-of-death-soul-river",
@@ -6236,7 +6946,12 @@ window.vs = {
         "axe_"
       ],
       "description": "Union of Dark Rift and Death Spiral.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "darkrift",
+        "axe_"
+      ]
     },
     {
       "id": "vjaya-sisters",
@@ -6248,7 +6963,12 @@ window.vs = {
         "lightning_"
       ],
       "description": "Union of Sword Brothers and Thunder Loop.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "swordbrothers",
+        "lightning_"
+      ]
     },
     {
       "id": "venus-crescent",
@@ -6260,7 +6980,12 @@ window.vs = {
         "pentagram_"
       ],
       "description": "Union of Summon Spirit Tornado and Gorgeous Moon.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "union",
+      "maxLevelItemIds": [
+        "spirittornado",
+        "pentagram_"
+      ]
     },
     {
       "id": "tonno-subito",
@@ -6334,7 +7059,8 @@ window.vs = {
         "tonne",
         "unsurpassed"
       ],
-      "description": "Secret Penshin Fatcha evolution that combines all six tuna effects.",
+      "description": "Secret Penshin Fatcha evolution available after six or more evolutions.",
+      "tips": "The planner shows a simplified six-form route; it does not track repeated evolutions. Obtaining every distinct form is not required by this reference.",
       "rarity": 50
     },
     {
@@ -6346,7 +7072,12 @@ window.vs = {
         "revival"
       ],
       "description": "Evolution of Unearthly Bolt. Requires a maxed Tirajisú and summons a green dragon that always deals critical hits.",
-      "rarity": 1
+      "rarity": 1,
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "unearthly-bolt",
+        "revival"
+      ]
     },
     {
       "id": "argent-flow",
@@ -6363,7 +7094,8 @@ window.vs = {
       "maxLevelItemIds": [
         "wind_",
         "torrona"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "lunarflight",
@@ -6382,7 +7114,8 @@ window.vs = {
         "lunarmight",
         "lunarsight",
         "lunarbight"
-      ]
+      ],
+      "kind": "union"
     },
     {
       "id": "cardinal-rain",
@@ -6399,7 +7132,8 @@ window.vs = {
       "maxLevelItemIds": [
         "scarlet-needle",
         "recovery"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "bloodlust",
@@ -6416,7 +7150,8 @@ window.vs = {
       "maxLevelItemIds": [
         "ashella",
         "amount"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "dust-to-dust",
@@ -6433,7 +7168,8 @@ window.vs = {
       "maxLevelItemIds": [
         "incineration",
         "area"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "forbidden-siren",
@@ -6450,7 +7186,8 @@ window.vs = {
       "maxLevelItemIds": [
         "screams-from-the-void",
         "magnet"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "damnation",
@@ -6467,7 +7204,8 @@ window.vs = {
       "maxLevelItemIds": [
         "blacken-firmament",
         "torrona"
-      ]
+      ],
+      "kind": "evolution"
     },
     {
       "id": "road-to-heaven",
@@ -6484,7 +7222,8 @@ window.vs = {
       "maxLevelItemIds": [
         "bocce",
         "108-responsive-prayers"
-      ]
+      ],
+      "kind": "union"
     },
     {
       "id": "firestall",
@@ -6503,7 +7242,8 @@ window.vs = {
         "firefall",
         "fireball",
         "firewall"
-      ]
+      ],
+      "kind": "union"
     },
     {
       "id": "shimmering-sands",
@@ -6520,6 +7260,75 @@ window.vs = {
       "maxLevelItemIds": [
         "descent-into-misery",
         "kyra-stones"
+      ],
+      "kind": "union"
+    },
+    {
+      "id": "anima-of-mortaccio",
+      "name": "Anima of Mortaccio",
+      "emoji": ":question:",
+      "description": "Evolved Bone. Projectiles accelerate when bouncing.",
+      "rarity": 1,
+      "itemIds": [
+        "bone"
+      ],
+      "kind": "morph",
+      "requiredCharacterId": "mortaccio",
+      "tips": "Morph: reach character level 80 after obtaining Chaos Malachite. No chest required; the base weapon does not need to be maxed."
+    },
+    {
+      "id": "yatta-daikarin",
+      "name": "Yatta Daikarin",
+      "emoji": ":question:",
+      "description": "Evolved Cherry Bomb. Generates extra explosions that can deal critical Luck-based damage.",
+      "rarity": 1,
+      "itemIds": [
+        "cherry"
+      ],
+      "kind": "morph",
+      "requiredCharacterId": "cavallo",
+      "tips": "Morph: reach character level 80 after obtaining Chaos Rosalia. No chest required; the base weapon does not need to be maxed."
+    },
+    {
+      "id": "carrozza",
+      "name": "Carrozza!",
+      "emoji": ":question:",
+      "description": "Evolved Carréllo. Duration, Speed, and Area affect damage instead.",
+      "rarity": 1,
+      "itemIds": [
+        "cart"
+      ],
+      "kind": "morph",
+      "requiredCharacterId": "ramba",
+      "tips": "Morph: reach character level 80 after obtaining Chaos Lazulia. No chest required; the base weapon does not need to be maxed."
+    },
+    {
+      "id": "profusione-d-amore",
+      "name": "Profusione D'Amore",
+      "emoji": ":question:",
+      "description": "Evolved Celestial Dusting. Projectiles generate a chain explosion at fixed intervals.",
+      "rarity": 1,
+      "itemIds": [
+        "flowers"
+      ],
+      "kind": "morph",
+      "requiredCharacterId": "osole",
+      "tips": "Morph: reach character level 80 after obtaining Chaos Altemanna. No chest required; the base weapon does not need to be maxed."
+    },
+    {
+      "id": "wicked-ruler",
+      "name": "Wicked Ruler",
+      "emoji": ":question:",
+      "description": "Evolved Chaos Rune. Exerts control over wild magical forces.",
+      "rarity": 1,
+      "itemIds": [
+        "chaos-rune",
+        "duration"
+      ],
+      "kind": "evolution",
+      "maxLevelItemIds": [
+        "chaos-rune",
+        "duration"
       ]
     }
   ],
@@ -6600,7 +7409,7 @@ window.vs = {
       "name": "Super Candybox II Turbo",
       "description": "Gift of Candybox. Allows to choose among a selection of advanced weapons.",
       "rarity": 0.1,
-      "tips": "Requires: Candybox."
+      "tips": "Gift from a treasure chest. Requires Candybox and maxed passives and evolutions. Does not replace Candybox."
     },
     {
       "id": "tongue2",

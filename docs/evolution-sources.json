@@ -1,0 +1,29 @@
+{
+  "source": "User-supplied Evolution wiki excerpt, checked against installed 1.16.107 client for new record names and artwork",
+  "records": {
+    "anima-of-mortaccio": {
+      "sourceKey": "BONE2",
+      "sprite": "animaMortaccio.png"
+    },
+    "yatta-daikarin": {
+      "sourceKey": "CHERRY2",
+      "sprite": "animaYattaCavallo.png"
+    },
+    "carrozza": {
+      "sourceKey": "CART2EVO",
+      "sprite": "animaRamba.png"
+    },
+    "profusione-d-amore": {
+      "sourceKey": "FLOWER2",
+      "sprite": "animaOsole.png"
+    },
+    "chaos-rune": {
+      "sourceKey": "FOLLOWER_KNIFE1",
+      "sprite": "SkillIcon_1.png"
+    },
+    "wicked-ruler": {
+      "sourceKey": "FOLLOWER_KNIFE2",
+      "sprite": "SkillIcon_2.png"
+    }
+  }
+}
