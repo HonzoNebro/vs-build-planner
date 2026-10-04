@@ -9491,7 +9491,7 @@ window.vs = {
     {
       "id": "red-moon-manor",
       "name": "Red Moon Manor",
-      "description": "The mythical place sought by the vile Bloodmoon Clan, said to hide terrible secrets. The relentless pursuit of immortality of its original founders, through atrocious rituals, spawned awful abominations.",
+      "description": "A sprawling Bloodmoon manor filled with bosses, hidden rooms, and stage items.",
       "contentPack": "legacy-bloodmoon",
       "special": true,
       "itemIds": [

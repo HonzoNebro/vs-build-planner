@@ -60,6 +60,7 @@ Community-maintained sources can help locate a topic but should not override cur
 
 - Penshin Fatcha is represented as one selector weapon, six alternative forms, and Miracle of Multiplication as their combined secret evolution. Its in-game unique treasure-chest selection logic does not map directly to a conventional passive-item evolution.
 - Character skins are not separate character records unless they change build-relevant starting equipment enough to be exposed as a distinct planner choice.
+- Character icons must use transparent in-game sprites without a selection-screen background or frame (the wiki's `Sprite-*` artwork, not `Select-*`). On 2026-10-04, 41 framed character thumbnails were replaced with the installed client's idle/walking sprites, including Kina and the other Emerald Diorama characters. [The sprite source map](character-sprite-sources.json) records each character key, sprite, texture, and output asset. All replacements were checked for transparency and visually inspected together.
 - Relics, achievements, enemies, bestiary entries, music, and interface-only unlocks are outside the planner model unless they directly participate in a build relationship.
 - Bloodmoon contributes 12 characters, 19 weapons/evolutions/passives, Red Moon Manor, and the Blood pickup. Three additional character records expose Sargon's alternate starting weapons and Jaman Jato's Prestige V starting Duplicator.
 - Moonspell adds Megalo Miang, Spiritoso, Spiritosa, Gekkojin, three lunar weapons, LunarFlight, Argent Flow, and Pearl Magatama. Three additional character records expose Gekkojin's alternate starting weapons and Gav'Et-Oni's Prestige V starting Spellbinder. Earlier Prestige ranks share starting equipment and remain folded into the base character.
@@ -90,7 +91,7 @@ The 1.16 regression suite runs the real planner setup/computed functions with a 
 1. Confirm the latest released version and platform availability from official announcements.
 2. Diff characters, weapons, evolution requirements, passives, Arcanas/Darkanas, pickups, and stages against the installed client.
 3. Register any new content pack before assigning records to it.
-4. Add data and artwork in the same change; prefer a versioned `img/vX.Y/` directory.
+4. Add data and artwork in the same change; prefer a versioned `img/vX.Y/` directory. For characters, use the in-game sprite with transparent surroundings, never a framed selection portrait.
 5. Update the totals and baseline in this document.
 6. Run the full verification commands and audit every local CSS image reference.
 
