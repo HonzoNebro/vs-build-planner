@@ -9606,8 +9606,7 @@ window.vs = {
           "id": "littleclover",
           "count": 3
         }
-      ],
-      "tips": "Floor items and pickups are listed below. Availability assumes the stated unlock conditions; the planner does not track collection progress."
+      ]
     }
   ]
 }

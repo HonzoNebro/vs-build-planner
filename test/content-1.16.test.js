@@ -135,8 +135,9 @@ test('Red Moon Manor preserves floor counts and conditional Moonspell availabili
     assert.equal(stage.floorItems.find((entry) => entry.id === id).count, 2)
   }
   assert.equal(stage.floorItems.find((entry) => entry.id === 'rosary').count, 3)
-  assert.ok(stage.title.includes('Collect this weapon once'))
-  assert.ok(stage.title.includes('Requires Yellow Sign'))
+  assert.equal(stage.floorItems.find((entry) => entry.id === '108-responsive-prayers').condition, 'Collect this weapon once before it can appear.')
+  assert.equal(stage.floorItems.find((entry) => entry.id === 'ring1').condition, 'Requires Yellow Sign. Northwest of Sargon.')
+  assert.equal(stage.title, 'Red Moon Manor\nA sprawling Bloodmoon manor filled with bosses, hidden rooms, and stage items.')
   assert.equal(stage.itemIds.filter((id) => id === 'ring1').length, 1)
   app.config.contentPacks['legacy-moonspell'] = false
   app.toggleItem(stage); flush()

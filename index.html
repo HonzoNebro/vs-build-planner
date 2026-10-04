@@ -613,9 +613,6 @@
             }
             item.evolution = item.evolutionId && itemsById[item.evolutionId]
             item.title = (item.fullName || item.name) + (item.type === 'weapon' || item.type === 'passive' ? ` (Rarity: ${item.rarity || 'Unknown'})` : '') + (item.price ? ` (Price: ${item.price})` : '') + (item.description ? `\n${item.description}` : '') + (item.tips ? `\n${item.tips}` : '') + (item.maxLevelItemIds?.length ? `\nMax level: ${item.maxLevelItemIds.map((id) => itemsById[id].name).join(', ')}.` : '')
-            if (item.floorItems) {
-              item.title += '\n' + item.floorItems.map(({ id, count, condition }) => `${itemsById[id].name} ×${count}${condition ? ` — ${condition}` : ''}`).join('\n')
-            }
             if (item.kind) item.title += `\nType: ${item.kind}.`
             if (item.glimmer) item.title += `\nRequired Glimmer: ${item.glimmer}.`
             if (item.consumedItemIds?.length) item.title += `\nConsumed on evolution: ${item.consumedItemIds.map((id) => itemsById[id].name).join(', ')}.`
