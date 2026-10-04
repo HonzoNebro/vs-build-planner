@@ -67,6 +67,10 @@ function validateData(data) {
   }
 
   for (const record of records) {
+    for (const entry of record.floorItems || []) {
+      if (!recordsById.has(entry.id)) errors.push(`${record.id}.floorItems references missing ID: ${entry.id}`)
+      if (!Number.isInteger(entry.count) || entry.count < 1) errors.push(`${record.id}.floorItems has invalid count for ${entry.id}`)
+    }
     for (const field of ['itemIds', 'hiddenitemIds', 'maxLevelItemIds']) {
       if (record[field] !== undefined && !Array.isArray(record[field])) {
         errors.push(`${record.collectionName}:${record.id}.${field} must be an array`)

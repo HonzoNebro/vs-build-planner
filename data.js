@@ -8682,7 +8682,120 @@ window.vs = {
       "description": "The mythical place sought by the vile Bloodmoon Clan, said to hide terrible secrets. The relentless pursuit of immortality of its original founders, through atrocious rituals, spawned awful abominations.",
       "contentPack": "legacy-bloodmoon",
       "special": true,
-      "itemIds": []
+      "itemIds": [
+        "magnet",
+        "descent-into-misery",
+        "area",
+        "recovery",
+        "amount",
+        "torrona",
+        "velvet-dodecahedron",
+        "armadio",
+        "108-responsive-prayers",
+        "arcana",
+        "bocce",
+        "pearl-magatama"
+      ],
+      "floorItems": [
+        {
+          "id": "magnet",
+          "count": 2
+        },
+        {
+          "id": "descent-into-misery",
+          "count": 1
+        },
+        {
+          "id": "area",
+          "count": 2
+        },
+        {
+          "id": "recovery",
+          "count": 2
+        },
+        {
+          "id": "amount",
+          "count": 2
+        },
+        {
+          "id": "torrona",
+          "count": 2
+        },
+        {
+          "id": "velvet-dodecahedron",
+          "count": 1,
+          "condition": "Collect this passive once before it can appear."
+        },
+        {
+          "id": "armadio",
+          "count": 1
+        },
+        {
+          "id": "108-responsive-prayers",
+          "count": 1,
+          "condition": "Collect this weapon once before it can appear."
+        },
+        {
+          "id": "arcana",
+          "count": 1,
+          "condition": "Far west side of the stage."
+        },
+        {
+          "id": "ring1",
+          "count": 1,
+          "condition": "Requires Yellow Sign. Northwest of Sargon."
+        },
+        {
+          "id": "sign2",
+          "count": 1,
+          "condition": "Requires Yellow Sign. Northeast of Ashtart."
+        },
+        {
+          "id": "ring2",
+          "count": 1,
+          "condition": "Requires Yellow Sign. Southwest of the In’ Kujata statue."
+        },
+        {
+          "id": "sign1",
+          "count": 1,
+          "condition": "Requires Yellow Sign. Far west, north of the Arcana chest."
+        },
+        {
+          "id": "bocce",
+          "count": 1,
+          "condition": "Requires Moonspell and having collected this weapon. Northwest of spawn."
+        },
+        {
+          "id": "pearl-magatama",
+          "count": 1,
+          "condition": "Requires Moonspell and having collected this passive. Northwest corner, on the unmapped frozen lake."
+        },
+        {
+          "id": "rosary",
+          "count": 3
+        },
+        {
+          "id": "vacuum",
+          "count": 3
+        },
+        {
+          "id": "chicken",
+          "count": 3
+        },
+        {
+          "id": "orologion",
+          "count": 1
+        },
+        {
+          "id": "fritta",
+          "count": 2
+        },
+        {
+          "id": "littleclover",
+          "count": 3
+        }
+      ],
+      "tips": "Floor items and pickups are listed below. Availability assumes the stated unlock conditions; the planner does not track collection progress."
     }
   ]
 }

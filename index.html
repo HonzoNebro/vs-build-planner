@@ -585,11 +585,25 @@
             if (stage.id === 'batcountry') {
               stage.itemIds.push('ring2')
             }
+            if (stage.floorItems) {
+              const stageItemIds = stage.itemIds
+              Object.defineProperty(stage, 'itemIds', {
+                get: () => stageItemIds.filter((id) => isContentAvailable(itemsById[id])),
+              })
+            }
           }
           for (const item of items) {
             item.items = item.itemIds ? item.itemIds.map((itemId) => itemsById[itemId]).filter((it) => !(it.type === 'passive' && item.type === 'passive')) : []
+            if (item.type === 'stage' && item.floorItems) {
+              Object.defineProperty(item, 'items', {
+                get: () => item.itemIds.map((id) => itemsById[id]),
+              })
+            }
             item.evolution = item.evolutionId && itemsById[item.evolutionId]
             item.title = (item.fullName || item.name) + (item.type === 'weapon' || item.type === 'passive' ? ` (Rarity: ${item.rarity || 'Unknown'})` : '') + (item.price ? ` (Price: ${item.price})` : '') + (item.description ? `\n${item.description}` : '') + (item.tips ? `\n${item.tips}` : '') + (item.maxLevelItemIds?.length ? `\nMax level: ${item.maxLevelItemIds.map((id) => itemsById[id].name).join(', ')}.` : '')
+            if (item.floorItems) {
+              item.title += '\n' + item.floorItems.map(({ id, count, condition }) => `${itemsById[id].name} ×${count}${condition ? ` — ${condition}` : ''}`).join('\n')
+            }
           }
 
           const impactsById = computed(() => {
@@ -1348,7 +1362,7 @@
           const excludedItemIds = new Set(['morningstar', 'coatofarms', 'spellbook', 'spectralsword', 'diabologue', 'familiarforge']);
 
           watch(
-            selectedIds,
+            () => [...selectedIds, ...Object.values(config.contentPacks)],
             () => {
               const idsArray = Array.from(selectedIds).filter((id) => !excludedItemIds.has(id)); // Exclude specific item IDs
               for (const item of items) {

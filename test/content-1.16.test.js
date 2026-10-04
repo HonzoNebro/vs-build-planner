@@ -12,7 +12,7 @@ function planner() {
   let app
   const watchers = []
   const effects = []
-  const value = (source) => source && 'value' in source ? source.value : source
+  const value = (source) => typeof source === 'function' ? source() : source && 'value' in source ? source.value : source
   const context = {
     window: { vs: loadData(root), addEventListener() {} },
     location: { hash: '' },
@@ -124,4 +124,37 @@ test('max-level requirements must refer to recipe ingredients', () => {
   const data = loadData(root)
   data.evolutions[0].maxLevelItemIds = ['lunarmight']
   assert.ok(validateData(data).some((error) => error.includes('outside its ingredients')))
+})
+
+test('Red Moon Manor preserves floor counts and conditional Moonspell availability', () => {
+  const { app, flush } = planner()
+  const stage = app.itemsById['red-moon-manor']
+  assert.equal(stage.floorItems.length, 22)
+  for (const id of ['magnet', 'area', 'recovery', 'amount', 'torrona']) {
+    assert.equal(stage.floorItems.find((entry) => entry.id === id).count, 2)
+  }
+  assert.equal(stage.floorItems.find((entry) => entry.id === 'rosary').count, 3)
+  assert.ok(stage.title.includes('Collect this weapon once'))
+  assert.ok(stage.title.includes('Requires Yellow Sign'))
+  assert.equal(stage.itemIds.filter((id) => id === 'ring1').length, 1)
+  app.config.contentPacks['legacy-moonspell'] = false
+  app.toggleItem(stage); flush()
+  assert.ok(!stage.items.some((item) => ['bocce', 'pearl-magatama'].includes(item.id)))
+  assert.ok(!app.stagePassives.value.some((item) => item.id === 'pearl-magatama'))
+  assert.ok(app.itemsById['descent-into-misery'].selected)
+  assert.ok(app.stagePassives.value.some((item) => item.id === 'torrona'))
+  app.config.contentPacks['legacy-moonspell'] = true
+  flush()
+  assert.ok(stage.items.some((item) => item.id === 'bocce'))
+  assert.ok(app.stagePassives.value.some((item) => item.id === 'pearl-magatama'))
+  assert.ok(app.itemsById['pearl-magatama'].selected)
+})
+
+test('floor inventory rejects unknown items and invalid quantities', () => {
+  const data = loadData(root)
+  const stage = data.stages.find((item) => item.id === 'red-moon-manor')
+  stage.floorItems.push({ id: 'unknown-floor-item', count: 0 })
+  const errors = validateData(data)
+  assert.ok(errors.some((error) => error.includes('floorItems references missing ID')))
+  assert.ok(errors.some((error) => error.includes('floorItems has invalid count')))
 })
