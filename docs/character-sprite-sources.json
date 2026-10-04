@@ -2,6 +2,13 @@
   "policy": "Use transparent in-game character sprites, never framed character-selection portraits.",
   "steamBuildId": "25016043",
   "records": {
+    "chaos": {
+      "source": "characterData_ThosePeople",
+      "key": "TP_CHAOS",
+      "sprite": "TP_Chaos_i01.png",
+      "texture": "character_tp_chaos",
+      "asset": "img/v1.14/chaos.webp"
+    },
     "eme-tsunanori": {
       "source": "characterData_Emeralds",
       "key": "EME_RAPIERDUAL",
