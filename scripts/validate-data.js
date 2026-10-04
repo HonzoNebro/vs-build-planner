@@ -143,7 +143,8 @@ function validateIconAssets(css, rootDir) {
     [...css.matchAll(/url\((?:"|')?(img\/[^"')]+)(?:"|')?\)/g)].map((match) => match[1]),
   )
   for (const reference of references) {
-    if (!fs.existsSync(path.join(rootDir, reference))) {
+    const assetPath = reference.split(/[?#]/, 1)[0]
+    if (!fs.existsSync(path.join(rootDir, assetPath))) {
       errors.push(`Missing icon asset: ${reference}`)
     }
   }

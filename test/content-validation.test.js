@@ -60,6 +60,11 @@ test('missing local icon assets are rejected', () => {
   assert.ok(validateIconAssets(css, rootDir).some((error) => error.includes('img/does-not-exist.webp')))
 })
 
+test('icon cache-busting query strings preserve local asset validation', () => {
+  const css = '.icon-example { background-image: url("img/v1.13/eme-kina.webp?v=transparent-sprites"); }'
+  assert.deepEqual(validateIconAssets(css, rootDir), [])
+})
+
 test('Chaos uses a transparent sprite rather than its framed selection portrait', () => {
   const css = fs.readFileSync(path.join(rootDir, 'icons.css'), 'utf8')
   const selector = /\.icon-chaos\s*\{[^}]*url\((?:"|')?([^"')]+)/g
