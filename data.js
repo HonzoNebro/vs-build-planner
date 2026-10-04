@@ -48,6 +48,13 @@ window.vs = {
       "shortName": "ANTE CHAMBER",
       "color": "#b62034",
       "animatedCharacters": false
+    },
+    {
+      "id": "legacy-bloodmoon",
+      "name": "Legacy of the Bloodmoon",
+      "shortName": "BLOODMOON",
+      "color": "#a94455",
+      "animatedCharacters": false
     }
   ],
   "characters": [
@@ -626,7 +633,7 @@ window.vs = {
       ],
       "contentPack": "legacy-moonspell",
       "surname": "Moonspell",
-      "description": "Recovery also multiplies all healing sources. Over-healing slightly increases Max Health.",
+      "description": "Overheal: slightly increases Max Health. Recovery also multiplies all healing sources.",
       "onEveryLevelUp": {},
       "price": 1000
     },
@@ -639,7 +646,7 @@ window.vs = {
       ],
       "contentPack": "legacy-moonspell",
       "surname": "Moonspell",
-      "description": "Becomes stronger and invincible for a fixed interval after defeating a large amount of enemies.",
+      "description": "Overheal +16: activates her starting weapon. Becomes stronger and invincible for a fixed interval after defeating a large amount of enemies.",
       "onEveryLevelUp": {},
       "price": 5000
     },
@@ -668,7 +675,7 @@ window.vs = {
       ],
       "contentPack": "legacy-moonspell",
       "surname": "",
-      "description": "Ignores weapons cooldown. Weapons fire at a fixed interval when moving.",
+      "description": "Overheal 16+: gains a temporary bonus to MoveSpeed. Ignores weapons cooldown. Weapons fire at a fixed interval when moving.",
       "onEveryLevelUp": {},
       "price": 5000
     },
@@ -681,9 +688,9 @@ window.vs = {
       ],
       "contentPack": "legacy-moonspell",
       "surname": "",
-      "description": "Area temporarily increases at fixed intervals.",
+      "description": "Overheal +16: gains a Reroll. Area temporarily increases at fixed intervals.",
       "onEveryLevelUp": {},
-      "price": 5000,
+      "price": 5000
     },
     {
       "id": "megamenya",
@@ -696,7 +703,7 @@ window.vs = {
       "contentPack": "legacy-moonspell",
       "prefix": "Megalo",
       "surname": "Moonspell",
-      "description": "Cannot be damaged, but disappears after reaching the current Time Limit. Starts with hidden 108 Bocce.",
+      "description": "Overheal +16: activates her first weapon. Cannot be damaged, but disappears after reaching the current Time Limit. Starts with hidden 108 Bocce.",
       "onEveryLevelUp": {},
       "price": 50000
     },
@@ -704,23 +711,25 @@ window.vs = {
       "id": "megasyuuto",
       "name": "Syuuto",
       "emoji": ":charMegaloSyuutoVS:",
-      "itemIds": ["muramasa"],
+      "itemIds": [
+        "muramasa"
+      ],
       "contentPack": "legacy-moonspell",
       "prefix": "Megalo",
       "surname": "Moonspell",
-      "description": "Gains +1% Might every level.",
+      "description": "Overheal +16: equipped Blood weapons gain extra damage. Gains +1% Might every level.",
       "price": 5000
     },
     {
       "id": "tony",
-      "name": "Gab'Et-Oni",
+      "name": "Gav'Et-Oni",
       "emoji": ":charGavEtOniVS:",
       "itemIds": [
         "bolle"
       ],
       "contentPack": "legacy-moonspell",
       "surname": "",
-      "description": "Gets more projectiles every 20 levels (max+4).",
+      "description": "Gets more projectiles every 20 levels (max+4). Complete a stage to gain a Prestige rank.",
       "price": 500
     },
     {
@@ -2666,6 +2675,286 @@ window.vs = {
       "description": "Activates his main weapon when collecting Gold Coins and uses Gold Coins as a damage barrier.",
       "price": 50000,
       "special": true
+    },
+    {
+      "id": "megalo-miang",
+      "name": "Miang",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "itemIds": [],
+      "price": 50000,
+      "animated": false,
+      "description": "Max Health is equal to Current Health. Has a hidden Argent Flow.",
+      "prefix": "Megalo",
+      "surname": "Moonspell",
+      "hiddenitemIds": [
+        "argent-flow"
+      ]
+    },
+    {
+      "id": "tony-prestige-5",
+      "name": "Gav'Et-Oni (Prestige V)",
+      "emoji": ":charGavEtOniVS:",
+      "itemIds": [
+        "bolle",
+        "duration"
+      ],
+      "contentPack": "legacy-moonspell",
+      "surname": "",
+      "description": "Gets more projectiles every 20 levels (max+4). Complete a stage to gain a Prestige rank. Starts with level 5 Spellbinder.",
+      "price": 500,
+      "animated": false
+    },
+    {
+      "id": "spiritoso",
+      "name": "Spiritoso",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "itemIds": [
+        "lunarmight"
+      ],
+      "price": 5000,
+      "animated": false,
+      "description": "Overheal +64: spawns a water or lunar weapon. Adept with Mille Bolle Blu and Penshin Fatcha weapons."
+    },
+    {
+      "id": "spiritosa",
+      "name": "Spiritosa",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "itemIds": [],
+      "price": 500,
+      "animated": false,
+      "description": "Overheal +16: Gains a follower (max 30). Gains a hidden Mille Bolle Blu every 8 levels (max 6). Adept with Mille Bolle Blu and Penshin Fatcha weapons.",
+      "hiddenitemIds": [
+        "bolle"
+      ]
+    },
+    {
+      "id": "gekkojin",
+      "name": "Gekkojin",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "itemIds": [
+        "lunarmight",
+        "pearl-magatama"
+      ],
+      "price": 50000,
+      "animated": false,
+      "description": "Recovers HP instead of receiving damage, but disappears after reaching the current Time Limit. Starts with a Pearl Magatama.",
+      "hiddenitemIds": []
+    },
+    {
+      "id": "gekkojin-lunarsight",
+      "name": "Gekkojin (LunarSight)",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "itemIds": [
+        "lunarsight",
+        "pearl-magatama"
+      ],
+      "price": 50000,
+      "animated": false,
+      "description": "Recovers HP instead of receiving damage, but disappears after reaching the current Time Limit. Starts with a Pearl Magatama.",
+      "hiddenitemIds": []
+    },
+    {
+      "id": "gekkojin-lunarbight",
+      "name": "Gekkojin (LunarBight)",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "itemIds": [
+        "lunarbight",
+        "pearl-magatama"
+      ],
+      "price": 50000,
+      "animated": false,
+      "description": "Recovers HP instead of receiving damage, but disappears after reaching the current Time Limit. Starts with a Pearl Magatama.",
+      "hiddenitemIds": []
+    },
+    {
+      "id": "malice",
+      "name": "Malice",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "scarlet-needle"
+      ],
+      "price": 1000,
+      "animated": false,
+      "description": "Gains 0.1 Recovery every 4 levels. Retaliation, HP-Critical, LastBreath, and OnRevival: triggers a wide area blood hex.",
+      "surname": "Bloodmoon"
+    },
+    {
+      "id": "calogero",
+      "name": "Calogero",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "ashella"
+      ],
+      "price": 3000,
+      "animated": false,
+      "description": "LastBreath: increases MaxHealth by 50%. Retaliation: gains a temporary stat bonus.",
+      "surname": "Bloodmoon"
+    },
+    {
+      "id": "ashtart",
+      "name": "Ashtart",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "incineration"
+      ],
+      "price": 5000,
+      "animated": false,
+      "description": "HP-Critical: Gets +1 Revival. Summons remnants of defeated enemies every time the clock strikes a minute."
+    },
+    {
+      "id": "sargon",
+      "name": "Sargon",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "firefall"
+      ],
+      "price": 5000,
+      "animated": false,
+      "description": "Generates spatial distortions that confuse enemies. Master of FireFall, FireWall, and FireBall. OnRevival: spawns an additional spatial distortion."
+    },
+    {
+      "id": "sargon-fireball",
+      "name": "Sargon (FireBall)",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "fireball"
+      ],
+      "price": 5000,
+      "animated": false,
+      "description": "Generates spatial distortions that confuse enemies. Master of FireFall, FireWall, and FireBall. OnRevival: spawns an additional spatial distortion."
+    },
+    {
+      "id": "sargon-firewall",
+      "name": "Sargon (FireWall)",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "firewall"
+      ],
+      "price": 5000,
+      "animated": false,
+      "description": "Generates spatial distortions that confuse enemies. Master of FireFall, FireWall, and FireBall. OnRevival: spawns an additional spatial distortion."
+    },
+    {
+      "id": "nameless-fool",
+      "name": "Fool",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "descent-into-misery"
+      ],
+      "price": 3000,
+      "animated": false,
+      "description": "LastBreath: loses half of Max Health and receives a random Darkana (if available). OnRevival: LastBreath ability can award an extra Darkana (max 3).",
+      "prefix": "Nameless"
+    },
+    {
+      "id": "congregation",
+      "name": "Congregation",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "screams-from-the-void"
+      ],
+      "price": 5000,
+      "animated": false,
+      "description": "Gains a passive weapon slot for any Revivals exceeding 1. HpCritical and LastBreath: frantically activate their main weapon depending on Revivals left. OnRevival: spawns a Velvet Dodecahedron."
+    },
+    {
+      "id": "nameless-saint",
+      "name": "Saint",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [],
+      "price": 3000,
+      "animated": false,
+      "description": "Starts and is Adept with an array of holy weapons, depending on their availability in the Collection. Lastbreath: triggers a Rosary.",
+      "prefix": "Nameless"
+    },
+    {
+      "id": "baal-thasar",
+      "name": "Baal'Thasar",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "blacken-firmament"
+      ],
+      "price": 5000,
+      "animated": false,
+      "description": "Adept with Hell type weapons. Enemies killed by Blood type weapons drop Blood. LastBreath: gains a temporary Might and Cooldown bonus depending on collected Blood."
+    },
+    {
+      "id": "jaman-jato",
+      "name": "Jaman Jato",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "108-responsive-prayers"
+      ],
+      "price": 500,
+      "animated": false,
+      "description": "Gets more projectiles every 20 levels (max+4). Complete a stage to gain a Prestige rank."
+    },
+    {
+      "id": "jaman-jato-prestige-5",
+      "name": "Jaman Jato (Prestige V)",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "108-responsive-prayers",
+        "amount"
+      ],
+      "price": 500,
+      "animated": false,
+      "description": "Gets more projectiles every 20 levels (max+4). Complete a stage to gain a Prestige rank. Starts with level 2 Duplicator."
+    },
+    {
+      "id": "in-kujata",
+      "name": "Kujata",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [],
+      "price": 5000,
+      "animated": false,
+      "description": "Slams the ground every few steps. Grows bigger when accumulating Armor. HP-Critical: gains a temporary Armor bonus.",
+      "prefix": "In'"
+    },
+    {
+      "id": "megalo-sargon",
+      "name": "Sargon",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "firestall"
+      ],
+      "price": 100000,
+      "animated": false,
+      "description": "Backhanded gifts. Dark illusions. Echoes of the past.",
+      "prefix": "Megalo"
+    },
+    {
+      "id": "baal-thamut",
+      "name": "Baal'Thamut",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "itemIds": [
+        "damnation",
+        "darkana6"
+      ],
+      "price": 100000,
+      "animated": false,
+      "description": "It is ground and horizon both, and still it devours itself. Starts with extra Darkana VI - Moonlight Bolero."
     }
   ],
   "weapons": [
@@ -2958,7 +3247,7 @@ window.vs = {
       "contentPack": "legacy-moonspell",
       "description": "Generates 4 explosions. Amount and Duration affect damage instead.",
       "rarity": 50,
-      "tips": "Ignores: speed."
+      "tips": "Ignores: Speed."
     },
     {
       "id": "night",
@@ -2967,25 +3256,25 @@ window.vs = {
       "contentPack": "legacy-moonspell",
       "description": "Generates damaging zones above the character.",
       "rarity": 50,
-      "tips": "Ignores: speed."
+      "tips": "Ignores: Speed."
     },
     {
       "id": "mirage",
       "name": "Mirage Robe",
       "emoji": ":MirageRobeVS:",
       "contentPack": "legacy-moonspell",
-      "description": "Generates freezing mines with a chance to explode.",
+      "description": "Generates freezing static projectiles with a chance to explode.",
       "rarity": 50,
-      "tips": "Ignores: speed."
+      "tips": "Ignores: Speed."
     },
     {
       "id": "muramasa",
       "name": "Night Sword",
       "emoji": ":NightSwordVS:",
       "contentPack": "legacy-moonspell",
-      "description": "Strikes with a combo attack at the nearest enemy. Retaliates. Might steals hearts.",
+      "description": "Retaliates with a bonus damage affected by Greed. Might steal hearts.",
       "rarity": 30,
-      "tips": "Ignores: speed, duration."
+      "tips": "Ignores: Speed, Duration."
     },
     {
       "id": "bolle",
@@ -3001,9 +3290,9 @@ window.vs = {
       "name": "108 Bocce",
       "emoji": ":108BocceVS:",
       "contentPack": "legacy-moonspell",
-      "description": "Actually it's just 8. Damages nearby enemies.",
+      "description": "Actually it's just 8. Damage affected by the difference between Curse and Luck.",
       "rarity": 10,
-      "tips": "Ignores: amount, duration, speed."
+      "tips": "Ignores: Amount, Duration, Speed."
     },
     {
       "id": "spell1",
@@ -3133,7 +3422,6 @@ window.vs = {
       "contentPack": "emergency-meeting",
       "description": ""
     },
-
     {
       "id": "longgun",
       "name": "Long Gun",
@@ -4128,6 +4416,123 @@ window.vs = {
       "emoji": ":question:",
       "description": "Targets the nearest enemy. Consecutive critical hits increase its damage, with a cap based on Revivals.",
       "rarity": 70
+    },
+    {
+      "id": "lunarmight",
+      "name": "LunarMight",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "description": "Generates a damaging zone that slightly increases Might.",
+      "tips": "Ignores: Area, Speed, Amount.",
+      "rarity": 70
+    },
+    {
+      "id": "lunarsight",
+      "name": "LunarSight",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "description": "Generates damaging zones that occasionally follow the character.",
+      "tips": "Ignores: Area, Speed, Amount.",
+      "rarity": 70
+    },
+    {
+      "id": "lunarbight",
+      "name": "LunarBight",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "description": "Has a chance to slow down enemies hit.",
+      "tips": "Ignores: Area, Speed, Amount.",
+      "rarity": 70
+    },
+    {
+      "id": "scarlet-needle",
+      "name": "Scarlet Needle",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Damaging needles pin the nearest enemy in place.",
+      "tips": "Ignores: Duration.",
+      "rarity": 80
+    },
+    {
+      "id": "ashella",
+      "name": "Ashella",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Can deal critical hits.",
+      "tips": "Best with: Amount.",
+      "rarity": 60
+    },
+    {
+      "id": "incineration",
+      "name": "Incineration",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Erases enemies in the faced direction.",
+      "tips": "",
+      "rarity": 40
+    },
+    {
+      "id": "screams-from-the-void",
+      "name": "Screams from the Void",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Unleash screams with high knockback. Retaliates.",
+      "tips": "",
+      "rarity": 70
+    },
+    {
+      "id": "blacken-firmament",
+      "name": "Blacken Firmament",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Erases a random enemy, occasionally leaving a damaging tear in reality.",
+      "tips": "Ignores: Speed.",
+      "rarity": 30
+    },
+    {
+      "id": "108-responsive-prayers",
+      "name": "108 Responsive Prayers",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Actually it's just 16. Damage affected by the difference between Curse and Luck.",
+      "tips": "Ignores: Speed.",
+      "rarity": 10
+    },
+    {
+      "id": "firefall",
+      "name": "FireFall",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Strikes at the furthest enemy. Damage further multiplied by Might.",
+      "tips": "Ignores: Area, Duration, Speed.",
+      "rarity": 70
+    },
+    {
+      "id": "fireball",
+      "name": "FireBall",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Generates an expanding damaging zone. Damage multiplied by Area.",
+      "tips": "Ignores: Amount.",
+      "rarity": 70
+    },
+    {
+      "id": "firewall",
+      "name": "FireWall",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Generates a directional damaging zone. Greatly affected by Amount.",
+      "tips": "Ignores: Area, Speed.",
+      "rarity": 70
+    },
+    {
+      "id": "descent-into-misery",
+      "name": "Descent Into Misery",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Cursed item. Amount affects Damage. Critical hits or changing movement direction ensure extra attacks.",
+      "tips": "Ignores: Speed, Duration.",
+      "rarity": 50
     }
   ],
   "evolutions": [
@@ -4471,7 +4876,11 @@ window.vs = {
       "contentPack": "legacy-moonspell",
       "description": "Evolved Silver Wind. Weakens enemies defenses.",
       "rarity": 1,
-      "tips": "Requires Max: Pummarola."
+      "tips": "Requires Max: Pummarola.",
+      "maxLevelItemIds": [
+        "wind",
+        "recovery"
+      ]
     },
     {
       "id": "seasons_",
@@ -4484,7 +4893,11 @@ window.vs = {
       "contentPack": "legacy-moonspell",
       "description": "Evolved Four Seasons. Generates an additional explosion.",
       "rarity": 1,
-      "tips": "Requires Max: Spinach, Candelabrador."
+      "tips": "Requires Max: Candelabrador.",
+      "maxLevelItemIds": [
+        "seasons",
+        "area"
+      ]
     },
     {
       "id": "night_",
@@ -4495,9 +4908,13 @@ window.vs = {
       ],
       "emoji": ":EchoNightVS:",
       "contentPack": "legacy-moonspell",
-      "description": "Evolved Summon Night. Generates damaging zones below the character.",
-      "rarity": 100,
-      "tips": "Requires Max: Duplicator."
+      "description": "Evolved Summon Night. Also generates damaging zones below the character.",
+      "rarity": 1,
+      "tips": "Requires Max: Duplicator.",
+      "maxLevelItemIds": [
+        "night",
+        "amount"
+      ]
     },
     {
       "id": "mirage_",
@@ -4510,7 +4927,11 @@ window.vs = {
       "contentPack": "legacy-moonspell",
       "description": "Evolved Mirage Robe. Projectiles move and confuse enemies.",
       "rarity": 1,
-      "tips": "Requires Max: Magnet."
+      "tips": "Requires Max: Attractorb.",
+      "maxLevelItemIds": [
+        "mirage",
+        "magnet"
+      ]
     },
     {
       "id": "muramasa_",
@@ -4523,7 +4944,11 @@ window.vs = {
       "contentPack": "legacy-moonspell",
       "description": "Evolved Night Sword. Enables critical hits and combo finisher. Drains Health.",
       "rarity": 1,
-      "tips": "Requires Max: Stone Mask."
+      "tips": "Requires Max: Stone Mask.",
+      "maxLevelItemIds": [
+        "muramasa",
+        "greed"
+      ]
     },
     {
       "id": "bolle_",
@@ -4536,7 +4961,11 @@ window.vs = {
       "contentPack": "legacy-moonspell",
       "description": "Evolved Mille Bolle Blu. Projectiles can hit the same target more than once.",
       "rarity": 1,
-      "tips": "Requires Max: Spellbinder"
+      "tips": "Requires Max: Spellbinder.",
+      "maxLevelItemIds": [
+        "bolle",
+        "duration"
+      ]
     },
     {
       "id": "spell_",
@@ -5915,6 +6344,180 @@ window.vs = {
       ],
       "description": "Evolution of Unearthly Bolt. Requires a maxed Tirajisú and summons a green dragon that always deals critical hits.",
       "rarity": 1
+    },
+    {
+      "id": "argent-flow",
+      "name": "Argent Flow",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "description": "Evolved Festive Winds. Shreds enemies defenses.",
+      "tips": "Requires Max: Torrona's Box.",
+      "rarity": 1,
+      "itemIds": [
+        "wind_",
+        "torrona"
+      ],
+      "maxLevelItemIds": [
+        "wind_",
+        "torrona"
+      ]
+    },
+    {
+      "id": "lunarflight",
+      "name": "LunarFlight",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "description": "Union of LunarMight, LunarSight, and LunarBight. Become one with the lunar glyphs.",
+      "tips": "Requires Max: LunarMight, LunarSight, LunarBight.",
+      "rarity": 1,
+      "itemIds": [
+        "lunarmight",
+        "lunarsight",
+        "lunarbight"
+      ],
+      "maxLevelItemIds": [
+        "lunarmight",
+        "lunarsight",
+        "lunarbight"
+      ]
+    },
+    {
+      "id": "cardinal-rain",
+      "name": "Cardinal Rain",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Evolved Scarlet Needle. Endless rain can hit in any location.",
+      "tips": "Requires Max: Pummarola.",
+      "rarity": 1,
+      "itemIds": [
+        "scarlet-needle",
+        "recovery"
+      ],
+      "maxLevelItemIds": [
+        "scarlet-needle",
+        "recovery"
+      ]
+    },
+    {
+      "id": "bloodlust",
+      "name": "Bloodlust",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Evolved Ashella. Critical damage affected by Amount.",
+      "tips": "Requires Max: Duplicator.",
+      "rarity": 1,
+      "itemIds": [
+        "ashella",
+        "amount"
+      ],
+      "maxLevelItemIds": [
+        "ashella",
+        "amount"
+      ]
+    },
+    {
+      "id": "dust-to-dust",
+      "name": "Dust to Dust",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Evolved Incineration. Infernal ashes blow back, erasing enemies.",
+      "tips": "Requires Max: Candelabrador.",
+      "rarity": 1,
+      "itemIds": [
+        "incineration",
+        "area"
+      ],
+      "maxLevelItemIds": [
+        "incineration",
+        "area"
+      ]
+    },
+    {
+      "id": "forbidden-siren",
+      "name": "Forbidden Siren",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Evolved Screams from the Void. Pulls and defangs enemies.",
+      "tips": "Requires Max: Attractorb.",
+      "rarity": 1,
+      "itemIds": [
+        "screams-from-the-void",
+        "magnet"
+      ],
+      "maxLevelItemIds": [
+        "screams-from-the-void",
+        "magnet"
+      ]
+    },
+    {
+      "id": "damnation",
+      "name": "Damnation",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Evolved Blacken Firmament. Draws enemies to ruin.",
+      "tips": "Requires Max: Torrona's Box.",
+      "rarity": 1,
+      "itemIds": [
+        "blacken-firmament",
+        "torrona"
+      ],
+      "maxLevelItemIds": [
+        "blacken-firmament",
+        "torrona"
+      ]
+    },
+    {
+      "id": "road-to-heaven",
+      "name": "Road to Heaven",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Union of 108 Bocce and 108 Responsive Prayers. Activate 108 times to glimpse enlightenment.",
+      "tips": "Requires Max: 108 Bocce, 108 Responsive Prayers.",
+      "rarity": 1,
+      "itemIds": [
+        "bocce",
+        "108-responsive-prayers"
+      ],
+      "maxLevelItemIds": [
+        "bocce",
+        "108-responsive-prayers"
+      ]
+    },
+    {
+      "id": "firestall",
+      "name": "FireStall",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Union of Firefall, FireWall, and Fireball.\nGrows stronger after every singularity.",
+      "tips": "Requires Max: FireFall, FireBall, FireWall.",
+      "rarity": 1,
+      "itemIds": [
+        "firefall",
+        "fireball",
+        "firewall"
+      ],
+      "maxLevelItemIds": [
+        "firefall",
+        "fireball",
+        "firewall"
+      ]
+    },
+    {
+      "id": "shimmering-sands",
+      "name": "Shimmering Sands",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Union of Kyra-Stones and Descent Into Misery. Quicksand drags enemies down to hell.",
+      "tips": "Requires Max: Descent Into Misery, Kyra-Stones.",
+      "rarity": 1,
+      "itemIds": [
+        "descent-into-misery",
+        "kyra-stones"
+      ],
+      "maxLevelItemIds": [
+        "descent-into-misery",
+        "kyra-stones"
+      ]
     }
   ],
   "counterparts": [
@@ -6087,7 +6690,7 @@ window.vs = {
       "description": "-",
       "contentPack": "ode-castlevania",
       "rarity": 60
-    },
+    }
   ],
   "passives": [
     {
@@ -6279,7 +6882,10 @@ window.vs = {
       "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
-      "itemIds": ["garlic"]
+      "itemIds": [
+        "garlic"
+      ],
+      "tips": "Available through ArmaDio and level-ups when eligible, even beyond the passive limit."
     },
     {
       "id": "miniengineer",
@@ -6288,7 +6894,10 @@ window.vs = {
       "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
-      "itemIds": ["lightning"]
+      "itemIds": [
+        "lightning"
+      ],
+      "tips": "Available through ArmaDio and level-ups when eligible, even beyond the passive limit."
     },
     {
       "id": "minighost",
@@ -6297,7 +6906,10 @@ window.vs = {
       "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
-      "itemIds": ["lancet"]
+      "itemIds": [
+        "lancet"
+      ],
+      "tips": "Available through ArmaDio and level-ups when eligible, even beyond the passive limit."
     },
     {
       "id": "minishapeshifter",
@@ -6306,7 +6918,10 @@ window.vs = {
       "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
-      "itemIds": ["bone"]
+      "itemIds": [
+        "bone"
+      ],
+      "tips": "Available through ArmaDio and level-ups when eligible, even beyond the passive limit."
     },
     {
       "id": "miniguardian",
@@ -6315,7 +6930,10 @@ window.vs = {
       "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
-      "itemIds": ["laurel"]
+      "itemIds": [
+        "laurel"
+      ],
+      "tips": "Available through ArmaDio and level-ups when eligible, even beyond the passive limit."
     },
     {
       "id": "miniimpostor",
@@ -6324,7 +6942,10 @@ window.vs = {
       "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
-      "itemIds": ["knife"]
+      "itemIds": [
+        "knife"
+      ],
+      "tips": "Available through ArmaDio and level-ups when eligible, even beyond the passive limit."
     },
     {
       "id": "miniscientist",
@@ -6333,7 +6954,10 @@ window.vs = {
       "contentPack": "emergency-meeting",
       "extra": true,
       "description": "",
-      "itemIds": ["water"]
+      "itemIds": [
+        "water"
+      ],
+      "tips": "Available through ArmaDio and level-ups when eligible, even beyond the passive limit."
     },
     {
       "id": "minihorse",
@@ -6341,7 +6965,11 @@ window.vs = {
       "emoji": ":question:",
       "contentPack": "emergency-meeting",
       "description": "",
-      "itemIds": ["jubilee"]
+      "itemIds": [
+        "jubilee"
+      ],
+      "extra": true,
+      "tips": "Available through ArmaDio and level-ups when eligible, even beyond the passive limit."
     },
     {
       "id": "powerup",
@@ -6350,7 +6978,8 @@ window.vs = {
       "description": "Levels up a random equipped weapon. Gives +1 Revival. Does not occupy a weapon slot",
       "itemIds": [],
       "contentPack": "operation-guns",
-      "extra": true
+      "extra": true,
+      "tips": "Available through ArmaDio and level-ups when eligible, even beyond the passive limit."
     },
     {
       "id": "parma",
@@ -6481,6 +7110,26 @@ window.vs = {
       "contentPack": "ante-chamber",
       "description": "Required to evolve every Ante Chamber weapon.",
       "rarity": 104
+    },
+    {
+      "id": "pearl-magatama",
+      "name": "Pearl magatama",
+      "emoji": ":question:",
+      "contentPack": "legacy-moonspell",
+      "description": "Gift. Will provide bonus Recovery and Revivals in exchange for Greed. Fully heals.",
+      "tips": "",
+      "rarity": 10,
+      "special": true
+    },
+    {
+      "id": "velvet-dodecahedron",
+      "name": "Velvet Dodecahedron",
+      "emoji": ":question:",
+      "contentPack": "legacy-bloodmoon",
+      "description": "Gift. Will provide bonus Growth and Greed in exchange for MaxHealth. Triggers LastBreath, OnRevival, and HPCritical skills.",
+      "tips": "",
+      "rarity": 10,
+      "special": true
     }
   ],
   "powerups": [
@@ -6738,7 +7387,10 @@ window.vs = {
         "lemuria",
         "lemuria_",
         "holy",
-        "holy_"
+        "holy_",
+        "argent-flow",
+        "scarlet-needle",
+        "cardinal-rain"
       ],
       "description": "Listed weapon projectiles generate explosions when they expire. Explosions damage is affected by Curse",
       "major": true
@@ -6764,7 +7416,11 @@ window.vs = {
         "elec",
         "elec_",
         "acid",
-        "acid_"
+        "acid_",
+        "scarlet-needle",
+        "cardinal-rain",
+        "blacken-firmament",
+        "damnation"
       ],
       "description": "The cooldown of the listed weapons reduces when moving.",
       "major": true
@@ -6814,7 +7470,8 @@ window.vs = {
         "flowers",
         "scan",
         "scan_",
-        "chicken"
+        "chicken",
+        "argent-flow"
       ],
       "description": "Healing is doubled. Recovering HP damages nearby enemies for the same amount.",
       "major": true
@@ -7042,7 +7699,11 @@ window.vs = {
         "slash_",
         "confodere",
         "confodere_",
-        "confodere__"
+        "confodere__",
+        "ashella",
+        "bloodlust",
+        "descent-into-misery",
+        "shimmering-sands"
       ],
       "description": "Enables critical hits for listed weapons. Doubles overall critical damage.",
       "major": true
@@ -7099,7 +7760,11 @@ window.vs = {
         "rpg",
         "rpg_",
         "savrogweapon",
-        "aurablastweapon"
+        "aurablastweapon",
+        "firefall",
+        "fireball",
+        "firewall",
+        "firestall"
       ],
       "description": "Listed weapon projectiles explode on impact. Light sources explode. Character explodes when damaged.",
       "major": true
@@ -7153,7 +7818,8 @@ window.vs = {
         "bolle",
         "bolle_",
         "popper",
-        "luck"
+        "luck",
+        "kyra-stones"
       ],
       "description": "All weapons have a chance to fire twice instead of once when activated. Listed weapons might fire more than twice instead.",
       "major": true
@@ -7212,7 +7878,9 @@ window.vs = {
         "muramasa",
         "scan",
         "magnet",
-        "chicken"
+        "chicken",
+        "argent-flow",
+        "muramasa_"
       ],
       "description": "Losing health generates exploding projectiles. Explosion damage is increased by total recovered health and Magnet bonus. Explosion Area is increased by Magnet.",
       "major": true
@@ -7340,7 +8008,11 @@ window.vs = {
         "bracelet__",
         "flame",
         "flame_",
-        "fritta"
+        "fritta",
+        "firefall",
+        "fireball",
+        "firewall",
+        "firestall"
       ],
       "description": "Fire kills drop Scorched Souls that grant Max Health and Might. Triggers an Nduja Fritta when health becomes critical.",
       "major": true
@@ -7608,6 +8280,13 @@ window.vs = {
       "rarity": 6,
       "tips": "Drop rate affected by Luck.",
       "value": 60
+    },
+    {
+      "id": "blood",
+      "name": "Blood",
+      "contentPack": "legacy-bloodmoon",
+      "emoji": ":question:",
+      "description": "Dropped instead of experience gems when Baal'Thasar defeats enemies with Blood weapons. Fuels his LastBreath Might and Cooldown bonus."
     }
   ],
   "structures": [
@@ -7994,6 +8673,14 @@ window.vs = {
       "id": "lycaeum",
       "name": "The Lycaeum",
       "description": "An underwater stage of switches, crabs, hidden treasure, and a climb to the surface.",
+      "special": true,
+      "itemIds": []
+    },
+    {
+      "id": "red-moon-manor",
+      "name": "Red Moon Manor",
+      "description": "The mythical place sought by the vile Bloodmoon Clan, said to hide terrible secrets. The relentless pursuit of immortality of its original founders, through atrocious rituals, spawned awful abominations.",
+      "contentPack": "legacy-bloodmoon",
       "special": true,
       "itemIds": []
     }

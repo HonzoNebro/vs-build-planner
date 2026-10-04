@@ -2,29 +2,31 @@
 
 ## Baseline
 
-- Audit date: 2026-08-08
-- Game baseline: Vampire Survivors 1.15 — The Wet One
-- Planner records: 719
-- Registered content packs: 7
-- Versioned assets: 147 (`v1.13`: 70, `v1.14`: 61, `v1.15`: 16)
+- Audit date: 2026-10-03
+- Game baseline: Vampire Survivors 1.16.107 (Steam build 25016043)
+- Planner records: 768
+- Registered content packs: 8
+- Versioned assets: 196 (`v1.13`: 70, `v1.14`: 61, `v1.15`: 16, `v1.16`: 49)
 
 The 1.15 scope follows the [official update announcement](https://store.steampowered.com/news/app/1794680/view/693137145499484494): The Lycaeum, Para Kooleo, Big Troubler, the Penshin Fatcha branch, Unearthly Bolt and Spirit Disturbance, and Darkanas 0, VIII, and XIX.
+
+The 1.16 scope follows the [official release and hotfix announcements](https://steamcommunity.com/app/1794680/announcements/?l=english). New records, localized English names and descriptions, evolution requirements, starting equipment, Arcana lists, and sprites were verified against the locally installed 1.16.107 client. [The source map](content-1.16-sources.json) records client data keys and sprite names for all 49 additions; raw game data is not included in the repository.
 
 ## Records by collection
 
 | Collection | Records |
 | --- | ---: |
-| Characters | 207 |
-| Weapons | 171 |
-| Evolutions | 155 |
+| Characters | 229 |
+| Weapons | 184 |
+| Evolutions | 165 |
 | Counterparts | 22 |
-| Passives | 46 |
+| Passives | 48 |
 | Power-ups | 20 |
 | Arcanas and Darkanas | 34 |
-| Pickups | 26 |
+| Pickups | 27 |
 | Structures | 5 |
-| Stages | 33 |
-| **Total** | **719** |
+| Stages | 34 |
+| **Total** | **768** |
 
 ## Records by content pack
 
@@ -33,14 +35,15 @@ Records without a `contentPack` value are counted as base-game content.
 | Scope | Records |
 | --- | ---: |
 | Base game and free updates | 271 |
-| Legacy of the Moonspell | 22 |
+| Legacy of the Moonspell | 35 |
 | Tides of the Foscari | 27 |
 | Emergency Meeting | 34 |
 | Operation Guns | 38 |
 | Ode to Castlevania | 250 |
 | Emerald Diorama | 63 |
 | Ante Chamber | 14 |
-| **Total** | **719** |
+| Legacy of the Bloodmoon | 36 |
+| **Total** | **768** |
 
 ## Source policy
 
@@ -57,7 +60,15 @@ Community-maintained sources can help locate a topic but should not override cur
 - Penshin Fatcha is represented as one selector weapon, six alternative forms, and Miracle of Multiplication as their combined secret evolution. Its in-game unique treasure-chest selection logic does not map directly to a conventional passive-item evolution.
 - Character skins are not separate character records unless they change build-relevant starting equipment enough to be exposed as a distinct planner choice.
 - Relics, achievements, enemies, bestiary entries, music, and interface-only unlocks are outside the planner model unless they directly participate in a build relationship.
-- Legacy of the Bloodmoon is excluded because, at the audit date, its [Steam page](https://store.steampowered.com/app/4781330/Vampire_Survivors_Legacy_of_the_Bloodmoon/) still marks it as unreleased.
+- Bloodmoon contributes 12 characters, 19 weapons/evolutions/passives, Red Moon Manor, and the Blood pickup. Three additional character records expose Sargon's alternate starting weapons and Jaman Jato's Prestige V starting Duplicator.
+- Moonspell adds Megalo Miang, Spiritoso, Spiritosa, Gekkojin, three lunar weapons, LunarFlight, Argent Flow, and Pearl Magatama. Three additional character records expose Gekkojin's alternate starting weapons and Gav'Et-Oni's Prestige V starting Spellbinder. Earlier Prestige ranks share starting equipment and remain folded into the base character.
+- Gift weapons Pearl Magatama and Velvet Dodecahedron are modeled as passives, following the client's `isPowerUp` flag. Internal Bloodmoon skill weapons (Blood Hex, Baal's LastBreath, summoned skeletons) are abilities rather than selectable weapons and are excluded.
+- `maxLevelItemIds` records which evolution ingredients must be maxed, and is displayed in tooltips. Selecting a recipe still expresses the intended build; the planner does not simulate current levels, chests, unlocks, or runtime triggers.
+- Road to Heaven requires both Moonspell and Bloodmoon; disabling either pack hides the union. Shimmering Sands consumes Kyra-Stones and Descent Into Misery. Argent Flow continues the Silver Wind → Festive Winds chain.
+- Nameless Saint's starting holy weapons depend on the player's Collection and are described rather than represented by a fixed loadout. Hidden Argent Flow and Mille Bolle Blu are shown for Megalo Miang and Spiritosa. Dynamic followers, random weapon grants, and extra passive slots from character abilities are not simulated.
+- Red Moon Manor uses the client's localized stage name rather than its internal `Bloodmoon` label. Its map-specific floor pickups have not been enumerated; its `itemIds` is empty, as with other recent free-roaming stages. The UI retains its existing generic Yellow Sign item handling.
+- Moonspell descriptions and evolution tips were refreshed, including Godai Shuffle requiring maxed Candelabrador. Eligible special passives from Emergency Meeting and Operation Guns are represented beyond the ordinary passive limit, with the 1.16 ArmaDio/level-up availability noted in tooltips.
+- New weapons have explicit Arcana relationships from the client. Exhaustive stat-impact highlighting remains incomplete, as for previous content updates; missing impact lists safely sort as empty arrays.
 
 ## Verification
 
@@ -70,6 +81,8 @@ git diff --check
 ```
 
 The validator rejects duplicate IDs, unknown content packs, dangling item references, evolution cycles, missing icon selectors, broken local icon paths, and invalid inline JavaScript.
+
+The 1.16 regression suite runs the real planner setup/computed functions with a minimal Vue test adapter to check union selection, chained evolution, starting equipment, DLC filtering, tooltips, sorting, and Arcana links. It does not replace a browser rendering or Vue scheduler test. No browser was available during this audit; extracted icon assets were inspected as a contact sheet.
 
 ## Maintenance checklist
 

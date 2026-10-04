@@ -4,7 +4,7 @@ A static build planner for [Vampire Survivors](https://store.steampowered.com/ap
 
 ## Content status
 
-The catalog is current through **Vampire Survivors 1.15 — The Wet One** and was audited on **2026-08-08**. It contains 719 planner records across the base game and these content packs:
+The catalog includes **Vampire Survivors 1.16.107 — Legacy of the Bloodmoon** and the expanded Moonspell content, audited on **2026-10-03** against Steam build **25016043**. It contains 768 planner records across the base game and these content packs:
 
 - Legacy of the Moonspell
 - Tides of the Foscari
@@ -13,6 +13,7 @@ The catalog is current through **Vampire Survivors 1.15 — The Wet One** and wa
 - Ode to Castlevania
 - Emerald Diorama
 - Ante Chamber
+- Legacy of the Bloodmoon
 
 See [the content audit](docs/content-audit.md) for collection totals, source policy, modeling decisions, and known exclusions.
 

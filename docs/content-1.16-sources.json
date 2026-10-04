@@ -1,0 +1,257 @@
+{
+  "version": "1.16.107",
+  "steamBuildId": "25016043",
+  "records": {
+    "argent-flow": {
+      "source": "weaponData_Moonspell",
+      "key": "SILVERWIND3",
+      "sprite": "-01-silverWind3.png"
+    },
+    "lunarmight": {
+      "source": "weaponData_Moonspell",
+      "key": "MS_LUNAR1_MIGHT",
+      "sprite": "-01-lunar1.png"
+    },
+    "lunarsight": {
+      "source": "weaponData_Moonspell",
+      "key": "MS_LUNAR2_SIGHT",
+      "sprite": "-01-lunar2.png"
+    },
+    "lunarbight": {
+      "source": "weaponData_Moonspell",
+      "key": "MS_LUNAR3_BIGHT",
+      "sprite": "-01-lunar3.png"
+    },
+    "lunarflight": {
+      "source": "weaponData_Moonspell",
+      "key": "MS_LUNAR4",
+      "sprite": "-01-lunar4.png"
+    },
+    "pearl-magatama": {
+      "source": "weaponData_Moonspell",
+      "key": "PEARLMAGATAMA",
+      "sprite": "-01-pearlmagatama.png"
+    },
+    "scarlet-needle": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN000_SCARLET1",
+      "sprite": "-08-BMN_1800.png"
+    },
+    "cardinal-rain": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN001_SCARLET2",
+      "sprite": "-08-BMN_1801.png"
+    },
+    "ashella": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN004_AXE1",
+      "sprite": "-08-BMN_1804.png"
+    },
+    "bloodlust": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN005_AXE2",
+      "sprite": "-08-BMN_1805.png"
+    },
+    "incineration": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN002_DUST1",
+      "sprite": "-08-BMN_1802.png"
+    },
+    "dust-to-dust": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN003_DUST2",
+      "sprite": "-08-BMN_1803.png"
+    },
+    "screams-from-the-void": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN006_SCREAM1",
+      "sprite": "-08-BMN_1806.png"
+    },
+    "forbidden-siren": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN007_SCREAM2",
+      "sprite": "-08-BMN_1807.png"
+    },
+    "blacken-firmament": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN008_BLACKEN1",
+      "sprite": "-08-BMN_1808.png"
+    },
+    "damnation": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN009_BLACKEN2",
+      "sprite": "-08-BMN_1809.png"
+    },
+    "108-responsive-prayers": {
+      "source": "weaponData_Bloodmoon",
+      "key": "PRAYERS",
+      "sprite": "-01-prayerScroll.png"
+    },
+    "road-to-heaven": {
+      "source": "weaponData_Bloodmoon",
+      "key": "HEAVENSROAD",
+      "sprite": "-01-heavensroad.png"
+    },
+    "firefall": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN010_FIRE1_FALL",
+      "sprite": "-08-BMN_1810.png"
+    },
+    "fireball": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN011_FIRE2_BALL",
+      "sprite": "-08-BMN_1811.png"
+    },
+    "firewall": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN012_FIRE3_WALL",
+      "sprite": "-08-BMN_1812.png"
+    },
+    "firestall": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN013_FIRE4",
+      "sprite": "-08-BMN_1813.png"
+    },
+    "descent-into-misery": {
+      "source": "weaponData_Bloodmoon",
+      "key": "DESCENT_MISERY",
+      "sprite": "-08-descentMisery.png"
+    },
+    "shimmering-sands": {
+      "source": "weaponData_Bloodmoon",
+      "key": "SHIMMERING_SANDS",
+      "sprite": "-08-shimmering.png"
+    },
+    "velvet-dodecahedron": {
+      "source": "weaponData_Bloodmoon",
+      "key": "BMN_DODECAHEDRON",
+      "sprite": "-08-velvet.png"
+    },
+    "megalo-miang": {
+      "source": "characterData_Moonspell",
+      "key": "MEGAMIANG",
+      "sprite": "miangmegalo_i01.png"
+    },
+    "tony-prestige-5": {
+      "source": "characterData_Moonspell",
+      "key": "TONY",
+      "skin": "SKIN_GAVET_S5",
+      "sprite": "P5_Gabet_i01.png"
+    },
+    "spiritoso": {
+      "source": "characterData_Moonspell",
+      "key": "SPIRITOSO",
+      "sprite": "spiritB_i01.png"
+    },
+    "spiritosa": {
+      "source": "characterData_Moonspell",
+      "key": "SPIRITOSA",
+      "sprite": "spirit_i01.png"
+    },
+    "gekkojin": {
+      "source": "characterData_Moonspell",
+      "key": "GEKKOJIN",
+      "sprite": "Icon_gekkojin.png"
+    },
+    "gekkojin-lunarsight": {
+      "source": "characterData_Moonspell",
+      "key": "GEKKOJIN",
+      "skin": "SKIN_GEKKOJIN_2LS",
+      "sprite": "Icon_gekkojin.png"
+    },
+    "gekkojin-lunarbight": {
+      "source": "characterData_Moonspell",
+      "key": "GEKKOJIN",
+      "skin": "SKIN_GEKKOJIN_2LB",
+      "sprite": "Icon_gekkojin.png"
+    },
+    "malice": {
+      "source": "characterData_Bloodmoon",
+      "key": "MALICE",
+      "sprite": "malice_i01.png"
+    },
+    "calogero": {
+      "source": "characterData_Bloodmoon",
+      "key": "CALOGERO",
+      "sprite": "calogero_i01.png"
+    },
+    "ashtart": {
+      "source": "characterData_Bloodmoon",
+      "key": "ASHTART",
+      "sprite": "ashtart_i01.png"
+    },
+    "sargon": {
+      "source": "characterData_Bloodmoon",
+      "key": "SARGON",
+      "sprite": "sargon_i01.png"
+    },
+    "sargon-fireball": {
+      "source": "characterData_Bloodmoon",
+      "key": "SARGON",
+      "skin": "SKIN_SARGON_2FW",
+      "sprite": "sargon_i01.png"
+    },
+    "sargon-firewall": {
+      "source": "characterData_Bloodmoon",
+      "key": "SARGON",
+      "skin": "SKIN_SARGON_2FB",
+      "sprite": "sargon_i01.png"
+    },
+    "nameless-fool": {
+      "source": "characterData_Bloodmoon",
+      "key": "NAMELESSFOOL",
+      "sprite": "fool_i01.png"
+    },
+    "congregation": {
+      "source": "characterData_Bloodmoon",
+      "key": "CONGREGATION",
+      "sprite": "congregation_i01.png"
+    },
+    "nameless-saint": {
+      "source": "characterData_Bloodmoon",
+      "key": "NAMELESSSAINT",
+      "sprite": "saint_01.png"
+    },
+    "baal-thasar": {
+      "source": "characterData_Bloodmoon",
+      "key": "BAALTHASAR",
+      "sprite": "baalthasar_i01.png"
+    },
+    "jaman-jato": {
+      "source": "characterData_Bloodmoon",
+      "key": "JAMANJATO",
+      "sprite": "P1_JamanJato_i01.png"
+    },
+    "jaman-jato-prestige-5": {
+      "source": "characterData_Bloodmoon",
+      "key": "JAMANJATO",
+      "skin": "SKIN_JAMAN_S5",
+      "sprite": "P5_JamanJato_i01.png"
+    },
+    "in-kujata": {
+      "source": "characterData_Bloodmoon",
+      "key": "KUJATA",
+      "sprite": "kujata_03.png"
+    },
+    "megalo-sargon": {
+      "source": "characterData_Bloodmoon",
+      "key": "MEGASARGON",
+      "sprite": "Icon_MegaloSargon.png"
+    },
+    "baal-thamut": {
+      "source": "characterData_Bloodmoon",
+      "key": "MEGABAALTHASAR",
+      "sprite": "Icon_MegaloBaalthasar.png"
+    },
+    "red-moon-manor": {
+      "source": "stageData_Bloodmoon",
+      "key": "BMN_BLOODMOON",
+      "sprite": "stage_bloodmoon.png"
+    },
+    "blood": {
+      "source": "ITEM_DATA",
+      "key": "BMN_BLOODGEM",
+      "sprite": "Blood3.png"
+    }
+  }
+}

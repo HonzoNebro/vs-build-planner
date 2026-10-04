@@ -513,7 +513,12 @@
           // Legacy relations use unscoped IDs. Collection order intentionally resolves stat IDs to passives.
           const itemsById = items.reduce((itemsById, item) => Object.assign(itemsById, { [item.id]: item }), {})
 
-          const filterByContentPack = (items) => items.filter((item) => !item.contentPack || config.contentPacks[item.contentPack] !== false)
+          const isContentAvailable = (item) => {
+            if (item.contentPack && config.contentPacks[item.contentPack] === false) return false
+            // Unions can depend on another DLC, including through an earlier evolution.
+            return item.type !== 'evolution' || item.itemIds.every((id) => isContentAvailable(itemsById[id]))
+          }
+          const filterByContentPack = (items) => items.filter(isContentAvailable)
           const contentPackStyle = (item) => item.contentPack ? { '--content-pack-color': contentPacksById[item.contentPack]?.color || '#666' } : {}
 
           const visibleCharacters = computed(() => filterByContentPack(characters))
@@ -584,7 +589,7 @@
           for (const item of items) {
             item.items = item.itemIds ? item.itemIds.map((itemId) => itemsById[itemId]).filter((it) => !(it.type === 'passive' && item.type === 'passive')) : []
             item.evolution = item.evolutionId && itemsById[item.evolutionId]
-            item.title = (item.fullName || item.name) + (item.type === 'weapon' || item.type === 'passive' ? ` (Rarity: ${item.rarity || 'Unknown'})` : '') + (item.price ? ` (Price: ${item.price})` : '') + (item.description ? `\n${item.description}` : '')
+            item.title = (item.fullName || item.name) + (item.type === 'weapon' || item.type === 'passive' ? ` (Rarity: ${item.rarity || 'Unknown'})` : '') + (item.price ? ` (Price: ${item.price})` : '') + (item.description ? `\n${item.description}` : '') + (item.tips ? `\n${item.tips}` : '') + (item.maxLevelItemIds?.length ? `\nMax level: ${item.maxLevelItemIds.map((id) => itemsById[id].name).join(', ')}.` : '')
           }
 
           const impactsById = computed(() => {
@@ -1077,6 +1082,15 @@
               accfamiliarturtle: []
             }
 
+            // New catalog entries may not have hand-authored stat impacts yet.
+            // They still need an array for sorting and Arcana relationships.
+            for (const item of items) newImpactsById[item.id] ||= []
+            for (const arcana of arcanas) {
+              for (const id of arcana.itemIds || []) {
+                if (!newImpactsById[arcana.id].includes(`+${id}`)) newImpactsById[arcana.id].push(`+${id}`)
+              }
+            }
+
             for (const itemId in newImpactsById) {
               const impactIds = newImpactsById[itemId]
               const item = itemsById[itemId]
@@ -1480,7 +1494,7 @@
             hoveredId = object.id
             // character's gif animation
             const contentPack = contentPacksById[object.contentPack]
-            if (object.type === 'character' && object.id !== 'shemoon' && (!contentPack || contentPack.animatedCharacters)) {
+            if (object.type === 'character' && object.animated !== false && object.id !== 'shemoon' && (!contentPack || contentPack.animatedCharacters)) {
               const iconElements = document.querySelectorAll(`[data-id="${object.id}"] > .icon`)
               for (const iconElement of iconElements) {
                 const image = new Image()

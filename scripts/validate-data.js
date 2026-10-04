@@ -67,7 +67,7 @@ function validateData(data) {
   }
 
   for (const record of records) {
-    for (const field of ['itemIds', 'hiddenitemIds']) {
+    for (const field of ['itemIds', 'hiddenitemIds', 'maxLevelItemIds']) {
       if (record[field] !== undefined && !Array.isArray(record[field])) {
         errors.push(`${record.collectionName}:${record.id}.${field} must be an array`)
         continue
@@ -76,6 +76,11 @@ function validateData(data) {
         if (!recordsById.has(reference)) {
           errors.push(`${record.collectionName}:${record.id}.${field} references missing ID: ${reference}`)
         }
+      }
+    }
+    for (const reference of record.maxLevelItemIds || []) {
+      if (record.collectionName !== 'evolutions' || !record.itemIds?.includes(reference)) {
+        errors.push(`${record.collectionName}:${record.id} has a max-level requirement outside its ingredients: ${reference}`)
       }
     }
   }
