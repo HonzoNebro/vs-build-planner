@@ -369,6 +369,14 @@ section {
   height: 3em;
   background-position: bottom center;
 }
+.object.character:hover > .icon,
+.slot.character:hover > .icon {
+  animation: character-movement 0.5s steps(2, end) infinite;
+}
+@keyframes character-movement {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(0.08em, -0.14em); }
+}
 .object.character .items > .icon-hiddenItem {
   opacity: 0.5;
 }

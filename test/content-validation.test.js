@@ -65,6 +65,13 @@ test('icon cache-busting query strings preserve local asset validation', () => {
   assert.deepEqual(validateIconAssets(css, rootDir), [])
 })
 
+test('every character receives a hover movement fallback', () => {
+  const css = fs.readFileSync(path.join(rootDir, 'main.css'), 'utf8')
+  assert.match(css, /\.object\.character:hover > \.icon,/)
+  assert.match(css, /animation: character-movement/)
+  assert.match(css, /@keyframes character-movement/)
+})
+
 test('Chaos uses a transparent sprite rather than its framed selection portrait', () => {
   const css = fs.readFileSync(path.join(rootDir, 'icons.css'), 'utf8')
   const selector = /\.icon-chaos\s*\{[^}]*url\((?:"|')?([^"')]+)/g
