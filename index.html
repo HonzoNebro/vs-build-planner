@@ -1545,10 +1545,10 @@
                 const image = new Image()
                 image.onload = () => {
                   if (object.id === hoveredId) {
-                    iconElement.style.backgroundImage = `url("./img/characters/${object.id}.gif")`
+                    iconElement.style.backgroundImage = `url("./img/characters/${object.id}.gif?v=variant-fix-20261004")`
                   }
                 }
-                image.src = `./img/characters/${object.id}.gif`
+                image.src = `./img/characters/${object.id}.gif?v=variant-fix-20261004`
               }
             }
             showImpacts(object)
