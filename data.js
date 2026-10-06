@@ -646,7 +646,7 @@ window.vs = {
       ],
       "contentPack": "legacy-moonspell",
       "surname": "Moonspell",
-      "description": "Overheal +16: activates her starting weapon. Becomes stronger and invincible for a fixed interval after defeating a large amount of enemies.",
+      "description": "Starts with -20% Max Health. Overheal +16 activates her starting weapon. Becomes stronger and invincible for a fixed interval after defeating a large amount of enemies.",
       "onEveryLevelUp": {},
       "price": 5000
     },

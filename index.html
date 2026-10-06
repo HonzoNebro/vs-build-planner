@@ -129,11 +129,31 @@
           </span>
           <span class="button" @click="config.combinations = !config.combinations">COMBINATIONS: <span :class="(config.combinations ? 'enabled' : 'disabled')">{{config.combinations ? 'ON' : 'OFF'}}</span></span>
           <span class="button" @click="config.impacts = !config.impacts">IMPACTS: <span :class="(config.impacts ? 'enabled' : 'disabled')">{{config.impacts ? 'ON' : 'OFF'}}</span></span>
+          <span class="button" @click="config.stats = !config.stats">STAT SUMMARY: <span :class="(config.stats ? 'enabled' : 'disabled')">{{config.stats ? 'ON' : 'OFF'}}</span></span>
+          <span class="button" @click="config.legend = !config.legend">LEGEND: <span :class="(config.legend ? 'enabled' : 'disabled')">{{config.legend ? 'ON' : 'OFF'}}</span></span>
           <span class="button" @click="config.titles = !config.titles">TITLES: <span :class="(config.titles ? 'enabled' : 'disabled')">{{config.titles ? 'ON' : 'OFF'}}</span></span>
           <span class="button" @click="config.pixels = !config.pixels">PIXELS: <span :class="(config.pixels ? 'enabled' : 'disabled')">{{config.pixels ? 'ON' : 'OFF'}}</span></span>
           <span class="button" @click="config.size -= 0.1">SIZE <span class="modifier">-</span></span>
           <span class="button" style="margin-left: 0" @click="config.size += 0.1">SIZE <span class="modifier">+</span></span>
         </div>
+
+        <section v-if="config.legend" class="info-panel" aria-label="Planner legend">
+          <strong>Planner legend</strong>
+          <span class="legend-item boost">Green: positive relationship</span>
+          <span class="legend-item drop">Red: reduction or trade-off</span>
+          <span class="legend-item evolve">Yellow: evolution requirement</span>
+          <span class="legend-item mixed">Pulsing: conditional or variable relationship</span>
+          <p>These colors describe how a character, item, or Arcana interacts with a stat or object. They do not rate whether an item is good or bad for a build.</p>
+        </section>
+
+        <section v-if="config.stats" class="info-panel" aria-live="polite">
+          <template v-if="statsSubject">
+            <strong>Stat summary — {{ statsSubject.fullName || statsSubject.name }}</strong>
+            <span v-if="!statImpactRows.length">No tracked stat relationships.</span>
+            <span v-for="stat in statImpactRows" :key="stat.id" class="stat-chip" :class="stat.tone">{{ stat.label }}: {{ stat.description }}</span>
+          </template>
+          <span v-else>Select or hover a character, weapon, passive, or Arcana to inspect its tracked stat relationships.</span>
+        </section>
 
         <!-- Characters -->
         <fieldset v-if="selectedCharacter.id === 'nameless-saint'">
@@ -470,6 +490,7 @@
           const collapsedSections = reactive({})
 
           let hoveredId = ''
+          const hoveredItem = ref(null)
 
           window.vs = reactive(window.vs)
 
@@ -1231,6 +1252,21 @@
           const selectedPassives = computed(() => selectedItems.value.filter((item) => item.type === 'passive' && !selectedStage.value.itemIds.includes(item.id)))
           const selectedArcanas = computed(() => selectedItems.value.filter((item) => item.type === 'arcana'))
 
+          const statsSubject = computed(() => hoveredItem.value || (selectedCharacter.value.id ? selectedCharacter.value : null))
+          const statImpactRows = computed(() => {
+            const subject = statsSubject.value
+            if (!subject) return []
+            return (impactsById.value[subject.id] || [])
+              .filter((impact) => itemsById[impact.substring(1)]?.type === 'passive')
+              .map((impact) => {
+                const direction = impact[0]
+                const stat = itemsById[impact.substring(1)]
+                const labels = { '+': 'positive', '-': 'reduction', '~': 'variable', '!': 'conditional' }
+                const statLabels = { health: 'Max Health', recovery: 'Recovery', armor: 'Armor', might: 'Might', speed: 'Move Speed', duration: 'Duration', area: 'Area', amount: 'Amount', cooldown: 'Cooldown', luck: 'Luck', growth: 'Growth', greed: 'Greed', curse: 'Curse', magnet: 'Magnet', wings: 'Move Speed', revival: 'Revival' }
+                return { id: impact.substring(1), label: statLabels[stat.id] || stat.name, tone: direction === '+' ? 'boost' : direction === '-' ? 'drop' : direction === '~' ? 'mixed' : 'mixed-reverse', description: labels[direction] || 'tracked' }
+              })
+          })
+
           const pickedPassives = computed(() => selectedPassives.value.filter((item) => !item.extra))
           const extraPassives = computed(() => selectedPassives.value.filter((item) => item.extra))
           const stagePassives = computed(() => selectedStage.value?.items.filter((item) => item.type === 'passive') || [])
@@ -1538,6 +1574,7 @@
 
           function onMouseEnter(object) {
             hoveredId = object.id
+            hoveredItem.value = object
             // character's gif animation
             if (object.type === 'character') {
               const iconElements = document.querySelectorAll(`[data-id="${object.id}"] > .icon`)
@@ -1556,6 +1593,7 @@
 
           function onMouseLeave(object) {
             hoveredId = ''
+            hoveredItem.value = null
             if (object && object.type === 'character') {
               const iconElements = document.querySelectorAll(`[data-id="${object.id}"] > .icon`)
               for (const iconElement of iconElements) {
@@ -1743,7 +1781,7 @@
 
           function useConfig(storageKey = 'vs-build') {
             const defaultContentPacks = Object.fromEntries(window.vs.contentPacks.map((contentPack) => [contentPack.id, true]))
-            const defaultConfig = { sorting: false, impacts: true, pixels: true, titles: true, contentPacks: defaultContentPacks, combinations: true, size: 1, version: 3 }
+            const defaultConfig = { sorting: false, impacts: true, stats: false, legend: false, pixels: true, titles: true, contentPacks: defaultContentPacks, combinations: true, size: 1, version: 4 }
 
             const userConfig = loadUserConfig()
 
@@ -1843,6 +1881,8 @@
             itemsById,
             itemsByKey,
             impactsById,
+            statsSubject,
+            statImpactRows,
             selectedStage,
             selectedCharacter,
             selectedWeapons,

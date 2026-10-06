@@ -185,6 +185,17 @@ test('Nameless Saint uses collected weapons, with priority and DLC fallbacks', (
   assert.ok(!app.impactsById.value['nameless-saint'].includes('+holy'))
 })
 
+test('Menya exposes her Max Health trade-off in the stat summary', () => {
+  const { app, flush } = planner()
+  app.toggleItem(app.itemsById.menya); flush()
+  assert.equal(app.config.stats, false)
+  const health = app.statImpactRows.value.find((stat) => stat.id === 'health')
+  assert.equal(health.label, 'Max Health')
+  assert.equal(health.tone, 'drop')
+  assert.equal(health.description, 'reduction')
+  assert.ok(app.itemsById.menya.description.includes('-20% Max Health'))
+})
+
 test('gift recipes retain base weapons and Universitas does not require Candybox', () => {
   for (const [giftId, bases] of [['universitas', ['light_', 'dark_']], ['sword_', ['sword']]]) {
     const { app, flush } = planner()

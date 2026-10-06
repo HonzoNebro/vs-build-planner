@@ -444,6 +444,27 @@ section {
   margin-top: -var(--space-s);
   font-size: 0.6em;
 }
+.info-panel {
+  max-width: 70em;
+  margin: var(--space-s) auto;
+  padding: var(--space-s);
+  border: 1px solid #555;
+  background: rgba(0, 0, 0, 0.35);
+  font-size: var(--space-ml);
+}
+.info-panel > * {
+  display: inline-block;
+  margin: var(--space-xxs);
+}
+.info-panel > p {
+  display: block;
+  margin-bottom: 0;
+}
+.legend-item,
+.stat-chip {
+  padding: var(--space-xxs) var(--space-xs);
+  color: #111;
+}
 .button {
   margin: 0.4em;
   padding: var(--space-ml);
